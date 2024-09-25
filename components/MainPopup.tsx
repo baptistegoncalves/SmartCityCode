@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import { View, Text, TouchableOpacity, ScrollView, Image, TextInput, StyleSheet } from 'react-native';
 import ForYou from './ForYou';
 import TrafficInfo from './TrafficInfo';
 import avatarImage from '../assets/Image_Popup/doug.jpg';
-
 
 const MainPopup: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<'ForYou' | 'Info'>('ForYou');
@@ -29,13 +28,17 @@ const MainPopup: React.FC = () => {
             onPress={() => setSelectedTab('ForYou')}
             style={[styles.tabButton, selectedTab === 'ForYou' && styles.activeTab]}
           >
-            <Text style={styles.tabText}>Pour toi</Text>
+            <Text style={[styles.tabText, selectedTab === 'ForYou' && styles.activeTabText]}>
+              Pour toi
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => setSelectedTab('Info')}
             style={[styles.tabButton, selectedTab === 'Info' && styles.activeTab]}
           >
-            <Text style={styles.tabText}>Info</Text>
+            <Text style={[styles.tabText, selectedTab === 'Info' && styles.activeTabText]}>
+              Info
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -51,7 +54,7 @@ const MainPopup: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: '#F4F4F4',
     padding: 16,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
@@ -68,7 +71,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 16,
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#D9D9D9',
     borderRadius: 50,
     padding: 8,
   },
@@ -85,22 +88,32 @@ const styles = StyleSheet.create({
   },
   tabSwitcher: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center', // Centrer les onglets horizontalement
     alignItems: 'center',
     marginBottom: 16,
   },
   tabContainer: {
     flexDirection: 'row',
+    justifyContent: 'center', // Centrer les boutons dans leur conteneur
+    alignItems: 'center',
+    width: '80%', // Largeur des onglets limitée pour plus d'espacement
   },
   tabButton: {
-    paddingBottom: 4,
+    paddingBottom: 10,
+    marginHorizontal: 16, // Espace entre les boutons
   },
   activeTab: {
-    borderBottomWidth: 2,
-    borderBottomColor: 'black',
+    borderBottomWidth: 3, // Bordure plus épaisse pour l'onglet actif
+    borderBottomColor: '#858FFF', // Couleur noire pour l'onglet actif
   },
   tabText: {
     fontSize: 18,
+    color: '#808080', // Texte grisé par défaut pour les onglets inactifs
+  },
+  activeTabText: {
+    fontSize: 18,
+    fontWeight: 'bold', // Texte plus gras pour l'onglet actif
+    color: '#000', // Couleur noire pour l'onglet actif
   },
 });
 
