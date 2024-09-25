@@ -1,5 +1,6 @@
 import React, { useState } from 'react'; 
 import { View, Text, TouchableOpacity, ScrollView, Image, TextInput, StyleSheet, Modal } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons'; // Importation de FontAwesome
 import ForYou from './ForYou';
 import TrafficInfo from './TrafficInfo';
 import avatarImage from '../assets/images_Popup/doug.jpg';
@@ -19,6 +20,12 @@ const MainPopup: React.FC = () => {
       <View style={styles.overlay}>
         <Image source={backgroundImage} style={styles.backgroundImage} />
         <View style={styles.container}>
+
+          {/* Flèche de retour (Chevron Down) */}
+          <TouchableOpacity style={styles.arrowButton} onPress={() => setModalVisible(false)}>
+            <FontAwesome name="chevron-down" size={24} color="black" />
+          </TouchableOpacity>
+
           {/* Search Bar */}
           <View style={styles.searchBar}>
             <TextInput
@@ -92,6 +99,16 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    position: 'relative', // Nécessaire pour que la flèche soit positionnée par rapport à ce conteneur
+  },
+  arrowButton: {
+    position: 'absolute',
+    top: -10, // Ajuste cette valeur pour placer la flèche à l'intérieur du pop-up, proche du bord supérieur
+    alignSelf: 'center', // Centrer horizontalement la flèche
+    zIndex: 10, // S'assurer que la flèche est au-dessus de tout autre élément
+    backgroundColor: 'white',
+    borderRadius: 50, // Pour arrondir le fond de la flèche
+    padding: 5, // Ajuste l'espacement autour de la flèche pour qu'elle soit plus visible
   },
   searchBar: {
     flexDirection: 'row',
