@@ -7,6 +7,12 @@ import {
   StyleSheet,
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
+import BoulangerieIcon from "../assets/icons_Popup/boulangerie.svg";
+import Croix from "../assets/icons_Popup/croix.svg";
+import EcoleIcon from "../assets/icons_Popup/ecole.svg";
+import MaisonIcon from "../assets/icons_Popup/maison.svg";
+import Ping_orange from "../assets/icons_Popup/ping_orange.svg";
+import Ping_vert from "../assets/icons_Popup/ping_vert.svg";
 
 const truncate = (text: string, maxLength: number) => {
   return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
@@ -25,7 +31,7 @@ const ForYou: React.FC = () => {
           >
             <TouchableOpacity style={styles.item}>
               <View style={styles.iconCircle}>
-                <FontAwesome name="home" size={24} color="blue" />
+                <MaisonIcon width={24} height={24} />
               </View>
               <Text style={styles.itemText}>{truncate("Maison", 8)}</Text>
               <Text style={styles.distanceText}>3.9 km</Text>
@@ -33,7 +39,7 @@ const ForYou: React.FC = () => {
 
             <TouchableOpacity style={styles.item}>
               <View style={styles.iconCircle}>
-                <FontAwesome name="graduation-cap" size={24} color="blue" />
+                <EcoleIcon width={24} height={24} />
               </View>
               <Text style={styles.itemText}>{truncate("École", 8)}</Text>
               <Text style={styles.distanceText}>5.7 km</Text>
@@ -41,7 +47,7 @@ const ForYou: React.FC = () => {
 
             <TouchableOpacity style={styles.item}>
               <View style={styles.iconCircle}>
-                <FontAwesome name="shopping-bag" size={24} color="blue" />
+                <BoulangerieIcon width={24} height={24} />
               </View>
               <Text style={styles.itemText}>{truncate("Boulangerie", 6)}</Text>
               <Text style={styles.distanceText}>950 m</Text>
@@ -49,7 +55,7 @@ const ForYou: React.FC = () => {
 
             <TouchableOpacity style={styles.item}>
               <View style={styles.iconCircle}>
-                <FontAwesome name="building" size={24} color="blue" />
+                <MaisonIcon width={24} height={24} />
               </View>
               <Text style={styles.itemText}>{truncate("Appartement", 6)}</Text>
               <Text style={styles.distanceText}>10 km</Text>
@@ -57,7 +63,7 @@ const ForYou: React.FC = () => {
 
             <TouchableOpacity style={styles.item}>
               <View style={styles.iconCircle}>
-                <FontAwesome name="briefcase" size={24} color="blue" />
+                <MaisonIcon width={24} height={24} />
               </View>
               <Text style={styles.itemText}>{truncate("Travail", 8)}</Text>
               <Text style={styles.distanceText}>9.3 km</Text>
@@ -70,12 +76,7 @@ const ForYou: React.FC = () => {
         <Text style={styles.sectionTitle}>Récents</Text>
         <View style={styles.recentContainer}>
           <TouchableOpacity style={styles.recentItem}>
-            <FontAwesome
-              name="map-marker"
-              size={24}
-              color="green"
-              style={styles.icon}
-            />
+            <Ping_vert width={24} height={24} />
             <View>
               <Text style={styles.recentText}>Repère placé</Text>
               <Text style={styles.recentSubText}>
@@ -84,12 +85,7 @@ const ForYou: React.FC = () => {
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={styles.recentItem}>
-            <FontAwesome
-              name="home"
-              size={24}
-              color="blue"
-              style={styles.icon}
-            />
+            <MaisonIcon width={24} height={24} />
             <View>
               <Text style={styles.recentText}>Maison</Text>
               <Text style={styles.recentSubText}>
@@ -98,12 +94,7 @@ const ForYou: React.FC = () => {
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.recentItem, styles.noBorder]}>
-            <FontAwesome
-              name="map-marker"
-              size={24}
-              color="orange"
-              style={styles.icon}
-            />
+            <Ping_orange width={24} height={24} />
             <View>
               <Text style={styles.recentText}>Repère placé</Text>
               <Text style={styles.recentSubText}>41°38'11.1"N 9°04'38.5"E</Text>
