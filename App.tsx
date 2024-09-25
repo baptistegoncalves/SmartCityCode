@@ -1,19 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import React, { useState } from 'react';
+import { View, StyleSheet, Image } from 'react-native';
 import MainPopup from './components/MainPopup';
+import backgroundImage from './assets/images_Popup/background.jpg';
 
-export default function App() {
+const App = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const togglePopup = () => {
+    setPopupOpen(!isPopupOpen);
+  };
+
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
-      <MainPopup />
+      <Image source={backgroundImage} style={styles.backgroundImage} />
+      <MainPopup isOpen={isPopupOpen} togglePopup={togglePopup} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
-    flex: 10,
-    backgroundColor: 'white',
+    flex: 1,
+  },
+  backgroundImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    resizeMode: 'cover',
   },
 });
+
+export default App;

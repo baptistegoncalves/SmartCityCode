@@ -1,122 +1,115 @@
-import React, { useState } from 'react'; 
-import { View, Text, TouchableOpacity, ScrollView, Image, TextInput, StyleSheet, Modal } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons'; // Importation de FontAwesome
+import React, { useRef, useEffect } from 'react';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+  Image,
+  TextInput,
+  StyleSheet,
+  Animated,
+} from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 import ForYou from './ForYou';
 import TrafficInfo from './TrafficInfo';
 import avatarImage from '../assets/images_Popup/doug.jpg';
-import backgroundImage from '../assets/images_Popup/background.jpg'; // Assure-toi d'importer ton image de fond
 
-const MainPopup: React.FC = () => {
-  const [selectedTab, setSelectedTab] = useState<'ForYou' | 'Info'>('ForYou');
-  const [modalVisible, setModalVisible] = useState(true); // État pour afficher le modal
+interface MainPopupProps {
+  isOpen: boolean;
+  togglePopup: () => void;
+}
+
+const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
+  const [selectedTab, setSelectedTab] = React.useState<'ForYou' | 'Info'>('ForYou');
+  const animation = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.timing(animation, {
+      toValue: isOpen ? 1 : 0,
+      duration: 300,
+      useNativeDriver: true,
+    }).start();
+  }, [isOpen]);
+
+  const translateY = animation.interpolate({
+    inputRange: [0, 1],
+    outputRange: [564, 0], // Ajustez "250" selon la hauteur souhaitée du pop-up lorsqu'il est fermé
+  });
 
   return (
-    <Modal
-      transparent={true}
-      animationType="slide"
-      visible={modalVisible}
-      onRequestClose={() => setModalVisible(false)} // Fermer le modal
-    >
-      <View style={styles.overlay}>
-        <Image source={backgroundImage} style={styles.backgroundImage} />
-        <View style={styles.container}>
+    <Animated.View style={[styles.container, { transform: [{ translateY }] }]}>
+      {/* Flèche pour ouvrir/fermer le pop-up */}
+      <TouchableOpacity style={styles.arrowButton} onPress={togglePopup}>
+        <FontAwesome name={isOpen ? 'chevron-down' : 'chevron-up'} size={24} color="black" />
+      </TouchableOpacity>
 
-          {/* Flèche de retour (Chevron Down) */}
-          <TouchableOpacity style={styles.arrowButton} onPress={() => setModalVisible(false)}>
-            <FontAwesome name="chevron-down" size={24} color="black" />
-          </TouchableOpacity>
-
-          {/* Search Bar */}
-          <View style={styles.searchBar}>
-            <TextInput
-              placeholder="Maison"
-              style={styles.searchInput}
-            />
-            <Image
-              source={avatarImage}
-              style={styles.avatar}
-            />
-          </View>
-
-          {/* Tab Switcher */}
-          <View style={styles.tabSwitcher}>
-            <View style={styles.tabContainer}>
-              <TouchableOpacity
-                onPress={() => setSelectedTab('ForYou')}
-                style={[styles.tabButton, selectedTab === 'ForYou' && styles.activeTab]}
-              >
-                <Text style={[styles.tabText, selectedTab === 'ForYou' && styles.activeTabText]}>
-                  Pour toi
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => setSelectedTab('Info')}
-                style={[styles.tabButton, selectedTab === 'Info' && styles.activeTab]}
-              >
-                <Text style={[styles.tabText, selectedTab === 'Info' && styles.activeTabText]}>
-                  Info
-                </Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-
-          {/* Content */}
-          <ScrollView>
-            {selectedTab === 'ForYou' ? <ForYou /> : <TrafficInfo />}
-          </ScrollView>
-        </View>
+      {/* Barre de recherche */}
+      <View style={styles.searchBar}>
+        <TextInput placeholder="Maison" style={styles.searchInput} />
+        <Image source={avatarImage} style={styles.avatar} />
       </View>
-    </Modal>
+
+      {/* Afficher le reste du contenu */}
+      <View style={styles.contentContainer}>
+        {/* Sélecteur d'onglets */}
+        <View style={styles.tabSwitcher}>
+          <View style={styles.tabContainer}>
+            <TouchableOpacity
+              onPress={() => setSelectedTab('ForYou')}
+              style={[styles.tabButton, selectedTab === 'ForYou' && styles.activeTab]}
+            >
+              <Text style={[styles.tabText, selectedTab === 'ForYou' && styles.activeTabText]}>
+                Pour toi
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setSelectedTab('Info')}
+              style={[styles.tabButton, selectedTab === 'Info' && styles.activeTab]}
+            >
+              <Text style={[styles.tabText, selectedTab === 'Info' && styles.activeTabText]}>
+                Info
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        {/* Contenu */}
+        <ScrollView>
+          {selectedTab === 'ForYou' ? <ForYou /> : <TrafficInfo />}
+        </ScrollView>
+      </View>
+    </Animated.View>
   );
 };
 
 const styles = StyleSheet.create({
-  overlay: {
-    flex: 1,
-    justifyContent: 'flex-end', // Positionner le contenu en bas
-    alignItems: 'center',
-  },
-  backgroundImage: {
+  container: {
     position: 'absolute',
-    top: 0,
+    bottom: 0,
     left: 0,
     right: 0,
-    bottom: 0,
-    resizeMode: 'cover', // Pour couvrir tout l'écran
-  },
-  container: {
-    width: '100%', // Prendre toute la largeur de l'écran
-    height: '84%', // Ajuster la hauteur du pop-up
-    backgroundColor: 'rgba(255, 255, 255, 0.9)', // Couleur de fond avec un peu de transparence
-    borderTopLeftRadius: 16, // Coins arrondis en haut à gauche
-    borderTopRightRadius: 16, // Coins arrondis en haut à droite
-    padding: 16,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: -2, // Légèrement au-dessus de l'écran
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-    position: 'relative', // Nécessaire pour que la flèche soit positionnée par rapport à ce conteneur
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+    paddingTop: 16,
+    paddingHorizontal: 16,
+    height: 700, // Hauteur fixe du pop-up
   },
   arrowButton: {
-    position: 'absolute',
-    top: -10, // Ajuste cette valeur pour placer la flèche à l'intérieur du pop-up, proche du bord supérieur
-    alignSelf: 'center', // Centrer horizontalement la flèche
-    zIndex: 10, // S'assurer que la flèche est au-dessus de tout autre élément
+    alignSelf: 'center',
     backgroundColor: 'white',
-    borderRadius: 50, // Pour arrondir le fond de la flèche
-    padding: 5, // Ajuste l'espacement autour de la flèche pour qu'elle soit plus visible
+    borderRadius: 50,
+    padding: 5,
+    marginBottom: 10,
+    zIndex: 10,
   },
   searchBar: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 16,
     backgroundColor: '#D9D9D9',
     borderRadius: 50,
     padding: 8,
+    marginBottom: 16,
   },
   searchInput: {
     flex: 1,
@@ -129,34 +122,37 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginLeft: 8,
   },
+  contentContainer: {
+    flex: 1,
+  },
   tabSwitcher: {
     flexDirection: 'row',
-    justifyContent: 'center', // Centrer les onglets horizontalement
+    justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 16,
   },
   tabContainer: {
     flexDirection: 'row',
-    justifyContent: 'center', // Centrer les boutons dans leur conteneur
+    justifyContent: 'center',
     alignItems: 'center',
-    width: '80%', // Largeur des onglets limitée pour plus d'espacement
+    width: '80%',
   },
   tabButton: {
     paddingBottom: 10,
-    marginHorizontal: 16, // Espace entre les boutons
+    marginHorizontal: 16,
   },
   activeTab: {
-    borderBottomWidth: 3, // Bordure plus épaisse pour l'onglet actif
-    borderBottomColor: '#858FFF', // Couleur noire pour l'onglet actif
+    borderBottomWidth: 3,
+    borderBottomColor: '#858FFF',
   },
   tabText: {
     fontSize: 18,
-    color: '#808080', // Texte grisé par défaut pour les onglets inactifs
+    color: '#808080',
   },
   activeTabText: {
     fontSize: 18,
-    fontWeight: 'bold', // Texte plus gras pour l'onglet actif
-    color: '#000', // Couleur noire pour l'onglet actif
+    fontWeight: 'bold',
+    color: '#000',
   },
 });
 
