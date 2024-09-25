@@ -1,67 +1,93 @@
 import React, { useState } from 'react'; 
-import { View, Text, TouchableOpacity, ScrollView, Image, TextInput, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, Image, TextInput, StyleSheet, Modal } from 'react-native';
 import ForYou from './ForYou';
 import TrafficInfo from './TrafficInfo';
-import avatarImage from '../assets/Image_Popup/doug.jpg';
+import avatarImage from '../assets/images_Popup/doug.jpg';
+import backgroundImage from '../assets/images_Popup/background.jpg'; // Assure-toi d'importer ton image de fond
 
 const MainPopup: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<'ForYou' | 'Info'>('ForYou');
+  const [modalVisible, setModalVisible] = useState(true); // État pour afficher le modal
 
   return (
-    <View style={styles.container}>
-      {/* Search Bar */}
-      <View style={styles.searchBar}>
-        <TextInput
-          placeholder="Maison"
-          style={styles.searchInput}
-        />
-        <Image
-          source={avatarImage}
-          style={styles.avatar}
-        />
-      </View>
+    <Modal
+      transparent={true}
+      animationType="slide"
+      visible={modalVisible}
+      onRequestClose={() => setModalVisible(false)} // Fermer le modal
+    >
+      <View style={styles.overlay}>
+        <Image source={backgroundImage} style={styles.backgroundImage} />
+        <View style={styles.container}>
+          {/* Search Bar */}
+          <View style={styles.searchBar}>
+            <TextInput
+              placeholder="Maison"
+              style={styles.searchInput}
+            />
+            <Image
+              source={avatarImage}
+              style={styles.avatar}
+            />
+          </View>
 
-      {/* Tab Switcher */}
-      <View style={styles.tabSwitcher}>
-        <View style={styles.tabContainer}>
-          <TouchableOpacity
-            onPress={() => setSelectedTab('ForYou')}
-            style={[styles.tabButton, selectedTab === 'ForYou' && styles.activeTab]}
-          >
-            <Text style={[styles.tabText, selectedTab === 'ForYou' && styles.activeTabText]}>
-              Pour toi
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => setSelectedTab('Info')}
-            style={[styles.tabButton, selectedTab === 'Info' && styles.activeTab]}
-          >
-            <Text style={[styles.tabText, selectedTab === 'Info' && styles.activeTabText]}>
-              Info
-            </Text>
-          </TouchableOpacity>
+          {/* Tab Switcher */}
+          <View style={styles.tabSwitcher}>
+            <View style={styles.tabContainer}>
+              <TouchableOpacity
+                onPress={() => setSelectedTab('ForYou')}
+                style={[styles.tabButton, selectedTab === 'ForYou' && styles.activeTab]}
+              >
+                <Text style={[styles.tabText, selectedTab === 'ForYou' && styles.activeTabText]}>
+                  Pour toi
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => setSelectedTab('Info')}
+                style={[styles.tabButton, selectedTab === 'Info' && styles.activeTab]}
+              >
+                <Text style={[styles.tabText, selectedTab === 'Info' && styles.activeTabText]}>
+                  Info
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+
+          {/* Content */}
+          <ScrollView>
+            {selectedTab === 'ForYou' ? <ForYou /> : <TrafficInfo />}
+          </ScrollView>
         </View>
       </View>
-
-      {/* Content */}
-      <ScrollView>
-        {selectedTab === 'ForYou' ? <ForYou /> : <TrafficInfo />}
-      </ScrollView>
-    </View>
+    </Modal>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  overlay: {
     flex: 1,
-    backgroundColor: '#F4F4F4',
+    justifyContent: 'flex-end', // Positionner le contenu en bas
+    alignItems: 'center',
+  },
+  backgroundImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    resizeMode: 'cover', // Pour couvrir tout l'écran
+  },
+  container: {
+    width: '100%', // Prendre toute la largeur de l'écran
+    height: '84%', // Ajuster la hauteur du pop-up
+    backgroundColor: 'rgba(255, 255, 255, 0.9)', // Couleur de fond avec un peu de transparence
+    borderTopLeftRadius: 16, // Coins arrondis en haut à gauche
+    borderTopRightRadius: 16, // Coins arrondis en haut à droite
     padding: 16,
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: -2, // Légèrement au-dessus de l'écran
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
