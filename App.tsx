@@ -1,11 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaView, StatusBar } from 'react-native';
+import Login from './components/Login';
 
-export default function App() {
+const App = () => {
   return (
-    <View>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar/>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar barStyle="dark-content" />
+      <Login />
+    </SafeAreaView>
   );
-}
+};
+
+export default App;

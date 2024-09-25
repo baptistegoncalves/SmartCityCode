@@ -1,4 +1,0 @@
-https://data.grandlyon.com/fr/datapusher/ws/timeseries/biotope.temperature/all.json?maxfeatures=100&start=1
-
-infos sur l'api :
-https://data.grandlyon.com/portail/fr/jeux-de-donnees/temperatures-en-temps-reel-sur-la-metropole-de-lyon/api
