@@ -1,11 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import MainPopup from './components/MainPopup';
 
 export default function App() {
   return (
-    <View className="flex-1 justify-center items-center bg-green-500">
-      <Text className='text-2xl'>Open up App.tsx to start working on your app!</Text>
+    <View style={styles.container}>
       <StatusBar style="auto" />
+      <MainPopup />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 10,
+    backgroundColor: 'white',
+  },
+});
