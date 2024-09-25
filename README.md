@@ -1,16 +1,30 @@
-# SmartCityCode
+## Installation
 
-Projet Expo avec TypeScript et Tailwind CSS pour l'application **SmartCityCode**.
+1. Clonez ce dépôt depuis GitHub :
+    
+    ```
+    git clone https://github.com/baptistegoncalves/SmartCityCode.git
+    ```
+    
+2. Naviguez dans le répertoire du projet :
+    
+    ```
+    cd SmartCityCode
+    ```
+    
+3. Installez les dépendances avec **npm** :
+    
+    ```
+    npm install
+    ```
+    
 
-## Pré-requis
+## Lancer l'application
 
-Assurez-vous d'avoir les éléments suivants installés avant de commencer :
+Une fois les dépendances installées, vous pouvez lancer l'application avec la commande suivante :
 
-- **Node.js** (version 14.x ou supérieure)
-- **npm** (généralement inclus avec Node.js)
-- **Expo CLI** (peut être installé globalement si nécessaire)
+```
+npm start
+```
 
-Si Expo CLI n'est pas installé, vous pouvez l'installer globalement avec :
-
-```bash
-npm install -g expo-cli
+Cette commande va démarrer l'application Expo et ouvrir une interface web pour choisir où l'exécuter (Android, iOS ou Web).
