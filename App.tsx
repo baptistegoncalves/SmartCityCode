@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 import * as React from "react";
 import { useState } from 'react';
 import { NavigationContainer } from "@react-navigation/native";
@@ -20,9 +20,17 @@ const App = () => {
     setPopupOpen(!isPopupOpen);
   };
   return (
-    <View className="flex-1 justify-center items-center bg-green-500">
-      <Text className='text-2xl'>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Login"
+        screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Map" component={MapScreen} />
+        <MainPopup isOpen={isPopupOpen} togglePopup={togglePopup} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
