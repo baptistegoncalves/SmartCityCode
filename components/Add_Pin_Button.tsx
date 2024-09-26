@@ -70,30 +70,26 @@ const Add_Pin_Button = () => {
         animationType="slide"
         transparent={true}
         visible={modalVisible}
-        onRequestClose={cancelPin} // Fermer le modal si l'utilisateur appuie sur retour
+        onRequestClose={cancelPin}
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalView}>
             <Text style={styles.modalTitle}>Sélectionner une raison</Text>
+            <View style={styles.buttonContainer}>
+              <Button title="Annuler" onPress={cancelPin} color="red" />
+              <Button title="Valider" onPress={insertDataToSupabase} />
+            </View>
             <Picker
               selectedValue={reason}
               onValueChange={(itemValue) => setReason(itemValue)}
               style={styles.picker}
             >
-              <Picker.Item label="Fontaine" value="fontaine" />
               <Picker.Item label="Banc" value="banc" />
               <Picker.Item label="Travaux" value="travaux" />
+              <Picker.Item label="Fontaine" value="fontaine" />
               <Picker.Item label="Regroupement" value="regroupement" />
             </Picker>
 
-            <View style={styles.buttonContainer}>
-              <TouchableOpacity onPress={cancelPin} style={[styles.modalButton, { backgroundColor: 'red' }]}>
-                <Text style={styles.buttonText}>Annuler</Text>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={insertDataToSupabase} style={styles.modalButton}>
-                <Text style={styles.buttonText}>Valider</Text>
-              </TouchableOpacity>
-            </View>
           </View>
         </View>
       </Modal>
@@ -143,9 +139,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.5)',
   },
   modalView: {
-    width: 350,
+    width: 300, // Largeur inchangée
+    height: 400, // Hauteur augmentée
     backgroundColor: 'white',
-    borderRadius: 20,
+    borderRadius: 10,
     padding: 20,
     alignItems: 'center',
     elevation: 5,
@@ -156,7 +153,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   picker: {
-    width: '100%',
+    width: '100%', // Prend toute la largeur du modal
     height: 44,
   },
   buttonContainer: {
@@ -164,20 +161,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
     marginTop: 20,
-  },
-  modalButton: {
-    flex: 1,
-    paddingVertical: 10,
-    marginHorizontal: 5,
-    borderRadius: 5,
-    backgroundColor: '#2196F3',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
   },
 });
 
