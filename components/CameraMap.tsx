@@ -15,15 +15,10 @@ interface Camera {
 const CameraMap: React.FC = () => {
   const [cameraLocations, setCameraLocations] = useState<Camera[]>([]);
 
-  // Fonction pour charger les données du JSON
+
   const loadCamerasFromJSON = async () => {
     try {
-      const asset = Asset.fromModule(require('../assets/Camera_Lyon_lon_lat.json'));
-      await asset.downloadAsync();
-      const fileUri = asset.localUri || asset.uri;
-
-      const response = await fetch(fileUri);
-      const results: Camera[] = await response.json(); // Récupérer et parser le JSON
+      const results: Camera[] = require('../assets/datasets/Camera_Lyon_lon_lat.json'); // Charger directement le fichier JSON
       setCameraLocations(results);
       console.log(results); // Vérifier les données chargées
     } catch (error) {
