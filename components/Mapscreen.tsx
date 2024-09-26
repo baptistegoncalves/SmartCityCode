@@ -7,7 +7,6 @@ import {
   Button,
   KeyboardAvoidingView,
   Platform,
-  Text,
 } from "react-native";
 import MapView from "react-native-maps";
 import * as Location from "expo-location";
@@ -16,6 +15,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 type RootStackParamList = {
   Home: undefined;
   Map: undefined;
+  CameraMap: undefined; // Assurez-vous d'ajouter CameraMap ici
 };
 
 type MapScreenProps = NativeStackScreenProps<RootStackParamList, "Map">;
@@ -33,8 +33,7 @@ function Mapscreen({ navigation }: MapScreenProps) {
     longitudeDelta: LONGITUDE_DELTA,
   });
 
-  const [location, setLocation] =
-    React.useState<Location.LocationObject | null>(null);
+  const [location, setLocation] = React.useState<Location.LocationObject | null>(null);
 
   React.useEffect(() => {
     (async () => {
@@ -90,6 +89,7 @@ function Mapscreen({ navigation }: MapScreenProps) {
       />
       <View style={styles.buttonContainer}>
         <Button title="Recenter" onPress={centerMap} />
+        <Button title="Voir Caméras" onPress={() => navigation.navigate('CameraMap')} />
       </View>
     </KeyboardAvoidingView>
   );
@@ -107,12 +107,12 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     position: "absolute",
-    bottom: 60, // Ajustez cette valeur pour positionner le bouton pas trop en bas
+    bottom: 60,
     left: 10,
     backgroundColor: "white",
     borderRadius: 5,
     padding: 10,
-    zIndex: 1, // Assurez-vous que le bouton est au-dessus de la carte
+    zIndex: 1,
   },
 });
 
