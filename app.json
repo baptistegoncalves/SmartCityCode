@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "SmartCity4",
-    "slug": "SmartCity4",
+    "name": "SmartCity",
+    "slug": "SmartCity",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/imageAriane/logoyourway.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/imageAriane/logoyourway.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,12 +17,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/imageAriane/logoyourway.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/imageAriane/logoyourway.png"
     }
   }
 }
