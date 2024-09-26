@@ -3,13 +3,13 @@ import {
   View,
   Text,
   TouchableOpacity,
-  ScrollView,
   Image,
   TextInput,
   StyleSheet,
   Animated,
 } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import PagerView from 'react-native-pager-view';  // Importation de PagerView
 import ForYou from './ForYou';
 import TrafficInfo from './TrafficInfo';
 import avatarImage from '../assets/images_Popup/doug.jpg';
@@ -20,8 +20,9 @@ interface MainPopupProps {
 }
 
 const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
-  const [selectedTab, setSelectedTab] = React.useState<'ForYou' | 'Info'>('ForYou');
   const animation = useRef(new Animated.Value(0)).current;
+  const pagerRef = useRef<PagerView>(null); // Référence pour PagerView
+  const [selectedTab, setSelectedTab] = React.useState(0); // Tab index
 
   useEffect(() => {
     Animated.timing(animation, {
@@ -33,8 +34,13 @@ const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
 
   const translateY = animation.interpolate({
     inputRange: [0, 1],
-    outputRange: [564, 0], // Ajustez "250" selon la hauteur souhaitée du pop-up lorsqu'il est fermé
+    outputRange: [564, 0], // Ajustez selon la hauteur souhaitée du pop-up lorsqu'il est fermé
   });
+
+  const handlePageChange = (index: number) => {
+    setSelectedTab(index);
+    pagerRef.current?.setPage(index); // Gérer le changement de page
+  };
 
   return (
     <Animated.View style={[styles.container, { transform: [{ translateY }] }]}>
@@ -49,35 +55,42 @@ const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
         <Image source={avatarImage} style={styles.avatar} />
       </View>
 
-      {/* Afficher le reste du contenu */}
-      <View style={styles.contentContainer}>
-        {/* Sélecteur d'onglets */}
-        <View style={styles.tabSwitcher}>
-          <View style={styles.tabContainer}>
-            <TouchableOpacity
-              onPress={() => setSelectedTab('ForYou')}
-              style={[styles.tabButton, selectedTab === 'ForYou' && styles.activeTab]}
-            >
-              <Text style={[styles.tabText, selectedTab === 'ForYou' && styles.activeTabText]}>
-                Pour toi
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => setSelectedTab('Info')}
-              style={[styles.tabButton, selectedTab === 'Info' && styles.activeTab]}
-            >
-              <Text style={[styles.tabText, selectedTab === 'Info' && styles.activeTabText]}>
-                Info
-              </Text>
-            </TouchableOpacity>
-          </View>
+      {/* Sélecteur d'onglets */}
+      <View style={styles.tabSwitcher}>
+        <View style={styles.tabContainer}>
+          <TouchableOpacity
+            onPress={() => handlePageChange(0)}
+            style={[styles.tabButton, selectedTab === 0 && styles.activeTab]}
+          >
+            <Text style={[styles.tabText, selectedTab === 0 && styles.activeTabText]}>
+              Pour toi
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => handlePageChange(1)}
+            style={[styles.tabButton, selectedTab === 1 && styles.activeTab]}
+          >
+            <Text style={[styles.tabText, selectedTab === 1 && styles.activeTabText]}>
+              Info
+            </Text>
+          </TouchableOpacity>
         </View>
-
-        {/* Contenu */}
-        <ScrollView>
-          {selectedTab === 'ForYou' ? <ForYou /> : <TrafficInfo />}
-        </ScrollView>
       </View>
+
+      {/* PagerView pour le swipe */}
+      <PagerView
+        style={styles.pagerView}
+        initialPage={0}
+        onPageSelected={(e) => setSelectedTab(e.nativeEvent.position)}
+        ref={pagerRef}
+      >
+        <View key="1">
+          <ForYou />
+        </View>
+        <View key="2">
+          <TrafficInfo />
+        </View>
+      </PagerView>
     </Animated.View>
   );
 };
@@ -122,9 +135,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginLeft: 8,
   },
-  contentContainer: {
-    flex: 1,
-  },
   tabSwitcher: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -153,6 +163,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: '#000',
+  },
+  pagerView: {
+    flex: 1,
   },
 });
 

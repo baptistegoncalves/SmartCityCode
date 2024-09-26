@@ -1,9 +1,12 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
+import MetroImage from '../assets/images_Popup/metroA.png';  
+import ProtestImage from '../assets/images_Popup/regroupement.png'; 
+import PollutionImage from '../assets/images_Popup/pollution.png';
 
 const TrafficInfo: React.FC = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       {/* Section Infos Traffic */}
       <Text style={styles.title}>Infos traffic</Text>
 
@@ -11,7 +14,7 @@ const TrafficInfo: React.FC = () => {
       <Text style={styles.subtitle}>⚠️ En cours :</Text>
       <View style={styles.infoBox}>
         <Image
-          source={{ uri: 'https://example.com/metro-image.jpg' }} // Placeholder pour l'image du métro
+          source={MetroImage}  // Utilisation de l'image locale
           style={styles.infoImage}
         />
         <Text style={styles.infoTitle}>!! Alerte métro A !!</Text>
@@ -22,7 +25,7 @@ const TrafficInfo: React.FC = () => {
       <Text style={styles.subtitle}>🕒 Programmé :</Text>
       <View style={styles.infoBox}>
         <Image
-          source={{ uri: 'https://example.com/protest-image.jpg' }} // Placeholder pour l'image de la manifestation
+          source={ProtestImage}  // Utilisation de l'image locale
           style={styles.infoImage}
         />
         <Text style={styles.infoTitle}>Alerte regroupement</Text>
@@ -30,7 +33,19 @@ const TrafficInfo: React.FC = () => {
           Regroupement prévu le 29 septembre place des Terreaux de 17h00 à 18h00
         </Text>
       </View>
-    </View>
+
+      <View style={styles.infoBox}>
+        <Image
+          source={PollutionImage}  // Utilisation de l'image locale
+          style={styles.infoImage}
+        />
+        <Text style={styles.infoTitle}>Alerte pollution</Text>
+        <Text style={styles.infoDescription}>
+          Grosse masse de pollution prévue le 30 septembre sur Lyon toute la journée
+        </Text>
+      </View>
+
+    </ScrollView>
   );
 };
 

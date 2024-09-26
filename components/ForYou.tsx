@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
 import BoulangerieIcon from "../assets/icons_Popup/boulangerie.svg";
 import Croix from "../assets/icons_Popup/croix.svg";
 import EcoleIcon from "../assets/icons_Popup/ecole.svg";
@@ -68,6 +67,14 @@ const ForYou: React.FC = () => {
               <Text style={styles.itemText}>{truncate("Travail", 8)}</Text>
               <Text style={styles.distanceText}>9.3 km</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.item}>
+              <View style={styles.iconCircle}>
+                <Croix width={40} height={40} />
+              </View>
+              <Text style={styles.itemText}>{truncate("Ajouter", 8)}</Text>
+            </TouchableOpacity>
+
           </ScrollView>
         </View>
       </View>
@@ -76,25 +83,25 @@ const ForYou: React.FC = () => {
         <Text style={styles.sectionTitle}>Récents</Text>
         <View style={styles.recentContainer}>
           <TouchableOpacity style={styles.recentItem}>
-            <Ping_vert width={24} height={24} />
+            <Ping_vert width={24} height={24} style={styles.icon} />
             <View>
               <Text style={styles.recentText}>Repère placé</Text>
               <Text style={styles.recentSubText}>
-                Quai Pascal Paoli, La Marine, 20137 Porto-Vecchio
+                Quai Pascal Paoli, La Marine, Porto-Vecchio
               </Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={styles.recentItem}>
-            <MaisonIcon width={24} height={24} />
+            <MaisonIcon width={24} height={24} style={styles.icon} />
             <View>
               <Text style={styles.recentText}>Maison</Text>
               <Text style={styles.recentSubText}>
-                20 route de Cala Rossa, 20137 Trinité de Porto-Vecchio
+                20 route de Cala Rossa, Trinité de Porto-Vecchio
               </Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.recentItem, styles.noBorder]}>
-            <Ping_orange width={24} height={24} />
+            <Ping_orange width={24} height={24} style={styles.icon} />
             <View>
               <Text style={styles.recentText}>Repère placé</Text>
               <Text style={styles.recentSubText}>41°38'11.1"N 9°04'38.5"E</Text>
@@ -129,7 +136,7 @@ const styles = StyleSheet.create({
   },
   iconCircle: {
     backgroundColor: "#858FFF",
-    opacity: 0.2,
+    opacity: 0.3,
     width: 60,
     height: 60,
     borderRadius: 30, // Cercle
@@ -172,7 +179,7 @@ const styles = StyleSheet.create({
     color: "#808080",
   },
   icon: {
-    marginRight: 12,
+    marginRight: 10, // Ajout d'un espacement entre l'icône et le texte
   },
 });
 
