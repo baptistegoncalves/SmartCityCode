@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   StyleSheet,
@@ -8,34 +8,37 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
-import MapView from "react-native-maps";
+import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
-type RootStackParamList = {
-  Home: undefined;
-  Map: undefined;
-  CameraMap: undefined; // Assurez-vous d'ajouter CameraMap ici
+type Camera = {
+  nom: string;
+  id: string;
+  observation?: string;
+  gid: string;
+  lon: number;
+  lat: number;
 };
-
-type MapScreenProps = NativeStackScreenProps<RootStackParamList, "Map">;
 
 const { width, height } = Dimensions.get("window");
 const ASPECT_RATIO = width / height;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-function Mapscreen({ navigation }: MapScreenProps) {
-  const [region, setRegion] = React.useState({
+function MapScreen() {
+  const [region, setRegion] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
     latitudeDelta: LATITUDE_DELTA,
     longitudeDelta: LONGITUDE_DELTA,
   });
 
-  const [location, setLocation] = React.useState<Location.LocationObject | null>(null);
+  const [location, setLocation] = useState<Location.LocationObject | null>(null);
+  const [cameraLocations, setCameraLocations] = useState<Camera[]>([]);
+  const [showCameras, setShowCameras] = useState(false); // Ajouter un état pour gérer l'affichage des caméras
 
-  React.useEffect(() => {
+  // Charger la localisation actuelle
+  useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
@@ -65,6 +68,25 @@ function Mapscreen({ navigation }: MapScreenProps) {
     })();
   }, []);
 
+  // Fonction pour charger les données des caméras depuis un fichier JSON
+  const loadCamerasFromJSON = async () => {
+    try {
+      const results: Camera[] = require('../assets/datasets/Camera_Lyon_lon_lat.json'); // Charger le JSON localement
+      setCameraLocations(results);
+      console.log(results);
+    } catch (error) {
+      console.error("Error loading JSON file:", error);
+    }
+  };
+
+  // Gérer l'affichage des caméras
+  const toggleCameras = async () => {
+    if (!showCameras) {
+      await loadCamerasFromJSON(); // Charger les caméras si elles ne sont pas encore affichées
+    }
+    setShowCameras(!showCameras); // Basculer l'état d'affichage des caméras
+  };
+
   const centerMap = () => {
     if (location) {
       setRegion({
@@ -86,10 +108,27 @@ function Mapscreen({ navigation }: MapScreenProps) {
         region={region}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
-      />
+      >
+        {/* Afficher les marqueurs des caméras si l'état showCameras est activé */}
+        {showCameras &&
+          cameraLocations.map((camera) => (
+            <Marker
+              key={camera.id}
+              coordinate={{
+                latitude: camera.lat,
+                longitude: camera.lon,
+              }}
+              title={`Caméra ${camera.id}`}
+              description={camera.observation || "Aucune description"}
+            />
+          ))}
+      </MapView>
       <View style={styles.buttonContainer}>
         <Button title="Recenter" onPress={centerMap} />
-        <Button title="Voir Caméras" onPress={() => navigation.navigate('CameraMap')} />
+        <Button
+          title={showCameras ? "Masquer les Caméras" : "Voir Caméras"}
+          onPress={toggleCameras}
+        />
       </View>
     </KeyboardAvoidingView>
   );
@@ -116,4 +155,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Mapscreen;
+export default MapScreen;

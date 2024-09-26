@@ -47,7 +47,7 @@ const CameraMap: React.FC = () => {
             key={camera.id}
             coordinate={{
               latitude: camera.lat,
-              longitude: camera.lon,
+              longitude: camera.lon,  
             }}
             title={`Caméra ${camera.id}`}
             description={camera.observation || 'Aucune description'}
