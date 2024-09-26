@@ -1,0 +1,403 @@
+ligne;code_trace;code_ligne;nom_trace;sens;origine;destination;nom_origine;nom_destination;famille_transport;date_debut;date_fin;pmr;code_tri_ligne;nom_version;last_update;gid
+8;8-1;8B;Perrache - Oullins Clement Desormes;Aller;30977;11033;Perrache;Oullins Clément Désormes;BUS;20200903;;True;8;18 septembre 2024;2024-09-18 13:33:38+02:00;429
+8;8-2;8B;Oullins Clement Desormes - Perrache;Retour;11033;30977;Oullins Clément Désormes;Perrache;BUS;20200903;;True;8;18 septembre 2024;2024-09-18 13:33:38+02:00;430
+6;6-3;6A;Ste-Foy Place Saint Luc - Gare d'Oullins;Aller;34271;34269;Ste-Foy Place Saint Luc;Gare d'Oullins;BUS;20211023;;False;6;18 septembre 2024;2024-09-18 13:33:38+02:00;805
+6;6-4;6A;Gare d'Oullins - Ste-Foy Place Saint Luc;Retour;34269;34271;Gare d'Oullins;Ste-Foy Place Saint Luc;BUS;20211023;;False;6;18 septembre 2024;2024-09-18 13:33:38+02:00;806
+7;7-2;7A;Laurent Bonnevay - Bonnevay Bel Air;Aller;10716;10111;Laurent Bonnevay;Bonnevay - Bel Air;BUS;20180101;;True;7;18 septembre 2024;2024-09-18 13:33:38+02:00;880
+2;2-1;2A;Croix-Rousse - Plateau de St-Rambert;Aller;11119;20244;Croix-Rousse;Plateau de St Rambert;BUS;20180101;;True;2;18 septembre 2024;2024-09-18 13:33:38+02:00;411
+2;2-2;2A;Plateau de St-Rambert - Croix-Rousse;Retour;20244;11119;Plateau de St Rambert;Croix-Rousse;BUS;20180101;;True;2;18 septembre 2024;2024-09-18 13:33:38+02:00;412
+3;3-1;3A;Gorge de Loup - Dardilly Le Jubin;Aller;10513;20189;Gorge de Loup;Dardilly Le Jubin;BUS;20180101;;True;3;18 septembre 2024;2024-09-18 13:33:38+02:00;413
+3;3-2;3A;Gorge de Loup - Limonest Le Puy d'Or;Aller;10513;33290;Gorge de Loup;Limonest Le Puy d'Or;BUS;20180101;;True;3;18 septembre 2024;2024-09-18 13:33:38+02:00;414
+3;3-3;3A;Gorge de Loup - Porte de Lyon;Aller;10513;11147;Gorge de Loup;Porte de Lyon;BUS;20180101;;True;3;18 septembre 2024;2024-09-18 13:33:38+02:00;415
+26;26-1;26A;Lycée Lumiere - Manissieux Pierre Blanche;Aller;32540;20079;Lycée Lumière;Manissieux P. Blanche;BUS;20180101;;True;26;18 septembre 2024;2024-09-18 13:33:38+02:00;471
+33;33-1;33A;Croix-Rousse - Rillieux Les Alagniers;Aller;11119;33420;Croix-Rousse;Rillieux - Les Alagniers;BUS;20180101;;True;33;18 septembre 2024;2024-09-18 13:33:38+02:00;485
+33;33-2;33A;Rillieux Les Alagniers - Croix-Rousse;Retour;33420;11119;Rillieux - Les Alagniers;Croix-Rousse;BUS;20180101;;True;33;18 septembre 2024;2024-09-18 13:33:38+02:00;486
+12;12-1;12C;Gare d'Oullins - Hopital Lyon Sud;Aller;34269;10565;Gare d'Oullins;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;12;18 septembre 2024;2024-09-18 13:33:38+02:00;809
+12;12-2;12C;Hopital Lyon Sud - Gare d'Oullins;Retour;10565;34269;St-Genis-Laval Hôp. Sud;Gare d'Oullins;BUS;20211023;;False;12;18 septembre 2024;2024-09-18 13:33:38+02:00;810
+45;45-2;45B;Valdo - Croix-Rousse;Retour;11411;11119;Valdo;Croix-Rousse;BUS;20300320;;True;45;18 septembre 2024;2024-09-18 13:33:38+02:00;504
+S10;S10-1;S10A;Joannès Carret - Lycée Jean Perrin;Aller;10599;10878;Joannès Carret;Lycée Jean Perrin;BUS;20180101;;True;S 10;18 septembre 2024;2024-09-18 13:33:38+02:00;644
+15;15-3;15C;Bellecour Charite - Irigny Hauts de Selettes;Aller;10077;32640;Bellecour Charité;Irigny Hauts de Selettes;BUS;20130522;;True;15;18 septembre 2024;2024-09-18 13:33:38+02:00;851
+15;15-1;15C;Bellecour Charite - Irigny Hauts de Selettes;Aller;10077;32640;Bellecour Charité;Irigny Hauts de Selettes;BUS;20210401;;True;15;18 septembre 2024;2024-09-18 13:33:38+02:00;439
+15;15-4;15C;Irigny Hauts de Selettes - Bellecour Charite;Retour;32640;10077;Irigny Hauts de Selettes;Bellecour Charité;BUS;20130522;;True;15;18 septembre 2024;2024-09-18 13:33:38+02:00;852
+15;15-2;15C;Irigny Hauts de Selettes - Bellecour Charite;Retour;32640;10077;Irigny Hauts de Selettes;Bellecour Charité;BUS;20210401;;True;15;18 septembre 2024;2024-09-18 13:33:38+02:00;440
+17;17-1;17C;Gare d'Oullins - St Genis 2;Aller;34269;11302;Gare d'Oullins;St Genis 2;BUS;20211023;;False;17;18 septembre 2024;2024-09-18 13:33:38+02:00;811
+17;17-2;17C;St Genis 2 - Gare d'Oullins;Retour;11302;34269;St Genis 2;Gare d'Oullins;BUS;20211023;;False;17;18 septembre 2024;2024-09-18 13:33:38+02:00;812
+18;18-2;18C;Vernaison  Place - Hopital Lyon Sud;Retour;31440;10565;Vernaison  Place;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;18;18 septembre 2024;2024-09-18 13:33:38+02:00;814
+S15;S15-1;S15A;Ecully Le Trouillat - Les Sources;Aller;10399;10842;Ecully Le Trouillat;Les Sources;BUS;20180101;;True;S 15;18 septembre 2024;2024-09-18 13:33:38+02:00;653
+ZI8;ZI8-3;ZI8A;La Fouillouse Acacias - Esplanade des Arts (50 E);Retour;31431;31160;La Fouillouse Acacias;Esplanade des Arts;BUS;20180101;;True;Z I8;18 septembre 2024;2024-09-18 13:33:38+02:00;677
+30;30-4;30B;St Priest Jules Ferry - St-Pierre-de-Chandieu - Rajat;Retour;31140;34339;St-Priest Jules Ferry;St-P.de-Chandieu - Rajat;BUS;20190209;;True;30;18 septembre 2024;2024-09-18 13:33:38+02:00;720
+72;72-2;72D;Gorge de Loup - Marcy l'Etoile;Aller;10513;10910;Gorge de Loup;Marcy l'Etoile;BUS;20230201;;False;72;18 septembre 2024;2024-09-18 13:33:38+02:00;553
+72;72-3;72D;Gorge de Loup - Ste Consorce;Aller;10513;11360;Gorge de Loup;Ste Consorce;BUS;20230201;;False;72;18 septembre 2024;2024-09-18 13:33:38+02:00;552
+25;25-2;25A;Sept Chemins - Gare Part-Dieu Vivier Merle;Retour;11269;11064;Sept Chemins;Gare Part-Dieu V.Merle;BUS;20180101;;True;25;18 septembre 2024;2024-09-18 13:33:38+02:00;470
+40;40-1;40A;Bellecour Le Viste - Neuville;Aller;10080;11014;Bellecour Le Viste;Neuville;BUS;20180101;;True;40;18 septembre 2024;2024-09-18 13:33:38+02:00;495
+72;72-6;72D;Ste Consorce - Gorge de Loup;Retour;11360;10513;Ste Consorce;Gorge de Loup;BUS;20230201;;False;72;18 septembre 2024;2024-09-18 13:33:38+02:00;555
+73;73-2;73D;Brindas Centre - Gorge de Loup;Retour;10117;10513;Brindas Centre;Gorge de Loup;BUS;20190701;;True;73;18 septembre 2024;2024-09-18 13:33:38+02:00;558
+81;81-1;81A;Plateau de Montrond - Collège Paul Vallon;Aller;31704;31730;Plateau de Montrond;Collège Paul Vallon;BUS;20180101;;True;81;18 septembre 2024;2024-09-18 13:33:38+02:00;569
+35;35-1;35A;Bellecour Charité - Vénissieux Le Charréard;Aller;10077;11442;Bellecour Charité;Vénissieux Le Charréard;BUS;20180101;;True;35;18 septembre 2024;2024-09-18 13:33:38+02:00;487
+43;43-1;43A;Gare de Vaise - Genay Proulieu;Aller;10487;30087;Gare de Vaise-G.Collomb;Genay Proulieu;BUS;20180101;;True;43;18 septembre 2024;2024-09-18 13:33:38+02:00;499
+47;47-2;47A;Marechal Juin - Meyzieu Z.i.;Retour;34355;31620;Maréchal Juin;Meyzieu Z.i.;BUS;20190209;;True;47;18 septembre 2024;2024-09-18 13:33:38+02:00;726
+43;43-3;43A;Genay Proulieu - Gare de Vaise;Retour;30087;10487;Genay Proulieu;Gare de Vaise-G.Collomb;BUS;20180101;;True;43;18 septembre 2024;2024-09-18 13:33:38+02:00;501
+R2;R2-6;R2A;Neuville l'echo - Chantemerle;Retour;34603;10192;Neuville l'écho;Chantemerle;BUS;20220301;;True;R  2;18 septembre 2024;2024-09-18 13:33:38+02:00;804
+5;5-3;5A;Pont Mouton - Charbonnieres Verrieres;Aller;11189;33630;Pont Mouton;Charbonnières Verrières;BUS;20300821;;True;5;18 septembre 2024;2024-09-18 13:33:38+02:00;754
+52;52-3;52D;Vaulx - La Grappiniere - Parilly Univ. Hippodrome;Aller;20205;33640;Vaulx - La Grappinière;Parilly Univ. Hippodrome;BUS;20240801;;False;52;18 septembre 2024;2024-09-18 13:33:38+02:00;854
+52;52-4;52D;Parilly Univ. Hippodrome - Vaulx - La Grappiniere;Retour;33640;20205;Parilly Univ. Hippodrome;Vaulx - La Grappinière;BUS;20240801;;False;52;18 septembre 2024;2024-09-18 13:33:38+02:00;855
+C20E;C20E-1;C20E;Bellecour Le Viste - Fort du Bruissin;Aller;10080;10454;Bellecour Le Viste;Fort du Bruissin;BUS;20190701;;True;C20E;18 septembre 2024;2024-09-18 13:33:38+02:00;407
+76;76-1;76A;Corbas Les Balmes - Décines Grand Large;Aller;31430;31610;Corbas Les Balmes;Décines Grand Large;BUS;20180101;;True;76;18 septembre 2024;2024-09-18 13:33:38+02:00;559
+C20;C20-3;C20D;Bellecour Le Viste - Fort du Bruissin;Aller;10080;10454;Bellecour Le Viste;Fort du Bruissin;BUS;20240719;;True;C 20;18 septembre 2024;2024-09-18 13:33:38+02:00;705
+C20;C20-4;C20D;Fort du Bruissin - Bellecour Le Viste;Retour;10454;10080;Fort du Bruissin;Bellecour Le Viste;BUS;20240719;;True;C 20;18 septembre 2024;2024-09-18 13:33:38+02:00;706
+3;3-4;3A;Dardilly Le Jubin - Gorge de Loup;Retour;20189;10513;Dardilly Le Jubin;Gorge de Loup;BUS;20180101;;True;3;18 septembre 2024;2024-09-18 13:33:38+02:00;418
+5;5-4;5A;Charbonnieres Verrieres - Pont Mouton;Retour;33630;11189;Charbonnières Verrières;Pont Mouton;BUS;20300821;;True;5;18 septembre 2024;2024-09-18 13:33:38+02:00;755
+S7;S7-1;S7A;La Chaux Ecole de Champlong-  La Chaux Ecole de Champlong;Aller;33181;33181;La Chaux Ecole Champlong;La Chaux Ecole Champlong;BUS;20180101;;True;S  7;18 septembre 2024;2024-09-18 13:33:38+02:00;635
+11;11-1;11B;Gare d'Oullins - Thurins Mairie;Aller;34269;34090;Gare d'Oullins;Thurins Mairie;BUS;20180101;;True;11;18 septembre 2024;2024-09-18 13:33:38+02:00;433
+11;11-2;11B;Thurins Mairie - Gare d'Oullins;Retour;34090;34269;Thurins Mairie;Gare d'Oullins;BUS;20180101;;True;11;18 septembre 2024;2024-09-18 13:33:38+02:00;434
+3;3-5;3A;Limonest Le Puy d'Or - Gorge de Loup;Retour;33290;10513;Limonest Le Puy d'Or;Gorge de Loup;BUS;20180101;;True;3;18 septembre 2024;2024-09-18 13:33:38+02:00;416
+7;7-5;7A;Laurent Bonnevay - Vaulx Lamartine;Aller;10716;11428;Laurent Bonnevay;Vaulx Lamartine;BUS;20231104;;True;7;18 septembre 2024;2024-09-18 13:33:38+02:00;807
+C20E;C20E-2;C20E;Fort du Bruissin - Bellecour Le Viste;Retour;10454;10080;Fort du Bruissin;Bellecour Le Viste;BUS;20190701;;True;C20E;18 septembre 2024;2024-09-18 13:33:38+02:00;408
+7;7-6;7A;Vaulx Lamartine - Laurent Bonnevay;Retour;11428;10716;Vaulx Lamartine;Laurent Bonnevay;BUS;20231104;;True;7;18 septembre 2024;2024-09-18 13:33:38+02:00;808
+7;7-4;7A;Bonnevay Bel Air - Laurent Bonnevay;Retour;10111;10716;Bonnevay - Bel Air;Laurent Bonnevay;BUS;20180101;;True;7;18 septembre 2024;2024-09-18 13:33:38+02:00;881
+9;9-1;9B;Cordeliers - Sathonay Castellane;Aller;10285;34463;Cordeliers;Sathonay Castellane;BUS;20260421;;True;9;18 septembre 2024;2024-09-18 13:33:38+02:00;431
+26;26-2;26A;Manissieux Pierre Blanche - Lycée Lumiere;Retour;20079;32540;Manissieux P. Blanche;Lycée Lumière;BUS;20180101;;True;26;18 septembre 2024;2024-09-18 13:33:38+02:00;472
+61;61-2;61B;Lissieu - Montluzin - Gare de Vaise;Retour;10995;10487;Lissieu - Montluzin;Gare de Vaise-G.Collomb;BUS;20190104;;True;61;18 septembre 2024;2024-09-18 13:33:38+02:00;526
+S12;S12-1;S12A;Hôtel-de-Ville L. Pradel - Croix-Rousse;Aller;10568;11119;Hôtel de Ville L. Pradel;Croix-Rousse;BUS;20180101;;True;S 12;18 septembre 2024;2024-09-18 13:33:38+02:00;648
+S12;S12-2;S12A;Croix-Rousse - Hôtel-de-Ville L. Pradel;Retour;11119;10568;Croix-Rousse;Hôtel de Ville L. Pradel;BUS;20180101;;True;S 12;18 septembre 2024;2024-09-18 13:33:38+02:00;649
+63;63-2;63A;Oullins Le Golf - Perrache;Retour;10729;30977;Oullins Le Golf;Perrache;BUS;20180101;;True;63;18 septembre 2024;2024-09-18 13:33:38+02:00;530
+63;63-1;63A;Perrache - Oullins Le Golf;Aller;30977;10729;Perrache;Oullins Le Golf;BUS;20180101;;True;63;18 septembre 2024;2024-09-18 13:33:38+02:00;529
+65;65-1;65B;Gorge de Loup - Charcot - La Source;Aller;10513;30071;Gorge de Loup;Charcot - La Source;BUS;20300320;;True;65;18 septembre 2024;2024-09-18 13:33:38+02:00;533
+9;9-2;9B;Sathonay Castellane - Cordeliers;Retour;34463;10285;Sathonay Castellane;Cordeliers;BUS;20260421;;True;9;18 septembre 2024;2024-09-18 13:33:38+02:00;432
+14;14-2;14B;Gorge de Loup - Gare d'Oullins;Retour;10513;34269;Gorge de Loup;Gare d'Oullins;BUS;20180101;;True;14;18 septembre 2024;2024-09-18 13:33:38+02:00;438
+61;61-1;61B;Gare de Vaise - Lissieu - Montluzin;Aller;10487;10995;Gare de Vaise-G.Collomb;Lissieu - Montluzin;BUS;20190104;;True;61;18 septembre 2024;2024-09-18 13:33:38+02:00;525
+66;66-2;66B;Champagne Ecoles - St Just;Retour;30637;11319;Champagne Ecoles;St Just;BUS;20300320;;True;66;18 septembre 2024;2024-09-18 13:33:38+02:00;536
+10;10-1;10D;Gare de Vaise - Porte de Lyon;Aller;10487;11147;Gare de Vaise-G.Collomb;Porte de Lyon;BUS;20160420;;True;10;18 septembre 2024;2024-09-18 13:33:38+02:00;740
+80;80-1;80A;Grigny La Colombe - Givors Vallée du Gier;Aller;31650;31687;Grigny La Colombe;Givors Vallée du Gier;BUS;20180101;;True;80;18 septembre 2024;2024-09-18 13:33:38+02:00;567
+85;85-3;85A;Decines Grand Large - Meyzieu Centre Aquatique;Aller;31610;34478;Décines Grand Large;Meyzieu Centre Aquatique;BUS;20280823;;True;85;18 septembre 2024;2024-09-18 13:33:38+02:00;817
+14;14-1;14B;Gare d'Oullins - Gorge de Loup;Aller;34269;10513;Gare d'Oullins;Gorge de Loup;BUS;20180101;;True;14;18 septembre 2024;2024-09-18 13:33:38+02:00;437
+78;78-1;78C;Hopital Lyon Sud - Gare de  Givors Ville;Aller;10565;31742;St-Genis-Laval Hôp. Sud;Gare de  Givors Ville;BUS;20211023;;False;78;18 septembre 2024;2024-09-18 13:33:38+02:00;563
+18;18-1;18C;Hopital Lyon Sud - Vernaison  Place;Aller;10565;31440;St-Genis-Laval Hôp. Sud;Vernaison  Place;BUS;20211023;;False;18;18 septembre 2024;2024-09-18 13:33:38+02:00;813
+84;84-5;84A;Neuville - Gare de Vaise;Retour;11014;10487;Neuville;Gare de Vaise-G.Collomb;BUS;20180101;;True;84;18 septembre 2024;2024-09-18 13:33:38+02:00;574
+19;19-3;19A;Hotel de Ville L. Pradel - Ecully Le Perollier;Aller;10568;33720;Hôtel de Ville L. Pradel;Ecully Le Perollier;BUS;20300821;;True;19;18 septembre 2024;2024-09-18 13:33:38+02:00;760
+S14;S14-3;S14A;Neuville  - Les Sources -  Neuville;Aller;11014;11014;Neuville;Neuville;BUS;20180101;;True;S 14;18 septembre 2024;2024-09-18 13:33:38+02:00;652
+ZI2;ZI2-2;ZI2A;Meyzieu Z.i. - Z.I. Sud;Aller;31620;31632;Meyzieu Z.i.;Z.I. Sud;BUS;20180101;;True;Z I2;18 septembre 2024;2024-09-18 13:33:38+02:00;659
+19;19-4;19A;Ecully Le Perollier - Hotel de Ville L. Pradel;Retour;33720;10568;Ecully Le Perollier;Hôtel de Ville L. Pradel;BUS;20300821;;True;19;18 septembre 2024;2024-09-18 13:33:38+02:00;761
+20;20-1;20A;Gare de Vaise - St Fortunat;Aller;10487;11301;Gare de Vaise-G.Collomb;St Fortunat;BUS;20180101;;True;20;18 septembre 2024;2024-09-18 13:33:38+02:00;450
+20;20-4;20A;St Fortunat - Gare de Vaise;Retour;11301;10487;St Fortunat;Gare de Vaise-G.Collomb;BUS;20180101;;True;20;18 septembre 2024;2024-09-18 13:33:38+02:00;451
+21;21-7;21A;Gare de Vaise - Limonest Cimetiere via Echangeur Sans Souci;Aller;10487;10860;Gare de Vaise-G.Collomb;Limonest Cimetière;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;453
+21;21-2;21A;Gare de Vaise - Limonest Cimetiere;Aller;10487;10860;Gare de Vaise-G.Collomb;Limonest Cimetière;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;457
+21;21-3;21A;Gare de Vaise - St-Germain Gare;Aller;10487;11313;Gare de Vaise-G.Collomb;St Germain Gare;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;454
+ZI4;ZI4-1;ZI4A;Vaulx-en-Velin La Soie - Caluire Chemin Petit;Aller;31760;10228;Vaulx-en-Velin La Soie;Caluire Chemin Petit;BUS;20180101;;True;Z I4;18 septembre 2024;2024-09-18 13:33:38+02:00;667
+20;20-3;20A;St Cyr - Gare de Vaise;Retour;11294;10487;St Cyr;Gare de Vaise-G.Collomb;BUS;20180101;;True;20;18 septembre 2024;2024-09-18 13:33:38+02:00;452
+21;21-10;21A;Limonest Cimetiere - Gare de Vaise via Echangeur Sans Souci;Retour;10860;10487;Limonest Cimetière;Gare de Vaise-G.Collomb;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;459
+21;21-4;21A;St-Germain Gare - Gare de Vaise;Retour;11313;10487;St Germain Gare;Gare de Vaise-G.Collomb;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;461
+98;98-5;98G;Gorge de Loup - Sain-Bel Gare;Aller;10513;34710;Gorge de Loup;Sain-Bel Gare;BUS;20260824;;True;98;18 septembre 2024;2024-09-18 13:33:38+02:00;883
+98;98-3;98G;Gorge de Loup - Ecole Veterinaire;Aller;10513;10393;Gorge de Loup;Ecole Vétérinaire;BUS;20260824;;True;98;18 septembre 2024;2024-09-18 13:33:38+02:00;882
+98;98-6;98G;Sain-Bel Gare - Gorge de Loup;Retour;34710;10513;Sain-Bel Gare;Gorge de Loup;BUS;20260824;;True;98;18 septembre 2024;2024-09-18 13:33:38+02:00;884
+21;21-5;21A;Limonest Cimetiere - Gare de Vaise;Retour;10860;10487;Limonest Cimetière;Gare de Vaise-G.Collomb;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;458
+10E;10E-2;10E;Porte de Lyon - Gare de Vaise;Retour;11147;10487;Porte de Lyon;Gare de Vaise-G.Collomb;BUS;20160420;;True;10E;18 septembre 2024;2024-09-18 13:33:38+02:00;745
+22;22-1;22A;Gare de Vaise - St Fortunat;Aller;10487;11301;Gare de Vaise-G.Collomb;St Fortunat;BUS;20180101;;True;22;18 septembre 2024;2024-09-18 13:33:38+02:00;463
+22;22-2;22A;St Fortunat - Gare de Vaise;Retour;11301;10487;St Fortunat;Gare de Vaise-G.Collomb;BUS;20180101;;True;22;18 septembre 2024;2024-09-18 13:33:38+02:00;464
+23;23-1;23A;Gare de Vaise - Rocade des Monts d'Or;Aller;10487;31930;Gare de Vaise-G.Collomb;Rocade des Monts d'Or;BUS;20180101;;True;23;18 septembre 2024;2024-09-18 13:33:38+02:00;465
+23;23-2;23A;Rocade des Monts d'Or - Gare de Vaise;Retour;31930;10487;Rocade des Monts d'Or;Gare de Vaise-G.Collomb;BUS;20180101;;True;23;18 septembre 2024;2024-09-18 13:33:38+02:00;466
+24;24-1;24A;Grange Blanche - Sept Chemins;Aller;10524;11269;Grange Blanche;Sept Chemins;BUS;20180101;;True;24;18 septembre 2024;2024-09-18 13:33:38+02:00;467
+24;24-2;24A;Sept Chemins - Grange Blanche;Retour;11269;10524;Sept Chemins;Grange Blanche;BUS;20180101;;True;24;18 septembre 2024;2024-09-18 13:33:38+02:00;468
+25;25-1;25A;Gare Part-Dieu Vivier Merle - Sept Chemins;Aller;11064;11269;Gare Part-Dieu V.Merle;Sept Chemins;BUS;20180101;;True;25;18 septembre 2024;2024-09-18 13:33:38+02:00;469
+28;28-3;28A;Meyzieu Z.i. - Vaulx-en-Velin La Soie;Aller;31620;31760;Meyzieu Z.i.;Vaulx-en-Velin La Soie;BUS;20190209;;True;28;18 septembre 2024;2024-09-18 13:33:38+02:00;715
+ZI4;ZI4-2;ZI4A;Caluire Chemin Petit - Vaulx-en-Velin La Soie;Retour;10228;31760;Caluire Chemin Petit;Vaulx-en-Velin La Soie;BUS;20180101;;True;Z I4;18 septembre 2024;2024-09-18 13:33:38+02:00;668
+BGS4;BGS4-3;BGS4;Vaulx-en-Velin La Soie - Gymnase Becquerel;Aller;31760;34442;Vaulx-en-Velin La Soie;Gymnase Becquerel;BUS;20240923;;True;BGS4;18 septembre 2024;2024-09-18 13:33:38+02:00;829
+BGS4;BGS4-4;BGS4;Gymnase Becquerel - Vaulx-en-Velin La Soie;Retour;34442;31760;Gymnase Becquerel;Vaulx-en-Velin La Soie;BUS;20240923;;True;BGS4;18 septembre 2024;2024-09-18 13:33:38+02:00;830
+28;28-4;28A;Vaulx-en-Velin La Soie - Meyzieu Z.i.;Retour;31760;31620;Vaulx-en-Velin La Soie;Meyzieu Z.i.;BUS;20190209;;True;28;18 septembre 2024;2024-09-18 13:33:38+02:00;716
+89D;89D-2;89E;Porte de Lyon - Gare de Vaise;Retour;11147;10487;Porte de Lyon;Gare de Vaise-G.Collomb;BUS;20190701;;True;89D;18 septembre 2024;2024-09-18 13:33:38+02:00;736
+29;29-4;29A;RN6 - A. Pare - Meyzieu Z.i.;Retour;10723;31620;R.N.6 - A. Pare;Meyzieu Z.i.;BUS;20180309;;True;29;18 septembre 2024;2024-09-18 13:33:38+02:00;478
+30;30-5;30B;Z.I. Ampere - Chandieu - St Priest Jules Ferry;Aller;34544;31140;Z.I. Ampère - Chandieu;St-Priest Jules Ferry;BUS;20190209;;True;30;18 septembre 2024;2024-09-18 13:33:38+02:00;717
+30;30-6;30B;St Priest Jules Ferry - Z.I. Ampere - Chandieu;Retour;31140;34544;St-Priest Jules Ferry;Z.I. Ampère - Chandieu;BUS;20190209;;True;30;18 septembre 2024;2024-09-18 13:33:38+02:00;721
+76;76-2;76A;Décines Grand Large - Corbas Les Balmes;Retour;31610;31430;Décines Grand Large;Corbas Les Balmes;BUS;20180101;;True;76;18 septembre 2024;2024-09-18 13:33:38+02:00;560
+77;77-1;77A;Montessuy Gutenberg - Pont de Fontaines;Aller;10987;11169;Montessuy Gutenberg;Pont de Fontaines;BUS;20180101;;True;77;18 septembre 2024;2024-09-18 13:33:38+02:00;561
+31;31-1;31A;Perrache - Cite Edouard Herriot;Aller;30977;10249;Perrache;Cité Edouard Herriot;BUS;20180101;;True;31;18 septembre 2024;2024-09-18 13:33:38+02:00;479
+31;31-4;31A;Cite Edouard Herriot - Perrache;Retour;10249;30977;Cité Edouard Herriot;Perrache;BUS;20180101;;True;31;18 septembre 2024;2024-09-18 13:33:38+02:00;481
+32;32-1;32A;Hameau de Bianne - Meyzieu Z.i.;Aller;34335;31620;Hameau de Bianne;Meyzieu Z.i.;BUS;20180309;;True;32;18 septembre 2024;2024-09-18 13:33:38+02:00;483
+52E;52E-1;52E;Vaulx-en-Velin La Soie - Bron Droits de l'Homme;Aller;31760;11674;Vaulx-en-Velin La Soie;Bron Droits de l'Homme;BUS;20230611;;False;52E;18 septembre 2024;2024-09-18 13:33:38+02:00;845
+ZI8;ZI8-1;ZI8A;Esplanade des Arts - La Fouillouse Acacias (50 E);Aller;31160;31431;Esplanade des Arts;La Fouillouse Acacias;BUS;20180101;;True;Z I8;18 septembre 2024;2024-09-18 13:33:38+02:00;675
+32;32-2;32A;Meyzieu Z.i. - Hameau de Bianne;Retour;31620;34335;Meyzieu Z.i.;Hameau de Bianne;BUS;20180309;;True;32;18 septembre 2024;2024-09-18 13:33:38+02:00;484
+114;114-1;114;Gare de Givors Ville - Hopital Lyon Sud;Aller;10565;31682;St-Genis-Laval Hôp. Sud;Gare de Givors Ville;BUS;20211023;;False;114;18 septembre 2024;2024-09-18 13:33:38+02:00;837
+35;35-2;35A;Vénissieux Le Charréard - Bellecour Charité;Retour;11442;10077;Vénissieux Le Charréard;Bellecour Charité;BUS;20180101;;True;35;18 septembre 2024;2024-09-18 13:33:38+02:00;488
+34;34-1;34A;Perrache - Grange Blanche;Aller;30977;10524;Perrache;Grange Blanche;BUS;20231119;;True;34;18 septembre 2024;2024-09-18 13:33:38+02:00;723
+120;120-2;120;Gare de Givors Ville - Perrache;Retour;31682;30977;Gare de Givors Ville;Perrache;BUS;20211023;;False;120;18 septembre 2024;2024-09-18 13:33:38+02:00;842
+34;34-2;34A;Grange Blanche - Perrache;Retour;10524;30977;Grange Blanche;Perrache;BUS;20231119;;True;34;18 septembre 2024;2024-09-18 13:33:38+02:00;724
+15E;15E-3;15F;Bellecour Charite - Grigny Jean Moulin;Aller;10077;34274;Bellecour Charité;Grigny Jean Moulin;BUS;20260824;;True;15E;18 septembre 2024;2024-09-18 13:33:38+02:00;886
+15E;15E-6;15F;Millery Place du Bouton - Bellecour Charite;Retour;34713;10077;Millery Place du Bouton;Bellecour Charité;BUS;20260824;;True;15E;18 septembre 2024;2024-09-18 13:33:38+02:00;888
+37;37-3;37A;Charpennes Charles Hernu - O'Hara;Aller;10204;20206;Charpennes Charles Hernu;Vaulx O'Hara;BUS;20200921;;True;37;18 septembre 2024;2024-09-18 13:33:38+02:00;762
+39;39-1;39A;Parc de Parilly - Solaize Mairie;Aller;33230;11278;Parc de Parilly;Solaize Mairie;BUS;20180101;;True;39;18 septembre 2024;2024-09-18 13:33:38+02:00;493
+16;16-1;16A;Vaulx-en-Velin La Soie - Decines Grand Large;Aller;31760;31610;Vaulx-en-Velin La Soie;Décines Grand Large;BUS;20180101;;True;16;18 septembre 2024;2024-09-18 13:33:38+02:00;441
+16;16-2;16A;Decines Grand Large - Vaulx-en-Velin La Soie;Retour;31610;31760;Décines Grand Large;Vaulx-en-Velin La Soie;BUS;20180101;;True;16;18 septembre 2024;2024-09-18 13:33:38+02:00;442
+C1;C1-2;C1A;Cuire - Gare Part-Dieu Vivier Merle;Retour;10309;11064;Cuire;Gare Part-Dieu V.Merle;BUS;20180101;;True;C  1;18 septembre 2024;2024-09-18 13:33:38+02:00;792
+39;39-2;39A;Solaize Mairie - Parc de Parilly;Retour;11278;33230;Solaize Mairie;Parc de Parilly;BUS;20180101;;True;39;18 septembre 2024;2024-09-18 13:33:38+02:00;494
+20;20-2;20A;Gare de Vaise - St Cyr;Aller;10487;11294;Gare de Vaise-G.Collomb;St Cyr;BUS;20180101;;True;20;18 septembre 2024;2024-09-18 13:33:38+02:00;449
+62;62-3;62A;Gare de Venissieux. - Mions Jules Valles;Aller;20510;10958;Gare de Vénissieux.;Mions Jules Vallès;BUS;20300821;;True;62;18 septembre 2024;2024-09-18 13:33:38+02:00;764
+62;62-4;62A;Mions Jules Valles - Gare de Venissieux;Retour;10958;20487;Mions Jules Vallès;Gare de Vénissieux;BUS;20300821;;True;62;18 septembre 2024;2024-09-18 13:33:38+02:00;765
+3;3-6;3A;Porte de Lyon - Gorge de Loup;Retour;11147;10513;Porte de Lyon;Gorge de Loup;BUS;20180101;;True;3;18 septembre 2024;2024-09-18 13:33:38+02:00;417
+40;40-2;40A;Neuville - Bellecour Le Viste;Retour;11014;10080;Neuville;Bellecour Le Viste;BUS;20180101;;True;40;18 septembre 2024;2024-09-18 13:33:38+02:00;496
+43;43-4;43A;Gare de Vaise - St Romain Centre;Aller;10487;32561;Gare de Vaise-G.Collomb;St Romain Centre;BUS;20180101;;True;43;18 septembre 2024;2024-09-18 13:33:38+02:00;497
+43;43-6;43A;St Romain Centre - Gare de Vaise;Retour;32561;10487;St Romain Centre;Gare de Vaise-G.Collomb;BUS;20180101;;True;43;18 septembre 2024;2024-09-18 13:33:38+02:00;500
+27;27-3;27A;Vieux Lyon - Villeurbanne Centre;Aller;20167;33593;Vieux Lyon;Villeurbanne Centre;BUS;20240801;;True;27;18 septembre 2024;2024-09-18 13:33:38+02:00;853
+46;46-1;46A;Perrache - Boyer;Aller;30977;10116;Perrache;Boyer;BUS;20180101;;True;46;18 septembre 2024;2024-09-18 13:33:38+02:00;505
+46;46-2;46A;Boyer - Perrache;Retour;10116;30977;Boyer;Perrache;BUS;20180101;;True;46;18 septembre 2024;2024-09-18 13:33:38+02:00;506
+10;10-2;10D;Porte de Lyon - Gare de Vaise;Retour;11147;10487;Porte de Lyon;Gare de Vaise-G.Collomb;BUS;20160420;;True;10;18 septembre 2024;2024-09-18 13:33:38+02:00;741
+48;48-1;48B;Bornicat - Aerop. St Ex. - Gare Routiere;Aller;34321;34323;Bornicat;St Ex. - Gare Routière;BUS;20190209;;True;48;18 septembre 2024;2024-09-18 13:33:38+02:00;727
+47;47-1;47A;Meyzieu ZI –Aéroport Saint Exupéry – Maréchal Juin;Aller;31620;34355;Meyzieu Z.i.;Maréchal Juin;BUS;20190209;;True;47;18 septembre 2024;2024-09-18 13:33:38+02:00;725
+48;48-2;48B;Aerop. St Ex. - Gare Routiere - Bornicat;Retour;34323;34321;St Ex. - Gare Routière;Bornicat;BUS;20190209;;True;48;18 septembre 2024;2024-09-18 13:33:38+02:00;728
+49;49-1;49A;Perrache - Ste Foy Chatelain;Aller;30977;11363;Perrache;Sainte-Foy Châtelain;BUS;20180101;;True;49;18 septembre 2024;2024-09-18 13:33:38+02:00;507
+49;49-2;49A;Ste Foy Chatelain - Perrache;Retour;11363;30977;Sainte-Foy Châtelain;Perrache;BUS;20180101;;True;49;18 septembre 2024;2024-09-18 13:33:38+02:00;508
+1E;1E-1;1EX;Colombier Saugnieu Les Salines - Grange Blanche;Aller;34351;10524;Colombier-Saugn. Salines;Grange Blanche;BUS;20180101;;True;1E;18 septembre 2024;2024-09-18 13:33:38+02:00;742
+1E;1E-2;1EX;Grange Blanche - Colombier Saugnieu Les Salines;Retour;10524;34351;Grange Blanche;Colombier-Saugn. Salines;BUS;20180101;;True;1E;18 septembre 2024;2024-09-18 13:33:38+02:00;743
+31;31-2;31A;Gare de Vaise - Cite Edouard Herriot;Aller;10487;10249;Gare de Vaise-G.Collomb;Cité Edouard Herriot;BUS;20180101;;True;31;18 septembre 2024;2024-09-18 13:33:38+02:00;480
+50;50-1;50A;St Priest Hôtel de Ville - La Fouillouse/La Fouillouse Acacias;Aller;11337;20363;St Priest Hôtel de Ville;La Fouillouse;BUS;20180101;;True;50;18 septembre 2024;2024-09-18 13:33:38+02:00;509
+50;50-2;50A;La Fouillouse Acacias/La Fouillouse - St Priest Hôtel de Ville;Retour;20363;11337;La Fouillouse;St Priest Hôtel de Ville;BUS;20180101;;True;50;18 septembre 2024;2024-09-18 13:33:38+02:00;510
+54;54-1;54B;Gare de Venissieux - Z.A. Chapotin;Aller;20487;34649;Gare de Vénissieux;Z.A. Chapotin;BUS;20280823;;False;54;18 septembre 2024;2024-09-18 13:33:38+02:00;513
+21;21-8;21A;Gare de Vaise - St Germain Gare via Echangeur Sans Souci;Aller;10487;11313;Gare de Vaise-G.Collomb;St Germain Gare;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;455
+54;54-2;54B;Z.A Chapotin - Gare de Venissieux;Retour;34649;20487;Z.A. Chapotin;Gare de Vénissieux;BUS;20280823;;False;54;18 septembre 2024;2024-09-18 13:33:38+02:00;514
+55;55-1;55B;Perrache - Campus Lyon Ouest;Aller;30977;33574;Perrache;Campus Lyon Ouest;BUS;20200903;;True;55;18 septembre 2024;2024-09-18 13:33:38+02:00;515
+55;55-2;55B;Campus Lyon Ouest - Perrache;Retour;33574;30977;Campus Lyon Ouest;Perrache;BUS;20200903;;True;55;18 septembre 2024;2024-09-18 13:33:38+02:00;516
+21;21-9;21A;St Germain Gare - Gare de Vaise via Echangeur Sans Souci;Retour;11313;10487;St Germain Gare;Gare de Vaise-G.Collomb;BUS;20180101;;True;21;18 septembre 2024;2024-09-18 13:33:38+02:00;462
+57;57-1;57A;Laurent Bonnevay - Vaulx Marcel Cachin/Décines Grand Large;Aller;10716;31610;Laurent Bonnevay;Décines Grand Large;BUS;20180101;;True;57;18 septembre 2024;2024-09-18 13:33:38+02:00;517
+57;57-2;57A;Décines Grand Large/Vaulx  Marcel Cachin - Laurent Bonnevay;Retour;31610;10716;Décines Grand Large;Laurent Bonnevay;BUS;20180101;;True;57;18 septembre 2024;2024-09-18 13:33:38+02:00;518
+60;60-13;60A;Debourg - Feyzin Chateau de l'Isle via Chambaud;Aller;20202;10435;Debourg;Feyzin Château de l'Isle;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;867
+60;60-11;60A;Debourg - Feyzin Chateau de l'Isle via Port;Aller;20202;10435;Debourg;Feyzin Château de l'Isle;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;866
+30;30-3;30B;St-Pierre-de-Chandieu - Rajat - St Priest Jules Ferry;Aller;34339;31140;St-P.de-Chandieu - Rajat;St-Priest Jules Ferry;BUS;20190209;;True;30;18 septembre 2024;2024-09-18 13:33:38+02:00;718
+60;60-9;60A;Debourg - Feyzin Les Razes via Chambaud;Aller;20202;10437;Debourg;Feyzin Les Razes;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;868
+60;60-7;60A;Debourg - Feyzin Les Razes via Port;Aller;20202;10437;Debourg;Feyzin Les Razes;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;869
+38;38-1;38B;Gare Part-Dieu V.Merle - Caluire - Pl. Bascule;Aller;11064;33190;Gare Part-Dieu V.Merle;Caluire - Pl. Bascule;BUS;20260421;;True;38;18 septembre 2024;2024-09-18 13:33:38+02:00;491
+60;60-10;60A;Feyzin Les Razes - Debourg via Chambaud;Retour;10437;20202;Feyzin Les Razes;Debourg;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;870
+60;60-14;60A;Feyzin Chateau de l'Isle - Debourg via Chambaud;Retour;10435;20202;Feyzin Château de l'Isle;Debourg;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;872
+60;60-12;60A;Feyzin Chateau de l'Isle - Debourg via Port;Retour;10435;20202;Feyzin Château de l'Isle;Debourg;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;871
+38;38-2;38B;Caluire - Pl. Bascule - Gare Part-Dieu V.Merle;Retour;33190;11064;Caluire - Pl. Bascule;Gare Part-Dieu V.Merle;BUS;20260421;;True;38;18 septembre 2024;2024-09-18 13:33:38+02:00;492
+27;27-2;27A;Villeurbanne Centre - Vieux Lyon;Retour;33593;20167;Villeurbanne Centre;Vieux Lyon;BUS;20180101;;True;27;18 septembre 2024;2024-09-18 13:33:38+02:00;474
+29;29-3;29A;Meyzieu Z.i. - RN6 - A. Pare;Aller;31620;10723;Meyzieu Z.i.;R.N.6 - A. Pare;BUS;20180309;;True;29;18 septembre 2024;2024-09-18 13:33:38+02:00;477
+60;60-8;60A;Feyzin Les Razes - Debourg via Port;Retour;10437;20202;Feyzin Les Razes;Debourg;BUS;20180324;;True;60;18 septembre 2024;2024-09-18 13:33:38+02:00;873
+30;30-1;30B;St-Pierre-de-Chandieu - Rajat - St Priest Jules Ferry;Aller;34339;31140;St-P.de-Chandieu - Rajat;St-Priest Jules Ferry;BUS;20190209;;True;30;18 septembre 2024;2024-09-18 13:33:38+02:00;719
+64;64-2;64A;St Fons Semard - Jean Mace;Retour;11785;10593;St Fons Semard;Jean Macé;BUS;20251119;;True;64;18 septembre 2024;2024-09-18 13:33:38+02:00;730
+30;30-2;30B;St Priest Jules Ferry - St-Pierre-de-Chandieu - Rajat;Retour;31140;34339;St-Priest Jules Ferry;St-P.de-Chandieu - Rajat;BUS;20190209;;True;30;18 septembre 2024;2024-09-18 13:33:38+02:00;722
+65;65-2;65B;Charcot - La Source - Gorge de Loup;Retour;30071;10513;Charcot - La Source;Gorge de Loup;BUS;20300320;;True;65;18 septembre 2024;2024-09-18 13:33:38+02:00;531
+66;66-1;66B;St Just - Champagne Ecoles;Aller;11319;30637;St Just;Champagne Ecoles;BUS;20300320;;True;66;18 septembre 2024;2024-09-18 13:33:38+02:00;535
+67;67-5;67A;Laurent Bonnevay - Meyzieu Z.i.;Aller;10716;31620;Laurent Bonnevay;Meyzieu Z.i.;BUS;20300821;;True;67;18 septembre 2024;2024-09-18 13:33:38+02:00;766
+67;67-6;67A;Meyzieu Z.i. - Laurent Bonnevay;Retour;31620;10716;Meyzieu Z.i.;Laurent Bonnevay;BUS;20300821;;True;67;18 septembre 2024;2024-09-18 13:33:38+02:00;767
+68;68-1;68B;Vaulx-en-Velin La Soie - Les Grandes Terres;Aller;31760;10805;Vaulx-en-Velin La Soie;Chassieu Grandes Terres;BUS;20180101;;True;68;18 septembre 2024;2024-09-18 13:33:38+02:00;541
+68;68-2;68B;Les Grandes Terres - Vaulx-en-Velin La Soie;Retour;10805;31760;Chassieu Grandes Terres;Vaulx-en-Velin La Soie;BUS;20180101;;True;68;18 septembre 2024;2024-09-18 13:33:38+02:00;542
+31;31-3;31A;Cite Edouard Herriot - Gare de Vaise;Retour;10249;10487;Cité Edouard Herriot;Gare de Vaise-G.Collomb;BUS;20180101;;True;31;18 septembre 2024;2024-09-18 13:33:38+02:00;482
+69;69-5;69A;Manufacture Montluc - College du Tonkin;Aller;10905;10259;Manufacture Montluc;Collège B. Tavernier;BUS;20190224;;True;69;18 septembre 2024;2024-09-18 13:33:38+02:00;856
+69;69-6;69A;College du Tonkin - Manufacture Montluc;Retour;10259;10905;Collège B. Tavernier;Manufacture Montluc;BUS;20190224;;True;69;18 septembre 2024;2024-09-18 13:33:38+02:00;857
+70;70-2;70A;Neuville - Gare Part-Dieu Vivier Merle;Retour;11014;11064;Neuville;Gare Part-Dieu V.Merle;BUS;20180101;;True;70;18 septembre 2024;2024-09-18 13:33:38+02:00;546
+43;43-2;43A;Gare de Vaise - Genay Proulieu;Aller;10487;30087;Gare de Vaise-G.Collomb;Genay Proulieu;BUS;20180101;;True;43;18 septembre 2024;2024-09-18 13:33:38+02:00;498
+71;71-1;71A;Gare de Vaise - Ecoles de Collonges;Aller;10487;30694;Gare de Vaise-G.Collomb;Ecoles de Collonges;BUS;20180101;;True;71;18 septembre 2024;2024-09-18 13:33:38+02:00;547
+71;71-2;71A;Ecoles de Collonges - Gare de Vaise;Retour;30694;10487;Ecoles de Collonges;Gare de Vaise-G.Collomb;BUS;20180101;;True;71;18 septembre 2024;2024-09-18 13:33:38+02:00;549
+43;43-5;43A;Genay Proulieu - Gare de Vaise;Retour;30087;10487;Genay Proulieu;Gare de Vaise-G.Collomb;BUS;20180101;;True;43;18 septembre 2024;2024-09-18 13:33:38+02:00;502
+45;45-1;45B;Croix-Rousse - Valdo;Aller;11119;11411;Croix-Rousse;Valdo;BUS;20300320;;True;45;18 septembre 2024;2024-09-18 13:33:38+02:00;503
+ZI3;ZI3-1;ZI3A;Vaulx-en-Velin La Soie - Z.I. Vaulx-en-Velin Est;Aller;31760;33644;Vaulx-en-Velin La Soie;Z.I. Vaulx-en-Velin Est;BUS;20180101;;True;Z I3;18 septembre 2024;2024-09-18 13:33:38+02:00;663
+72;72-1;72D;Gorge de Loup - Val Fontaine;Aller;10513;30001;Gorge de Loup;Val Fontaine;BUS;20230201;;False;72;18 septembre 2024;2024-09-18 13:33:38+02:00;551
+72;72-4;72D;Marcy l'Etoile - Gorge de Loup;Retour;10910;10513;Marcy l'Etoile;Gorge de Loup;BUS;20230201;;False;72;18 septembre 2024;2024-09-18 13:33:38+02:00;556
+72;72-5;72D;Val Fontaine - Gorge de Loup;Retour;30001;10513;Val Fontaine;Gorge de Loup;BUS;20230201;;False;72;18 septembre 2024;2024-09-18 13:33:38+02:00;554
+73;73-1;73D;Gorge de Loup - Brindas Centre;Aller;10513;10117;Gorge de Loup;Brindas Centre;BUS;20190701;;True;73;18 septembre 2024;2024-09-18 13:33:38+02:00;557
+79;79-1;79A;La Borelle - Décines Grand Large;Aller;10630;31610;La Borelle;Décines Grand Large;BUS;20180101;;True;79;18 septembre 2024;2024-09-18 13:33:38+02:00;565
+79;79-2;79A;Décines Grand Large - La Borelle;Retour;31610;10630;Décines Grand Large;La Borelle;BUS;20180101;;True;79;18 septembre 2024;2024-09-18 13:33:38+02:00;566
+80;80-2;80A;Givors Vallée du Gier - Grigny La Colombe;Retour;31687;31650;Givors Vallée du Gier;Grigny La Colombe;BUS;20180101;;True;80;18 septembre 2024;2024-09-18 13:33:38+02:00;568
+85;85-4;85A;Meyzieu Centre Aquatique - Decines Grand Large;Retour;34478;31610;Meyzieu Centre Aquatique;Décines Grand Large;BUS;20280823;;True;85;18 septembre 2024;2024-09-18 13:33:38+02:00;818
+81;81-2;81A;Collège Paul Vallon - Plateau de Montrond;Retour;31730;31704;Collège Paul Vallon;Plateau de Montrond;BUS;20180101;;True;81;18 septembre 2024;2024-09-18 13:33:38+02:00;570
+84;84-1;84A;Gare de Vaise - Neuville;Aller;10487;11014;Gare de Vaise-G.Collomb;Neuville;BUS;20180101;;True;84;18 septembre 2024;2024-09-18 13:33:38+02:00;573
+86;86-1;86A;Gorge de Loup - La Tour-de-Salvagny Chambettes;Aller;10513;33631;Gorge de Loup;Tour Salvagny Chambettes;BUS;20180101;;True;86;18 septembre 2024;2024-09-18 13:33:38+02:00;577
+86;86-2;86A;La Tour-de-Salvagny Chambettes - Gorge de Loup;Retour;33631;10513;Tour Salvagny Chambettes;Gorge de Loup;BUS;20180101;;True;86;18 septembre 2024;2024-09-18 13:33:38+02:00;578
+87;87-1;87A;Gare de Vénissieux - Mions Bourdelle;Aller;20487;31582;Gare de Vénissieux;Mions Bourdelle;BUS;20180101;;True;87;18 septembre 2024;2024-09-18 13:33:38+02:00;579
+87;87-2;87A;Mions Bourdelle - Gare de Vénissieux;Retour;31582;20487;Mions Bourdelle;Gare de Vénissieux;BUS;20180101;;True;87;18 septembre 2024;2024-09-18 13:33:38+02:00;580
+88;88-1;88C;Gare d'Oullins - Hopital Lyon Sud;Aller;34269;10565;Gare d'Oullins;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;88;18 septembre 2024;2024-09-18 13:33:38+02:00;581
+88;88-2;88C;Hopital Lyon Sud - Gare d'Oullins;Retour;10565;34269;St-Genis-Laval Hôp. Sud;Gare d'Oullins;BUS;20211023;;False;88;18 septembre 2024;2024-09-18 13:33:38+02:00;582
+89;89-3;89D;Gare de Vaise - Porte de Lyon;Aller;10487;11147;Gare de Vaise-G.Collomb;Porte de Lyon;BUS;20300821;;True;89;18 septembre 2024;2024-09-18 13:33:38+02:00;768
+89;89-4;89D;Porte de Lyon - Gare de Vaise;Retour;11147;10487;Porte de Lyon;Gare de Vaise-G.Collomb;BUS;20300821;;True;89;18 septembre 2024;2024-09-18 13:33:38+02:00;769
+90;90-1;90B;Valmy - Place Ferber - Ste Foy Chatelain.;Aller;34451;30867;Valmy - Place Ferber;Ste Foy Châtelain.;BUS;20300320;;True;90;18 septembre 2024;2024-09-18 13:33:38+02:00;586
+90;90-2;90B;Ste Foy Chatelain. - Valmy - Place Ferber;Retour;30867;34451;Ste Foy Châtelain.;Valmy - Place Ferber;BUS;20300320;;True;90;18 septembre 2024;2024-09-18 13:33:38+02:00;585
+70;70-1;70A;Gare Part-Dieu Vivier Merle - Neuville;Aller;11064;11014;Gare Part-Dieu V.Merle;Neuville;BUS;20180101;;True;70;18 septembre 2024;2024-09-18 13:33:38+02:00;545
+93;93-3;93A;Hopital Feyzin Venissieux - Parc Technologique;Aller;32811;33573;Hôp. Feyzin Vénissieux;Parc Technologique;BUS;20190701;;True;93;18 septembre 2024;2024-09-18 13:33:38+02:00;589
+93;93-4;93A;Parc Technologique - Hopital Feyzin Venissieux;Retour;33573;32811;Parc Technologique;Hôp. Feyzin Vénissieux;BUS;20190701;;True;93;18 septembre 2024;2024-09-18 13:33:38+02:00;590
+95;95-1;95A;Meyzieu Parc du Grand Large - Jonage Château des Marres;Aller;33772;10603;Meyzieu Parc Grand Large;Jonage Chât. des Marres;BUS;20180101;;True;95;18 septembre 2024;2024-09-18 13:33:38+02:00;591
+95;95-2;95A;Jonage Château des Marres - Meyzieu Parc du Grand Large;Retour;10603;33772;Jonage Chât. des Marres;Meyzieu Parc Grand Large;BUS;20180101;;True;95;18 septembre 2024;2024-09-18 13:33:38+02:00;592
+97;97-1;97A;Montanay Les Dîmes - Neuville;Aller;10975;11014;Montanay Les Dîmes;Neuville;BUS;20180101;;True;97;18 septembre 2024;2024-09-18 13:33:38+02:00;595
+97;97-5;97A;Neuville - Montanay Les Dîmes;Retour;11014;10975;Neuville;Montanay Les Dîmes;BUS;20180101;;True;97;18 septembre 2024;2024-09-18 13:33:38+02:00;596
+64;64-1;64A;Jean Mace - St Fons Semard;Aller;10593;11785;Jean Macé;St Fons Semard;BUS;20251119;;True;64;18 septembre 2024;2024-09-18 13:33:38+02:00;729
+10E;10E-1;10E;Gare de Vaise - Porte de Lyon;Aller;10487;11147;Gare de Vaise-G.Collomb;Porte de Lyon;BUS;20160420;;True;10E;18 septembre 2024;2024-09-18 13:33:38+02:00;744
+77;77-2;77A;Pont de Fontaines - Montessuy Gutenberg;Retour;11169;10987;Pont de Fontaines;Montessuy Gutenberg;BUS;20180101;;True;77;18 septembre 2024;2024-09-18 13:33:38+02:00;562
+111;111-1;111A;Parilly - Jacques Prévert;Aller;20491;20233;Parilly;Jacques Prévert;BUS;20180101;;True;111;18 septembre 2024;2024-09-18 13:33:38+02:00;601
+98;98-4;98G;Ecole Veterinaire - Gorge de Loup;Retour;10393;10513;Ecole Vétérinaire;Gorge de Loup;BUS;20260824;;True;98;18 septembre 2024;2024-09-18 13:33:38+02:00;885
+111;111-2;111A;Jacques Prévert - Parilly;Retour;20233;20491;Jacques Prévert;Parilly;BUS;20180101;;True;111;18 septembre 2024;2024-09-18 13:33:38+02:00;602
+112;112-1;112A;Parilly - Corbas Rue du Midi;Aller;20491;10284;Parilly;Corbas Rue du Midi;BUS;20180101;;True;112;18 septembre 2024;2024-09-18 13:33:38+02:00;603
+112;112-2;112A;Corbas Rue du Midi - Parilly;Retour;10284;20491;Corbas Rue du Midi;Parilly;BUS;20180101;;True;112;18 septembre 2024;2024-09-18 13:33:38+02:00;604
+78;78-2;78C;Gare de  Givors Ville - Hopital Lyon Sud;Retour;31742;10565;Gare de  Givors Ville;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;78;18 septembre 2024;2024-09-18 13:33:38+02:00;564
+BRT1;BRT1-3;321A;Gare Part-Dieu V.Merle - INSA - Einstein;Aller;11064;31028;Gare Part-Dieu V.Merle;INSA - Einstein;BUS;20240807;;True;BRT1;18 septembre 2024;2024-09-18 13:33:38+02:00;890
+BRT1;BRT1-4;321A;INSA - Einstein - Gare Part-Dieu V.Merle;Retour;31028;11064;INSA - Einstein;Gare Part-Dieu V.Merle;BUS;20240807;;True;BRT1;18 septembre 2024;2024-09-18 13:33:38+02:00;891
+BRT4;BRT4-1;329A;La Borelle - Hop. Feyzin Venissieux;Aller;10630;32811;La Borelle;Hôp. Feyzin Vénissieux;BUS;20190624;;True;BRT4;18 septembre 2024;2024-09-18 13:33:38+02:00;892
+BRT4;BRT4-2;329A;Hop. Feyzin Venissieux - La Borelle;Retour;32811;10630;Hôp. Feyzin Vénissieux;La Borelle;BUS;20190624;;True;BRT4;18 septembre 2024;2024-09-18 13:33:38+02:00;893
+115;115-3;115A;Gare de Vaise - Lissieu - Montluzin;Aller;10487;10995;Gare de Vaise-G.Collomb;Lissieu - Montluzin;BUS;20230106;;True;115;18 septembre 2024;2024-09-18 13:33:38+02:00;821
+115;115-4;115A;Lissieu - Montluzin - Gare de Vaise;Retour;10995;10487;Lissieu - Montluzin;Gare de Vaise-G.Collomb;BUS;20230106;;True;115;18 septembre 2024;2024-09-18 13:33:38+02:00;822
+118;118-1;118A;Gare de Vaise - Lissieu Le Bois Dieu;Aller;10487;33760;Gare de Vaise-G.Collomb;Bois Dieu;BUS;20180101;;True;118;18 septembre 2024;2024-09-18 13:33:38+02:00;605
+114;114-2;114;Hopital Lyon Sud - Gare de Givors Ville;Retour;31682;10565;Gare de Givors Ville;St-Genis-Laval Hôp. Sud;BUS;20211002;;False;114;18 septembre 2024;2024-09-18 13:33:38+02:00;838
+118;118-2;118A;Lissieu Le Bois Dieu - Gare de Vaise;Retour;33760;10487;Bois Dieu;Gare de Vaise-G.Collomb;BUS;20180101;;True;118;18 septembre 2024;2024-09-18 13:33:38+02:00;606
+119;119-1;119;Gare d'Oullins - Charly Chemin du repos;Aller;34269;34684;Gare d'Oullins;Charly Chemin du repos;BUS;20211023;;False;119;18 septembre 2024;2024-09-18 13:33:38+02:00;839
+119;119-2;119;Charly Chemin du repos - Gare d'Oullins;Retour;34684;34269;Charly Chemin du repos;Gare d'Oullins;BUS;20211023;;False;119;18 septembre 2024;2024-09-18 13:33:38+02:00;840
+122;122-1;122;Messimy - Boiron - Parc activites la Tour;Aller;40005;33791;Messimy - Boiron;Parc activités la Tour;BUS;20260824;;False;122;18 septembre 2024;2024-09-18 13:33:38+02:00;896
+122;122-2;122;Parc activites la Tour - Messimy - Boiron;Retour;33791;40005;Parc activités la Tour;Messimy - Boiron;BUS;20260824;;False;122;18 septembre 2024;2024-09-18 13:33:38+02:00;897
+142;142-1;142A;Gorge de Loup - Ecole Veterinaire;Aller;10513;10393;Gorge de Loup;Ecole Vétérinaire;BUS;20180309;;True;142;18 septembre 2024;2024-09-18 13:33:38+02:00;607
+142;142-2;142A;Ecole Veterinaire - Gorge de Loup;Retour;10393;10513;Ecole Vétérinaire;Gorge de Loup;BUS;20180309;;True;142;18 septembre 2024;2024-09-18 13:33:38+02:00;608
+145;145-1;145;Hopital Lyon Sud - Barolles Gendarmerie;Aller;10565;12255;St-Genis-Laval Hôp. Sud;Barolles Gendarmerie;BUS;20211023;;False;145;18 septembre 2024;2024-09-18 13:33:38+02:00;843
+145;145-2;145;Barolles Gendarmerie - Hopital Lyon Sud;Retour;12255;10565;Barolles Gendarmerie;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;145;18 septembre 2024;2024-09-18 13:33:38+02:00;844
+147;147-3;147;Terres Plates - Grezieu - Montolvet;Aller;32170;34197;Terres Plates;Grézieu - Montolvet;BUS;20230106;;True;147;18 septembre 2024;2024-09-18 13:33:38+02:00;823
+96;96-4;96A;Neuville - Quincieux Boulodrome;Aller;11014;34292;Neuville;Quincieux Boulodrome;BUS;20180101;;True;96;18 septembre 2024;2024-09-18 13:33:38+02:00;593
+C10;C10-3;C10A;Bellecour A. Poncet - Brignais Parc Birabent;Aller;10075;34645;Bellecour A. Poncet;Brignais Parc Birabent;BUS;20260824;;True;C 10;18 septembre 2024;2024-09-18 13:33:38+02:00;894
+147;147-4;147;Grezieu - Montolvet - Terres Plates;Retour;34197;32170;Grézieu - Montolvet;Terres Plates;BUS;20230106;;True;147;18 septembre 2024;2024-09-18 13:33:38+02:00;824
+15E;15E-5;15F;Bellecour Charite - Millery Place du Bouton;Aller;10077;34713;Bellecour Charité;Millery Place du Bouton;BUS;20260824;;True;15E;18 septembre 2024;2024-09-18 13:33:38+02:00;887
+15E;15E-4;15F;Grigny Jean Moulin - Bellecour Charite;Retour;34274;10077;Grigny Jean Moulin;Bellecour Charité;BUS;20260824;;True;15E;18 septembre 2024;2024-09-18 13:33:38+02:00;889
+89D;89D-1;89E;Gare de Vaise - Porte de Lyon;Aller;10487;11147;Gare de Vaise-G.Collomb;Porte de Lyon;BUS;20190701;;True;89D;18 septembre 2024;2024-09-18 13:33:38+02:00;735
+98E;98E-1;98H;Gorge de Loup - Marcy Campus Sanofi;Aller;10513;31360;Gorge de Loup;Marcy Campus Sanofi;BUS;20300320;;True;98E;18 septembre 2024;2024-09-18 13:33:38+02:00;623
+96;96-5;96A;Quincieux Boulodrome - Neuville;Retour;34292;11014;Quincieux Boulodrome;Neuville;BUS;20180101;;True;96;18 septembre 2024;2024-09-18 13:33:38+02:00;594
+98E;98E-2;98H;Marcy Campus Sanofi - Gorge de Loup;Retour;31360;10513;Marcy Campus Sanofi;Gorge de Loup;BUS;20300320;;True;98E;18 septembre 2024;2024-09-18 13:33:38+02:00;624
+145E;145E-1;145E;St-Genis Lycee Descartes - St-Genis-Laval Hop. Sud;Aller;12284;10565;St-Genis Lycée Descartes;St-Genis-Laval Hôp. Sud;BUS;20260824;;False;145E;18 septembre 2024;2024-09-18 13:33:38+02:00;898
+145E;145E-2;145E;St-Genis-Laval Hop. Sud - St-Genis Lycee Descartes;Retour;10565;12284;St-Genis-Laval Hôp. Sud;St-Genis Lycée Descartes;BUS;20260824;;False;145E;18 septembre 2024;2024-09-18 13:33:38+02:00;899
+A32;A32-1;A32;Pont Guillotiere RD - Crepieux Les Brosses;Aller;11172;10304;Pont Guillotière RD;Crépieux Les Brosses;BUS;20290822;;False;A 32;18 septembre 2024;2024-09-18 13:33:38+02:00;787
+A32;A32-2;A32;Crepieux Les Brosses - Pont Guillotiere RD;Retour;10304;11172;Crépieux Les Brosses;Pont Guillotière RD;BUS;20290822;;False;A 32;18 septembre 2024;2024-09-18 13:33:38+02:00;788
+113;113-3;113;Parilly - Gare de Givors Ville;Aller;20491;31682;Parilly;Gare de Givors Ville;BUS;20211023;;False;113;18 septembre 2024;2024-09-18 13:33:38+02:00;835
+113;113-4;113;Gare de Givors Ville - Parilly;Retour;31682;20491;Gare de Givors Ville;Parilly;BUS;20211023;;False;113;18 septembre 2024;2024-09-18 13:33:38+02:00;836
+A71;A71-1;A71;Pont Guillotiere RD - Crepieux Les Brosses;Aller;11172;10304;Pont Guillotière RD;Crépieux Les Brosses;BUS;20290822;;False;A 71;18 septembre 2024;2024-09-18 13:33:38+02:00;789
+A71;A71-2;A71;Crepieux Les Brosses - Pont Guillotiere RD;Retour;10304;11172;Crépieux Les Brosses;Pont Guillotière RD;BUS;20290822;;False;A 71;18 septembre 2024;2024-09-18 13:33:38+02:00;790
+BGS1;BGS1-1;BGS1;Meyzieu les Panettes - Parc Olympique Lyonnais;Aller;34433;34432;Meyzieu les Panettes;Décines OL Vallée;BUS;20180101;;True;BGS1;18 septembre 2024;2024-09-18 13:33:38+02:00;825
+BRT1;BRT1-1;321A;Gare Part-Dieu V.Merle - IUT - Feyssine;Aller;11064;31027;Gare Part-Dieu V.Merle;IUT - Feyssine;BUS;20240306;;True;BRT1;18 septembre 2024;2024-09-18 13:33:38+02:00;878
+BGS2;BGS2-2;BGS2;Parc Olympique Lyonnais - Eurexpo;Retour;34432;34431;Décines OL Vallée;Eurexpo;BUS;20180101;;True;BGS2;18 septembre 2024;2024-09-18 13:33:38+02:00;828
+C1;C1-1;C1A;Gare Part-Dieu Vivier Merle - Cuire;Aller;11064;10309;Gare Part-Dieu V.Merle;Cuire;BUS;20180101;;True;C  1;18 septembre 2024;2024-09-18 13:33:38+02:00;791
+C2;C2-1;C2A;Gare Part-Dieu Vivier Merle - Rillieux Semailles;Aller;11064;11225;Gare Part-Dieu V.Merle;Rillieux Semailles;BUS;20180101;;True;C  2;18 septembre 2024;2024-09-18 13:33:38+02:00;793
+C2;C2-2;C2A;Rillieux Semailles - Gare Part-Dieu Vivier Merle;Retour;11225;11064;Rillieux Semailles;Gare Part-Dieu V.Merle;BUS;20180101;;True;C  2;18 septembre 2024;2024-09-18 13:33:38+02:00;794
+C3;C3-1;C3A;Gare Saint Paul - Vaulx-en-Velin La Grappiniere;Aller;11327;20205;Gare Saint-Paul;Vaulx - La Grappinière;BUS;20180101;;True;C  3;18 septembre 2024;2024-09-18 13:33:38+02:00;701
+120;120-1;120;Perrache - Gare de Givors Ville;Aller;30977;31682;Perrache;Gare de Givors Ville;BUS;20211023;;False;120;18 septembre 2024;2024-09-18 13:33:38+02:00;841
+C3;C3-2;C3A;Vaulx-en-Velin La Grappiniere - Gare Saint Paul;Retour;20205;11327;Vaulx - La Grappinière;Gare Saint-Paul;BUS;20180101;;True;C  3;18 septembre 2024;2024-09-18 13:33:38+02:00;702
+C5;C5-1;C5A;Cordeliers - Rillieux Semailles;Aller;10285;11225;Cordeliers;Rillieux Semailles;BUS;20180101;;True;C  5;18 septembre 2024;2024-09-18 13:33:38+02:00;360
+2EX;2EX-1;2EX;Gorge de Loup - Thurins Le Pont;Aller;10513;34108;Gorge de Loup;Le Pont;BUS;20180101;;True;2EX;18 septembre 2024;2024-09-18 13:33:38+02:00;617
+2EX;2EX-2;2EX;Thurins Le Pont - Gorge de Loup;Retour;34108;10513;Le Pont;Gorge de Loup;BUS;20180101;;True;2EX;18 septembre 2024;2024-09-18 13:33:38+02:00;618
+73E;73E-1;73E;Gorge de Loup - Brindas Centre;Aller;10513;10117;Gorge de Loup;Brindas Centre;BUS;20190701;;True;73E;18 septembre 2024;2024-09-18 13:33:38+02:00;619
+73E;73E-2;73E;Brindas Centre - Gorge de Loup;Retour;10117;10513;Brindas Centre;Gorge de Loup;BUS;20190701;;True;73E;18 septembre 2024;2024-09-18 13:33:38+02:00;620
+BGS1;BGS1-2;BGS1;Parc Olympique Lyonnais - Meyzieu les Panettes;Retour;34432;34433;Décines OL Vallée;Meyzieu les Panettes;BUS;20180101;;True;BGS1;18 septembre 2024;2024-09-18 13:33:38+02:00;826
+52E;52E-2;52E;Bron Droits de l'Homme - Vaulx-en-Velin La Soie;Retour;11674;31760;Bron Droits de l'Homme;Vaulx-en-Velin La Soie;BUS;20230611;;False;52E;18 septembre 2024;2024-09-18 13:33:38+02:00;846
+BGS2;BGS2-1;BGS2;Eurexpo - Parc Olympique Lyonnais;Aller;34431;34432;Eurexpo;Décines OL Vallée;BUS;20180101;;True;BGS2;18 septembre 2024;2024-09-18 13:33:38+02:00;827
+BR60;BR60-4;99B;Perrache - Debourg;Aller;30977;20202;Perrache;Debourg;BUS;20180923;;False;BR60;18 septembre 2024;2024-09-18 13:33:38+02:00;858
+C5;C5-4;C5A;Rillieux Semailles - Cordeliers;Retour;11225;10285;Rillieux Semailles;Cordeliers;BUS;20180101;;True;C  5;18 septembre 2024;2024-09-18 13:33:38+02:00;362
+C24E;C24E-2;C24E;Gymnase E.Catalon - Gorge de Loup;Retour;33910;10513;Gymnase E. Catalon;Gorge de Loup;BUS;20190701;;True;C24E;18 septembre 2024;2024-09-18 13:33:38+02:00;410
+C5;C5-3;C5A;Vancia Château Bérard - Cordeliers;Retour;31520;10285;Vancia Château Bérard;Cordeliers;BUS;20180101;;True;C  5;18 septembre 2024;2024-09-18 13:33:38+02:00;361
+C6;C6-1;C6C;Gare Part-Dieu Vivier Merle - Campus Lyon Ouest;Aller;11064;33574;Gare Part-Dieu V.Merle;Campus Lyon Ouest;BUS;20300320;;True;C  6;18 septembre 2024;2024-09-18 13:33:38+02:00;363
+C6;C6-2;C6C;Campus Lyon Ouest - Gare Part-Dieu Vivier Merle;Retour;33574;11064;Campus Lyon Ouest;Gare Part-Dieu V.Merle;BUS;20300320;;True;C  6;18 septembre 2024;2024-09-18 13:33:38+02:00;364
+BRT1;BRT1-2;321A;IUT - Feyssine - Gare Part-Dieu V.Merle;Retour;31027;11064;IUT - Feyssine;Gare Part-Dieu V.Merle;BUS;20240306;;True;BRT1;18 septembre 2024;2024-09-18 13:33:38+02:00;879
+C7;C7-1;C7B;Gare Part-Dieu Vivier Merle - St-Genis-Laval Hôpital Lyon Sud;Aller;11064;10565;Gare Part-Dieu V.Merle;St-Genis-Laval Hôp. Sud;BUS;20180101;;True;C  7;18 septembre 2024;2024-09-18 13:33:38+02:00;365
+BR60;BR60-5;99B;Debourg - Perrache;Retour;20202;30977;Debourg;Perrache;BUS;20180923;;False;BR60;18 septembre 2024;2024-09-18 13:33:38+02:00;859
+C11;C11-3;C11A;Saxe - Gambetta. - Laurent Bonnevay;Aller;33452;10716;Saxe - Gambetta.;Laurent Bonnevay;BUS;20240801;;True;C 11;18 septembre 2024;2024-09-18 13:33:38+02:00;862
+C7;C7-2;C7B;St-Genis-Laval Hôpital Lyon Sud - Gare Part-Dieu Vivier Merle;Retour;10565;11064;St-Genis-Laval Hôp. Sud;Gare Part-Dieu V.Merle;BUS;20180101;;True;C  7;18 septembre 2024;2024-09-18 13:33:38+02:00;366
+C8;C8-3;C8A;Grange Blanche - Vaulx - Resistance;Aller;10524;33413;Grange Blanche;Vaulx - Résistance;BUS;20240801;;True;C  8;18 septembre 2024;2024-09-18 13:33:38+02:00;860
+C8;C8-4;C8A;Vaulx - Resistance - Grange Blanche;Retour;33413;10524;Vaulx - Résistance;Grange Blanche;BUS;20240801;;True;C  8;18 septembre 2024;2024-09-18 13:33:38+02:00;861
+C4;C4-1;C4A;Jean Macé - Cité Internationale Centre de Congrès;Aller;10593;11792;Jean Macé;Cité Internationale;BUS;20180101;;True;C  4;18 septembre 2024;2024-09-18 13:33:38+02:00;357
+C4;C4-2;C4A;Cité Internationale Centre de Congrès - Jean Macé;Retour;11792;10593;Cité Internationale;Jean Macé;BUS;20180101;;True;C  4;18 septembre 2024;2024-09-18 13:33:38+02:00;358
+C10;C10-1;C10A;Bellecour Charité - St-Genis Barolles;Aller;10077;11303;Bellecour Charité;Saint-Genis Barolles;BUS;20180101;;True;C 10;18 septembre 2024;2024-09-18 13:33:38+02:00;371
+C9;C9-2;C9A;Hôpitaux Est - Bellecour Antonin Poncet;Retour;33247;10075;Hôpitaux Est;Bellecour A. Poncet;BUS;20180101;;True;C  9;18 septembre 2024;2024-09-18 13:33:38+02:00;370
+C5;C5-2;C5A;Cordeliers - Vancia Château Bérard;Aller;10285;31520;Cordeliers;Vancia Château Bérard;BUS;20180101;;True;C  5;18 septembre 2024;2024-09-18 13:33:38+02:00;359
+C10;C10-4;C10A;Brignais Parc Birabent - Bellecour Charite;Retour;34645;10077;Brignais Parc Birabent;Bellecour Charité;BUS;20260824;;True;C 10;18 septembre 2024;2024-09-18 13:33:38+02:00;895
+C9;C9-1;C9A;Bellecour Antonin Poncet - Hôpitaux Est;Aller;10075;33247;Bellecour A. Poncet;Hôpitaux Est;BUS;20180101;;True;C  9;18 septembre 2024;2024-09-18 13:33:38+02:00;369
+C10;C10-2;C10A;St-Genis Barolles - Bellecour Charité;Retour;11303;10077;Saint-Genis Barolles;Bellecour Charité;BUS;20180101;;True;C 10;18 septembre 2024;2024-09-18 13:33:38+02:00;372
+C11;C11-4;C11A;Laurent Bonnevay - Saxe - Gambetta.;Retour;10716;33452;Laurent Bonnevay;Saxe - Gambetta.;BUS;20240801;;True;C 11;18 septembre 2024;2024-09-18 13:33:38+02:00;863
+C12;C12-1;C12A;Bellecour Antonin Poncet - Hôpital Feyzin Vénissieux;Aller;10075;32811;Bellecour A. Poncet;Hôp. Feyzin Vénissieux;BUS;20180101;;True;C 12;18 septembre 2024;2024-09-18 13:33:38+02:00;375
+C12;C12-2;C12A;Hôpital Feyzin Vénissieux - Bellecour Antonin Poncet;Retour;32811;10075;Hôp. Feyzin Vénissieux;Bellecour A. Poncet;BUS;20180101;;True;C 12;18 septembre 2024;2024-09-18 13:33:38+02:00;376
+C17;C17-6;C17A;Laurent Bonnevay - Charpennes Charles Hernu;Retour;10716;10204;Laurent Bonnevay;Charpennes Charles Hernu;BUS;20241103;;True;C 17;18 septembre 2024;2024-09-18 13:33:38+02:00;877
+C13;C13-1;C13B;Grange Blanche - Montessuy Gutenberg;Aller;10524;10987;Grange Blanche;Montessuy Gutenberg;BUS;20260421;;True;C 13;18 septembre 2024;2024-09-18 13:33:38+02:00;377
+C16;C16-1;C16A;Charpennes Charles Hernu - Surville Route de Vienne;Aller;10204;11369;Charpennes Charles Hernu;Surville Route de Vienne;BUS;20180101;;True;C 16;18 septembre 2024;2024-09-18 13:33:38+02:00;385
+C13;C13-2;C13B;Montessuy Gutenberg - Grange Blanche;Retour;10987;10524;Montessuy Gutenberg;Grange Blanche;BUS;20260421;;True;C 13;18 septembre 2024;2024-09-18 13:33:38+02:00;378
+C14;C14-1;C14A;Jean Macé - Les Sources;Aller;10593;10842;Jean Macé;Les Sources;BUS;20180101;;True;C 14;18 septembre 2024;2024-09-18 13:33:38+02:00;381
+C16;C16-2;C16A;Surville Route de Vienne - Charpennes Charles Hernu;Retour;11369;10204;Surville Route de Vienne;Charpennes Charles Hernu;BUS;20180101;;True;C 16;18 septembre 2024;2024-09-18 13:33:38+02:00;386
+C14;C14-2;C14A;Les Sources - Jean Macé;Retour;10842;10593;Les Sources;Jean Macé;BUS;20180101;;True;C 14;18 septembre 2024;2024-09-18 13:33:38+02:00;382
+C15;C15-1;C15A;Bachut Mairie du 8e - Laurent Bonnevay;Aller;10052;10716;Bachut - Mairie du 8ème;Laurent Bonnevay;BUS;20180101;;True;C 15;18 septembre 2024;2024-09-18 13:33:38+02:00;703
+C15;C15-2;C15A;Laurent Bonnevay - Bachut Mairie du 8e;Retour;10716;10052;Laurent Bonnevay;Bachut - Mairie du 8ème;BUS;20180101;;True;C 15;18 septembre 2024;2024-09-18 13:33:38+02:00;704
+C17;C17-4;C17A;Laurent Bonnevay - Porte des Alpes;Aller;10716;20041;Laurent Bonnevay;Porte des Alpes;BUS;20241103;;True;C 17;18 septembre 2024;2024-09-18 13:33:38+02:00;874
+C17;C17-5;C17A;Charpennes Ch. Hernu - Laurent Bonnevay;Aller;33460;10716;Charpennes Ch. Hernu;Laurent Bonnevay;BUS;20241103;;True;C 17;18 septembre 2024;2024-09-18 13:33:38+02:00;875
+C17;C17-7;C17A;Porte des Alpes - Laurent Bonnevay;Retour;20041;10716;Porte des Alpes;Laurent Bonnevay;BUS;20241103;;True;C 17;18 septembre 2024;2024-09-18 13:33:38+02:00;876
+C18;C18-1;C18A;Hôtel de Ville Louis Pradel - Croix-Rousse Nord;Aller;10568;30957;Hôtel de Ville L. Pradel;Croix-Rousse Nord;BUS;20180101;;True;C 18;18 septembre 2024;2024-09-18 13:33:38+02:00;389
+C20;C20-1;C20D;Bellecour Le Viste - Francheville Taffignon;Aller;10080;10173;Bellecour Le Viste;Francheville Taffignon;BUS;20190701;;True;C 20;18 septembre 2024;2024-09-18 13:33:38+02:00;393
+C20;C20-2;C20D;Francheville Taffignon - Bellecour Le Viste;Retour;10173;10080;Francheville Taffignon;Bellecour Le Viste;BUS;20190701;;True;C 20;18 septembre 2024;2024-09-18 13:33:38+02:00;394
+C24E;C24E-1;C24E;Gorge de Loup - Gymnase E.Catalon;Aller;10513;33910;Gorge de Loup;Gymnase E. Catalon;BUS;20190701;;True;C24E;18 septembre 2024;2024-09-18 13:33:38+02:00;409
+C21;C21-1;C21A;Perrache - Gorge de Loup;Aller;30977;10513;Perrache;Gorge de Loup;BUS;20180101;;True;C 21;18 septembre 2024;2024-09-18 13:33:38+02:00;395
+C24;C24-1;C24D;Gorge de Loup - Gymnase E.Catalon;Aller;10513;33910;Gorge de Loup;Gymnase E. Catalon;BUS;20190701;;True;C 24;18 septembre 2024;2024-09-18 13:33:38+02:00;399
+C24;C24-3;C24D;Gorge de Loup - Craponne Val d'Yzeron;Aller;10513;20307;Gorge de Loup;Craponne Val d'Yzeron;BUS;20190701;;True;C 24;18 septembre 2024;2024-09-18 13:33:38+02:00;400
+C24;C24-2;C24D;Gymnase E.Catalon - Gorge de Loup;Retour;33910;10513;Gymnase E. Catalon;Gorge de Loup;BUS;20190701;;True;C 24;18 septembre 2024;2024-09-18 13:33:38+02:00;401
+C26;C26-4;C26A;Grange Blanche - Cite Inter Transbordeur;Retour;10524;10387;Grange Blanche;Cité Inter Transbordeur;BUS;20240801;;True;C 26;18 septembre 2024;2024-09-18 13:33:38+02:00;865
+C24;C24-4;C24D;Craponne Val d'Yzeron - Gorge de Loup;Retour;20307;10513;Craponne Val d'Yzeron;Gorge de Loup;BUS;20190701;;True;C 24;18 septembre 2024;2024-09-18 13:33:38+02:00;402
+C6E;C6E-1;C6E;Gare de Vaise - Campus Lyon Ouest;Aller;10487;33574;Gare de Vaise-G.Collomb;Campus Lyon Ouest;BUS;20300320;;True;C 6E;18 septembre 2024;2024-09-18 13:33:38+02:00;748
+C25;C25-1;C25B;Gare Part-Dieu Vivier Merle - St-Priest Plaine de Saythe / Sogaris - Promotrans;Aller;11064;30987;Gare Part-Dieu V.Merle;Sogaris - Promotrans;BUS;20180101;;True;C 25;18 septembre 2024;2024-09-18 13:33:38+02:00;403
+C25;C25-2;C25B;Sogaris - Promotrans / St-Priest Plaine de Saythe  - Gare Part-Dieu Vivier Merle;Retour;30987;11064;Sogaris - Promotrans;Gare Part-Dieu V.Merle;BUS;20180101;;True;C 25;18 septembre 2024;2024-09-18 13:33:38+02:00;404
+GE4;GE4-3;GE4A;La Tour de Salvagny Gare - Techlid Le Tronchon;Aller;30155;33790;La Tour de Salvagny Gare;Techlid Le Tronchon;BUS;20220301;;True;G E4;18 septembre 2024;2024-09-18 13:33:38+02:00;770
+GE6;GE6-2;GE6B;Charbonnieres Gare - Charbonnieres Gare;Aller;30092;30092;Charbonnières Gare;Charbonnières Gare;BUS;20230201;;False;G E6;18 septembre 2024;2024-09-18 13:33:38+02:00;772
+C6E;C6E-2;C6E;Campus Lyon Ouest - Gare de Vaise;Retour;33574;10487;Campus Lyon Ouest;Gare de Vaise-G.Collomb;BUS;20300320;;True;C 6E;18 septembre 2024;2024-09-18 13:33:38+02:00;749
+GE1;GE1-2;GE1A;Rillieux Victor Hugo - Gare de Crepieux;Retour;34225;32720;Rillieux Victor Hugo;Gare de Crépieux;BUS;20290822;;False;G E1;18 septembre 2024;2024-09-18 13:33:38+02:00;798
+GE2;GE2-1;GE2A;Feyzin Gare - Solaize CRES;Aller;10436;33704;Feyzin Gare;Solaize CRES;BUS;20180101;;True;G E2;18 septembre 2024;2024-09-18 13:33:38+02:00;679
+GE6;GE6-1;GE6B;Charbonnieres Gare - Charbonnieres Gare;Aller;30092;30092;Charbonnières Gare;Charbonnières Gare;BUS;20230201;;False;G E6;18 septembre 2024;2024-09-18 13:33:38+02:00;683
+GE2;GE2-2;GE2A;Solaize CRES - Feyzin Gare;Retour;33704;10436;Solaize CRES;Feyzin Gare;BUS;20180101;;True;G E2;18 septembre 2024;2024-09-18 13:33:38+02:00;680
+N20;N20-1;N20;Gare de Vaise - Mont Thou;Aller;10487;30488;Gare de Vaise-G.Collomb;Mont Thou;BUS;20230106;;False;N 20;18 septembre 2024;2024-09-18 13:33:38+02:00;831
+C26;C26-3;C26A;Cite Inter Transbordeur - Grange Blanche;Aller;10387;10524;Cité Inter Transbordeur;Grange Blanche;BUS;20240801;;True;C 26;18 septembre 2024;2024-09-18 13:33:38+02:00;864
+N81;N81-2;N81;Grand Parc Fontanil - Gare de Venissieux;Retour;34586;20487;Grand Parc Le Fontanil;Gare de Vénissieux;BUS;20220207;;False;N 81;18 septembre 2024;2024-09-18 13:33:38+02:00;800
+N20;N20-2;N20;Mont Thou - Gare de Vaise;Retour;30488;10487;Mont Thou;Gare de Vaise-G.Collomb;BUS;20230106;;False;N 20;18 septembre 2024;2024-09-18 13:33:38+02:00;832
+C18;C18-2;C18A;Croix-Rousse Nord - Hôtel de Ville Louis Pradel;Retour;30957;10568;Croix-Rousse Nord;Hôtel de Ville L. Pradel;BUS;20180101;;True;C 18;18 septembre 2024;2024-09-18 13:33:38+02:00;390
+GE4;GE4-4;GE4A;Techlid Le Tronchon - La Tour de Salvagny Gare;Retour;33790;30155;Techlid Le Tronchon;La Tour de Salvagny Gare;BUS;20220301;;True;G E4;18 septembre 2024;2024-09-18 13:33:38+02:00;771
+N80;N80-1;N80;Vaulx-en-Velin La Soie - Grand Parc le Morlet;Aller;31760;30002;Vaulx-en-Velin La Soie;Grand Parc le Morlet;BUS;20290621;;False;N 80;18 septembre 2024;2024-09-18 13:33:38+02:00;773
+N82;N82-1;N82;Gare de Vaise - Grand Parc les Sablettes;Aller;10487;34587;Gare de Vaise-G.Collomb;Grand Parc les Sablettes;BUS;20220207;;False;N 82;18 septembre 2024;2024-09-18 13:33:38+02:00;801
+N83;N83-1;N83;Vaulx-en-Velin La Soie - Grd Parc Miribel Jonage;Aller;31760;11045;Vaulx-en-Velin La Soie;Grand Parc L'atol';BUS;20220101;;True;N 83;18 septembre 2024;2024-09-18 13:33:38+02:00;775
+C19;C19-1;C19A;Perrache - Francheville Taffignon;Aller;30977;10173;Perrache;Francheville Taffignon;BUS;20180101;;True;C 19;18 septembre 2024;2024-09-18 13:33:38+02:00;391
+C19;C19-2;C19A;Francheville Taffignon - Perrache;Retour;10173;30977;Francheville Taffignon;Perrache;BUS;20180101;;True;C 19;18 septembre 2024;2024-09-18 13:33:38+02:00;392
+N83;N83-2;N83;Grd Parc Miribel Jonage - Vaulx-en-Velin La Soie;Retour;11045;31760;Grand Parc L'atol';Vaulx-en-Velin La Soie;BUS;20220101;;True;N 83;18 septembre 2024;2024-09-18 13:33:38+02:00;776
+N80;N80-2;N80;Grand Parc le Morlet - Vaulx-en-Velin La Soie;Retour;30002;31760;Grand Parc le Morlet;Vaulx-en-Velin La Soie;BUS;20290621;;False;N 80;18 septembre 2024;2024-09-18 13:33:38+02:00;774
+N81;N81-1;N81;Gare de Venissieux - Grand Parc Fontanil;Aller;20487;34586;Gare de Vénissieux;Grand Parc Le Fontanil;BUS;20220207;;False;N 81;18 septembre 2024;2024-09-18 13:33:38+02:00;799
+N84;N84-1;N84;Rillieux - Les Alagniers - Grand Parc les Sablettes;Aller;33420;34587;Rillieux - Les Alagniers;Grand Parc les Sablettes;BUS;20290621;;False;N 84;18 septembre 2024;2024-09-18 13:33:38+02:00;777
+C21;C21-2;C21A;Gorge de Loup - Perrache;Retour;10513;30977;Gorge de Loup;Perrache;BUS;20180101;;True;C 21;18 septembre 2024;2024-09-18 13:33:38+02:00;396
+N84;N84-2;N84;Grand Parc les Sablettes - Rillieux - Les Alagniers;Retour;34587;33420;Grand Parc les Sablettes;Rillieux - Les Alagniers;BUS;20290621;;False;N 84;18 septembre 2024;2024-09-18 13:33:38+02:00;778
+N100;N100-1;N100;Vaulx-en-Velin La Soie - Eurexpo Entree Princ.;Aller;31760;10419;Vaulx-en-Velin La Soie;Eurexpo Entrée Princ.;BUS;20220101;;True;N100;18 septembre 2024;2024-09-18 13:33:38+02:00;779
+PL3;PL3-1;PL3A;Hôtel de Ville-L. Pradel - Campus Lyon Ouest;Aller;10568;20184;Hôtel de Ville L. Pradel;Pontet Crases;BUS;20180101;;True;P L3;18 septembre 2024;2024-09-18 13:33:38+02:00;687
+R2;R2-5;R2A;Chantemerle - Neuville l'echo;Aller;10192;34603;Chantemerle;Neuville l'écho;BUS;20220301;;True;R  2;18 septembre 2024;2024-09-18 13:33:38+02:00;803
+PL1;PL1-3;PL1A;Terreaux La Feuillee - INSA - Einstein;Aller;34306;31028;Terreaux La Feuillée;INSA - Einstein;BUS;20211009;;True;P L1;18 septembre 2024;2024-09-18 13:33:38+02:00;781
+S2;S2-1;S2A;La Tour-de-Salvagny Mairie - La Tour-de-Salvagny Mairie;Aller;30157;30157;Tour de Salvagny Mairie;Tour de Salvagny Mairie;BUS;20180101;;True;S  2;18 septembre 2024;2024-09-18 13:33:38+02:00;627
+C15E;C15E-1;C15E;Mermoz - Pinel - Parilly Universite Hippodrome;Aller;20091;33640;Mermoz - Pinel;Parilly Univ. Hippodrome;BUS;20190909;;True;C15E;18 septembre 2024;2024-09-18 13:33:38+02:00;707
+C15E;C15E-2;C15E;Parilly Universite Hippodrome - Mermoz - Pinel;Retour;33640;20091;Parilly Univ. Hippodrome;Mermoz - Pinel;BUS;20190909;;True;C15E;18 septembre 2024;2024-09-18 13:33:38+02:00;708
+N82;N82-2;N82;Grand Parc les Sablettes - Gare de Vaise;Retour;34587;10487;Grand Parc les Sablettes;Gare de Vaise-G.Collomb;BUS;20220207;;False;N 82;18 septembre 2024;2024-09-18 13:33:38+02:00;802
+S3;S3-1;S3B;College Paul Vallon  - Cimetiere de Givors;Aller;31730;31732;Collège Paul Vallon;Cimetière de Givors;BUS;20230611;;False;S  3;18 septembre 2024;2024-09-18 13:33:38+02:00;847
+S3;S3-3;S3B;College Paul Vallon - La Rama;Aller;31730;34402;Collège Paul Vallon;La Rama;BUS;20230611;;False;S  3;18 septembre 2024;2024-09-18 13:33:38+02:00;848
+S3;S3-2;S3B;Cimetiere de Givors - College Paul Vallon;Retour;31732;31730;Cimetière de Givors;Collège Paul Vallon;BUS;20230611;;False;S  3;18 septembre 2024;2024-09-18 13:33:38+02:00;850
+GE1;GE1-1;GE1A;Gare de Crepieux - Rillieux Victor Hugo;Aller;32720;34225;Gare de Crépieux;Rillieux Victor Hugo;BUS;20290822;;False;G E1;18 septembre 2024;2024-09-18 13:33:38+02:00;795
+S3;S3-4;S3B;La Rama - College Paul Vallon;Retour;34402;31730;La Rama;Collège Paul Vallon;BUS;20230611;;False;S  3;18 septembre 2024;2024-09-18 13:33:38+02:00;849
+S4;S4-1;S4A;Croix-Rousse - Henon - Deleuvre;Aller;11119;10553;Croix-Rousse;Hénon - Deleuvre;BUS;20180101;;True;S  4;18 septembre 2024;2024-09-18 13:33:38+02:00;630
+S5;S5-1;S5A;Caluire Bords de Saône - Vieux Crépieux;Aller;34030;11462;Caluire - Bords de Saône;Vieux Crépieux;BUS;20180101;;True;S  5;18 septembre 2024;2024-09-18 13:33:38+02:00;631
+N100;N100-2;N100;Eurexpo Entree Princ. - Vaulx-en-Velin La Soie;Retour;10419;31760;Eurexpo Entrée Princ.;Vaulx-en-Velin La Soie;BUS;20220101;;True;N100;18 septembre 2024;2024-09-18 13:33:38+02:00;780
+PL1;PL1-4;PL1A;INSA - Einstein - Terreaux La Feuillee;Retour;31028;34306;INSA - Einstein;Terreaux La Feuillée;BUS;20211009;;True;P L1;18 septembre 2024;2024-09-18 13:33:38+02:00;782
+PL2;PL2-1;PL2A;Hôtel de Ville - Grange Blanche;Aller;10568;10524;Hôtel de Ville L. Pradel;Grange Blanche;BUS;20180101;;True;P L2;18 septembre 2024;2024-09-18 13:33:38+02:00;686
+ZI8;ZI8-4;ZI8A;Parc des Lumières - St Priest Jules Ferry;Retour;34444;31140;Parc des Lumieres;St-Priest Jules Ferry;BUS;20180101;;True;Z I8;18 septembre 2024;2024-09-18 13:33:38+02:00;678
+S1;S1-3;S1A;Confluence Rambaud - Gare Saint-Paul;Aller;34284;11327;Confluence Rambaud;Gare Saint-Paul;BUS;20300821;;True;S  1;18 septembre 2024;2024-09-18 13:33:38+02:00;783
+S1;S1-4;S1A;Gare Saint-Paul - Confluence Rambaud;Retour;11327;34284;Gare Saint-Paul;Confluence Rambaud;BUS;20300821;;True;S  1;18 septembre 2024;2024-09-18 13:33:38+02:00;784
+S5;S5-2;S5A;Vieux Crépieux - Caluire Bords de Saône;Retour;11462;34030;Vieux Crépieux;Caluire - Bords de Saône;BUS;20180101;;True;S  5;18 septembre 2024;2024-09-18 13:33:38+02:00;632
+S6;S6-2;S6A;Croix-Rousse - Hotel-de-Ville L. Pradel;Retour;11119;10568;Croix-Rousse;Hôtel de Ville L. Pradel;BUS;20180101;;True;S  6;18 septembre 2024;2024-09-18 13:33:38+02:00;634
+S8;S8-5;S8A;La Buissiere Viralamande - Rillieux Vancia;Aller;10633;34606;La Buissière Viralamande;Rillieux Vancia;BUS;20230106;;True;S  8;18 septembre 2024;2024-09-18 13:33:38+02:00;833
+S8;S8-6;S8A;Rillieux Vancia - La Buissiere Viralamande;Retour;34606;10633;Rillieux Vancia;La Buissière Viralamande;BUS;20230106;;True;S  8;18 septembre 2024;2024-09-18 13:33:38+02:00;834
+S4;S4-2;S4A;Henon - Deleuvre - Croix-Rousse;Retour;10553;11119;Hénon - Deleuvre;Croix-Rousse;BUS;20230719;;True;S  4;18 septembre 2024;2024-09-18 13:33:38+02:00;737
+S9;S9-1;S9B;Hopital Lyon Sud - Moly;Aller;10565;33077;St-Genis-Laval Hôp. Sud;Moly;BUS;20211023;;False;S  9;18 septembre 2024;2024-09-18 13:33:38+02:00;641
+S9;S9-2;S9B;Moly - Hopital Lyon Sud;Retour;33077;10565;Moly;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;S  9;18 septembre 2024;2024-09-18 13:33:38+02:00;643
+S6;S6-1;S6A;Hôtel-de-Ville L. Pradel - Croix-Rousse;Aller;10568;11119;Hôtel de Ville L. Pradel;Croix-Rousse;BUS;20180101;;True;S  6;18 septembre 2024;2024-09-18 13:33:38+02:00;633
+S9;S9-4;S9B;Moly - Hopital Lyon Sud;Retour;33077;10565;Moly;St-Genis-Laval Hôp. Sud;BUS;20211023;;False;S  9;18 septembre 2024;2024-09-18 13:33:38+02:00;642
+S11;S11-1;S11A;Gare de Vaise - Le Château Duchère;Aller;10487;30144;Gare de Vaise-G.Collomb;Le Château Duchère;BUS;20180101;;True;S 11;18 septembre 2024;2024-09-18 13:33:38+02:00;646
+S10;S10-2;S10A;Lycée Jean Perrin - Joannès Carret;Retour;10878;10599;Lycée Jean Perrin;Joannès Carret;BUS;20180101;;True;S 10;18 septembre 2024;2024-09-18 13:33:38+02:00;645
+S9;S9-3;S9B;Hopital Lyon Sud - Moly;Aller;10565;33077;St-Genis-Laval Hôp. Sud;Moly;BUS;20211023;;False;S  9;18 septembre 2024;2024-09-18 13:33:38+02:00;640
+T36;T36-1;T36;Gare Part-Dieu Villette - St-P.de-Chandieu - Rajat;Aller;11063;34339;Gare Part-Dieu Villette;St-P.de-Chandieu - Rajat;BUS;20210109;;True;T 36;18 septembre 2024;2024-09-18 13:33:38+02:00;785
+T36;T36-2;T36;St-P.de-Chandieu - Rajat - Gare Part-Dieu Villette;Retour;34339;11063;St-P.de-Chandieu - Rajat;Gare Part-Dieu Villette;BUS;20210109;;True;T 36;18 septembre 2024;2024-09-18 13:33:38+02:00;786
+ZI1;ZI1-3;ZI1A;Gare de Venissieux - St Priest Gare;Aller;20487;11335;Gare de Vénissieux;St Priest Gare;BUS;20180309;;True;Z I1;18 septembre 2024;2024-09-18 13:33:38+02:00;657
+ZI1;ZI1-4;ZI1A;St Priest Gare - Gare de Venissieux.;Retour;11335;20510;St Priest Gare;Gare de Vénissieux.;BUS;20180309;;True;Z I1;18 septembre 2024;2024-09-18 13:33:38+02:00;658
+ZI2;ZI2-1;ZI2A;Meyzieu Z.i. - Z.I. Nord;Aller;31620;31631;Meyzieu Z.i.;Z.I. Nord;BUS;20180101;;True;Z I2;18 septembre 2024;2024-09-18 13:33:38+02:00;660
+S11;S11-2;S11A;Le Château Duchère - Gare de Vaise;Retour;30144;10487;Le Château Duchère;Gare de Vaise-G.Collomb;BUS;20180101;;True;S 11;18 septembre 2024;2024-09-18 13:33:38+02:00;647
+ZI3;ZI3-3;ZI3A;Z.I. Vaulx-en-Velin Est - Vaulx-en-Velin La Soie;Retour;33644;31760;Z.I. Vaulx-en-Velin Est;Vaulx-en-Velin La Soie;BUS;20180101;;True;Z I3;18 septembre 2024;2024-09-18 13:33:38+02:00;666
+S14;S14-1;S14A;Neuville  - Hôpital -  Neuville;Aller;11014;11014;Neuville;Neuville;BUS;20180101;;True;S 14;18 septembre 2024;2024-09-18 13:33:38+02:00;650
+ZI5;ZI5-1;ZI5B;Vaulx-en-Velin La Soie - Rond-Point d'Italie;Aller;31760;34320;Vaulx-en-Velin La Soie;Rond-Point d'Italie;BUS;20180101;;True;Z I5;18 septembre 2024;2024-09-18 13:33:38+02:00;669
+ZI5;ZI5-2;ZI5B;Rond-Point d'Italie - Vaulx-en-Velin La Soie;Retour;34320;31760;Rond-Point d'Italie;Vaulx-en-Velin La Soie;BUS;20180101;;True;Z I5;18 septembre 2024;2024-09-18 13:33:38+02:00;670
+ZI8;ZI8-2;ZI8A;St Priest Jules Ferry - Parc des Lumières;Aller;31140;34444;St-Priest Jules Ferry;Parc des Lumieres;BUS;20180101;;True;Z I8;18 septembre 2024;2024-09-18 13:33:38+02:00;676
+S14;S14-2;S14A;Neuville  - Torrières -  Neuville;Aller;11014;11014;Neuville;Neuville;BUS;20180101;;True;S 14;18 septembre 2024;2024-09-18 13:33:38+02:00;651
+S15;S15-2;S15A;Les Sources - Ecully Le Trouillat;Retour;10842;10399;Les Sources;Ecully Le Trouillat;BUS;20180101;;True;S 15;18 septembre 2024;2024-09-18 13:33:38+02:00;654
+ZI3;ZI3-4;ZI3A;Z.I. Roosevelt - Vaulx-en-Velin La Soie;Retour;31978;31760;Z.I. Roosevelt;Vaulx-en-Velin La Soie;BUS;20180101;;True;Z I3;18 septembre 2024;2024-09-18 13:33:38+02:00;665
+ZI2;ZI2-4;ZI2A;Z.I. Sud - Meyzieu Z.i.;Retour;31632;31620;Z.I. Sud;Meyzieu Z.i.;BUS;20180101;;True;Z I2;18 septembre 2024;2024-09-18 13:33:38+02:00;662
+ZI2;ZI2-3;ZI2A;Z.I. Nord - Meyzieu Z.i.;Retour;31631;31620;Z.I. Nord;Meyzieu Z.i.;BUS;20180101;;True;Z I2;18 septembre 2024;2024-09-18 13:33:38+02:00;661
+ZI3;ZI3-2;ZI3A;Vaulx-en-Velin La Soie - Z.I. Roosevelt;Aller;31760;31978;Vaulx-en-Velin La Soie;Z.I. Roosevelt;BUS;20180101;;True;Z I3;18 septembre 2024;2024-09-18 13:33:38+02:00;664
