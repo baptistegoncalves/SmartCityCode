@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./components/HomeScreen_vanto";
 import MapScreen from "./components/Mapscreen"; // Assurez-vous que le nom du fichier est correct
+import Add_Pin_Button from "./components/Add_Pin_Button";
 
 type RootStackParamList = {
   Home: undefined;

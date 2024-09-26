@@ -12,6 +12,7 @@ import {
 import MapView from "react-native-maps";
 import * as Location from "expo-location";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import Add_Pin_Button from "./Add_Pin_Button";
 
 type RootStackParamList = {
   Home: undefined;
@@ -90,6 +91,7 @@ function Mapscreen({ navigation }: MapScreenProps) {
       />
       <View style={styles.buttonContainer}>
         <Button title="Recenter" onPress={centerMap} />
+        <Add_Pin_Button />
       </View>
     </KeyboardAvoidingView>
   );
