@@ -54,7 +54,7 @@ export default function MapScreen() {
 
   // Référence pour le Bottom Sheet
   const bottomSheetRef = useRef<BottomSheet>(null);
-  const snapPoints = useMemo(() => ["50%"], []); // Modifié pour être plus grand
+  const snapPoints = useMemo(() => ["80%"], []); // Modifié pour remonter le BottomSheet
 
   // Fonction pour récupérer les pins de Supabase
   const fetchPins = async () => {
@@ -117,7 +117,6 @@ export default function MapScreen() {
   // Fonction pour ajouter un pin dans la base de données puis l'ajouter localement
   const addPin = async (newPin: Omit<Pin, "id">) => {
     try {
-      // 1. Envoyer les données à la base de données Supabase
       const { data, error } = await supabase
         .from("PinUser")
         .insert([
@@ -136,11 +135,9 @@ export default function MapScreen() {
         );
       }
 
-      // 2. Ajouter le pin avec l'ID réel renvoyé par la base de données
       const [insertedPin] = data;
       setPins((prevPins) => [...prevPins, insertedPin]);
     } catch (err: any) {
-      // Afficher une alerte en cas d'erreur
       Alert.alert("Erreur", err.message || "Impossible d'ajouter le pin.");
       console.error(err);
     }
@@ -164,7 +161,6 @@ export default function MapScreen() {
         console.error("Erreur lors de la suppression du pin:", error.message);
         Alert.alert("Erreur", "Impossible de supprimer le pin.");
       } else {
-        // Supprimer localement
         setPins((prevPins) =>
           prevPins.filter((pin) => pin.id !== selectedPin.id)
         );
@@ -180,7 +176,7 @@ export default function MapScreen() {
       style={styles.container}
     >
       <MapView
-        style={[styles.map, { zIndex: 0 }]} // Assurez-vous que le zIndex de MapView soit le plus bas possible
+        style={[styles.map, { zIndex: 0 }]}
         region={region || undefined}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
@@ -210,10 +206,10 @@ export default function MapScreen() {
       <BottomSheet
         ref={bottomSheetRef}
         index={-1} // Caché par défaut
-        snapPoints={snapPoints}
+        snapPoints={snapPoints} // Hauteur augmentée à 80%
         enablePanDownToClose={true}
         backgroundStyle={styles.bottomSheetBackground}
-        style={[styles.bottomSheet, { zIndex: 10, elevation: 10 }]} // Ajout de `elevation` pour Android
+        style={[styles.bottomSheet, { zIndex: 10, elevation: 10 }]}
       >
         {selectedPin && (
           <View style={styles.bottomSheetContent}>
@@ -283,7 +279,7 @@ export default function MapScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    position: "relative", // Ajouté pour le zIndex
+    position: "relative",
   },
   map: {
     width: width,
@@ -297,18 +293,17 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 5,
     padding: 10,
-    zIndex: 1, // Doit être inférieur au zIndex du Bottom Sheet
+    zIndex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  // Styles pour le Bottom Sheet
   bottomSheetBackground: {
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    backgroundColor: "#F9F9F9", // Gris très clair
+    backgroundColor: "#F9F9F9",
   },
   bottomSheet: {
-    zIndex: 2, // Doit être supérieur au zIndex des boutons
+    zIndex: 2,
   },
   bottomSheetContent: {
     flex: 1,
@@ -317,12 +312,6 @@ const styles = StyleSheet.create({
   chevronContainer: {
     alignItems: "center",
     marginVertical: 5,
-  },
-  chevron: {
-    width: 40,
-    height: 5,
-    backgroundColor: "#000",
-    borderRadius: 2.5,
   },
   searchContainer: {
     flexDirection: "row",
@@ -348,7 +337,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 15,
     marginBottom: 20,
-    // Ombre pour la carte
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -363,7 +351,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   iconBackground: {
-    backgroundColor: "#D1C4E9", // Violet clair
+    backgroundColor: "#D1C4E9",
     padding: 10,
     borderRadius: 25,
   },
