@@ -8,7 +8,7 @@ import {
   TextInput,
 } from "react-native";
 import * as Location from "expo-location";
-import { Picker } from "@react-native-picker/picker"; // Importez le Picker
+import { Picker } from "@react-native-picker/picker";
 
 export default function Add_Pin_Button({ onAddPin }) {
   const [modalVisible, setModalVisible] = useState(false);
@@ -20,7 +20,7 @@ export default function Add_Pin_Button({ onAddPin }) {
     const getLocation = async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
-        console.log("Permission to access location was denied");
+        console.log("Permission de localisation refusée");
         return;
       }
       let loc = await Location.getCurrentPositionAsync({});
@@ -33,13 +33,6 @@ export default function Add_Pin_Button({ onAddPin }) {
   }, [modalVisible]);
 
   const handlePinConfirmation = () => {
-    console.log("Pin ajouté avec : ", {
-      name: pinName,
-      lat: location.latitude,
-      lon: location.longitude,
-      reason: selectedReason,
-    });
-
     if (location && pinName) {
       onAddPin({
         name: pinName,
@@ -50,6 +43,8 @@ export default function Add_Pin_Button({ onAddPin }) {
 
       setPinName("");
       setModalVisible(false);
+    } else {
+      Alert.alert("Erreur", "Veuillez entrer un nom pour le pin.");
     }
   };
 
@@ -130,6 +125,10 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     elevation: 5,
   },
+  plusSign: {
+    fontSize: 30,
+    color: "black",
+  },
   modalContainer: {
     flex: 1,
     justifyContent: "center",
@@ -150,10 +149,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 5,
-  },
-  plusSign: {
-    fontSize: 30,
-    color: "black",
   },
   modalTitle: {
     fontSize: 18,

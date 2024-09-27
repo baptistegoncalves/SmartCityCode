@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useMemo } from "react";
 import {
   View,
   Button,
@@ -6,15 +6,18 @@ import {
   Dimensions,
   KeyboardAvoidingView,
   Platform,
-  Modal,
   Text,
   Alert,
+  TextInput,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import MapView, { Marker, Region } from "react-native-maps";
+import BottomSheet from "@gorhom/bottom-sheet";
 import * as Location from "expo-location";
 import Add_Pin_Button from "./Add_Pin_Button";
 import { createClient } from "@supabase/supabase-js";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const { width, height } = Dimensions.get("window");
 const LATITUDE_DELTA = 0.0922;
@@ -22,15 +25,15 @@ const LONGITUDE_DELTA = LATITUDE_DELTA * (width / height);
 
 // Supabase configuration
 const supabaseUrl = "https://tpzxhsjdxvqoroyflzpq.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Types pour les pins et la localisation
 type Pin = {
   id: number | string;
   lat: number;
   lon: number;
-  name: string; // Ajoutez cette ligne
+  name: string;
   reason: string;
 };
 
@@ -42,12 +45,15 @@ type LocationObject = {
 };
 
 export default function MapScreen() {
-  const [pins, setPins] = useState<Pin[]>([]); // Initialisation avec un tableau de type Pin
+  const [pins, setPins] = useState<Pin[]>([]);
   const [region, setRegion] = useState<Region | null>(null);
   const [location, setLocation] = useState<LocationObject | null>(null);
 
-  const [selectedPin, setSelectedPin] = useState<Pin | null>(null); // Stocker le pin sélectionné
-  const [modalVisible, setModalVisible] = useState(false); // Contrôler la visibilité du modal de suppression
+  const [selectedPin, setSelectedPin] = useState<Pin | null>(null);
+
+  // Référence pour le Bottom Sheet
+  const bottomSheetRef = useRef<BottomSheet>(null);
+  const snapPoints = useMemo(() => ["50%"], []); // Modifié pour être plus grand
 
   // Fonction pour récupérer les pins de Supabase
   const fetchPins = async () => {
@@ -107,8 +113,10 @@ export default function MapScreen() {
     }
   };
 
+  // Fonction pour ajouter un pin dans la base de données puis l'ajouter localement
   const addPin = async (newPin: Omit<Pin, "id">) => {
     try {
+      // 1. Envoyer les données à la base de données Supabase
       const { data, error } = await supabase
         .from("PinUser")
         .insert([
@@ -116,29 +124,29 @@ export default function MapScreen() {
             lat: newPin.lat,
             lon: newPin.lon,
             reason: newPin.reason,
-            name: newPin.name, // Include the name field here
+            name: newPin.name, // Inclure le nom du pin
           },
         ])
-        .select();
+        .select(); // Sélectionner l'élément inséré pour récupérer son ID
 
       if (error) {
-        throw new Error(
-          "Erreur lors de l'ajout du pin dans la base de données"
-        );
+        throw new Error("Erreur lors de l'ajout du pin dans la base de données");
       }
 
+      // 2. Ajouter le pin avec l'ID réel renvoyé par la base de données
       const [insertedPin] = data;
       setPins((prevPins) => [...prevPins, insertedPin]);
-    } catch (err) {
+    } catch (err: any) {
+      // Afficher une alerte en cas d'erreur
       Alert.alert("Erreur", err.message || "Impossible d'ajouter le pin.");
       console.error(err);
     }
   };
 
-  // Fonction pour ouvrir le modal avec les détails du pin
+  // Fonction pour ouvrir le Bottom Sheet avec les détails du pin
   const openPinDetails = (pin: Pin) => {
-    setSelectedPin(pin); // Enregistrer le pin sélectionné
-    setModalVisible(true); // Afficher le modal
+    setSelectedPin(pin);
+    bottomSheetRef.current?.snapToIndex(0); // Ouvre le Bottom Sheet
   };
 
   // Fonction pour supprimer un pin
@@ -154,10 +162,9 @@ export default function MapScreen() {
         Alert.alert("Erreur", "Impossible de supprimer le pin.");
       } else {
         // Supprimer localement
-        setPins((prevPins) =>
-          prevPins.filter((pin) => pin.id !== selectedPin.id)
-        );
-        setModalVisible(false); // Fermer le modal après la suppression
+        setPins((prevPins) => prevPins.filter((pin) => pin.id !== selectedPin.id));
+        bottomSheetRef.current?.close(); // Fermer le Bottom Sheet après la suppression
+        setSelectedPin(null);
       }
     }
   };
@@ -172,6 +179,9 @@ export default function MapScreen() {
         region={region || undefined}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
+        onPress={() => {
+          bottomSheetRef.current?.close();
+        }}
       >
         {pins.map((pin) => (
           <Marker
@@ -180,46 +190,89 @@ export default function MapScreen() {
               latitude: pin.lat,
               longitude: pin.lon,
             }}
-            onPress={() => openPinDetails(pin)} // Ouvrir le modal avec les détails du pin
+            title={pin.name}
+            description={pin.reason}
+            onPress={() => openPinDetails(pin)}
           />
         ))}
       </MapView>
 
       <View style={styles.buttonContainer}>
-        <Button title="Recenter" onPress={centerMap} />
+        <Button title="Recentrer" onPress={centerMap} />
         <Add_Pin_Button onAddPin={addPin} />
       </View>
 
-      <Modal transparent={true} visible={modalVisible}>
-        <View style={styles.modalContainer}>
-          <View style={styles.modalView}>
-            {selectedPin && (
-              <>
-                <Text style={styles.modalTitle}>Détails du pin</Text>
-                <Text>Nom : {selectedPin.name}</Text>
-                <Text>Latitude : {selectedPin.lat}</Text>
-                <Text>Longitude : {selectedPin.lon}</Text>
-                <Text>Raison : {selectedPin.reason}</Text>
+      {/* Bottom Sheet */}
+      <BottomSheet
+        ref={bottomSheetRef}
+        index={-1} // Caché par défaut
+        snapPoints={snapPoints}
+        enablePanDownToClose={true}
+        backgroundStyle={styles.bottomSheetBackground}
+        style={[styles.bottomSheet, { zIndex: 10 }]} // zIndex ajouté ici
+      >
+        {selectedPin && (
+          <View style={styles.bottomSheetContent}>
+            {/* Chevron */}
+            <View style={styles.chevronContainer}>
+              <View style={styles.chevron} />
+            </View>
 
-                <View style={styles.buttonRow}>
-                  <TouchableOpacity
-                    style={styles.cancelButton}
-                    onPress={deletePin}
-                  >
-                    <Text style={styles.cancelButtonText}>Supprimer</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                    style={styles.confirmButton}
-                    onPress={() => setModalVisible(false)}
-                  >
-                    <Text style={styles.confirmButtonText}>OK</Text>
-                  </TouchableOpacity>
+            {/* Barre de recherche */}
+            <View style={styles.searchContainer}>
+              <TextInput
+                style={styles.searchInput}
+                placeholder="Rechercher..."
+                placeholderTextColor="#aaa"
+              />
+              <Image
+                source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")} // Remplacez par le chemin de votre image
+                style={styles.avatar}
+              />
+            </View>
+
+            {/* Carte d'information */}
+            <View style={styles.infoCard}>
+              <View style={styles.cardHeader}>
+                <View style={styles.iconContainer}>
+                  <View style={styles.iconBackground}>
+                    <FontAwesome name="home" size={24} color="white" />
+                  </View>
                 </View>
-              </>
-            )}
+                <Text style={styles.cardTitle}>{selectedPin.name}</Text>
+                <FontAwesome
+                  name="map-pin"
+                  size={16}
+                  color="red"
+                  style={{ marginLeft: 5 }}
+                />
+              </View>
+
+              {/* Informations détaillées */}
+              <View style={styles.cardContent}>
+                <Text style={styles.cardLabel}>Nom :</Text>
+                <Text style={styles.cardValue}>{selectedPin.name}</Text>
+
+                <Text style={styles.cardLabel}>Longitude :</Text>
+                <Text style={styles.cardValue}>{selectedPin.lon}</Text>
+
+                <Text style={styles.cardLabel}>Latitude :</Text>
+                <Text style={styles.cardValue}>{selectedPin.lat}</Text>
+
+                <Text style={styles.cardLabel}>Raison :</Text>
+                <TouchableOpacity>
+                  <Text style={styles.cardLink}>{selectedPin.reason}</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+
+            {/* Bouton Supprimer */}
+            <TouchableOpacity style={styles.deleteButton} onPress={deletePin}>
+              <Text style={styles.deleteButtonText}>Supprimer</Text>
+            </TouchableOpacity>
           </View>
-        </View>
-      </Modal>
+        )}
+      </BottomSheet>
     </KeyboardAvoidingView>
   );
 }
@@ -227,8 +280,7 @@ export default function MapScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    position: "relative", // Ajouté pour le zIndex
   },
   map: {
     width: width,
@@ -238,31 +290,107 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 60,
     left: 10,
+    right: 10,
     backgroundColor: "white",
     borderRadius: 5,
     padding: 10,
-    zIndex: 1,
+    zIndex: 1, // Doit être inférieur au zIndex du Bottom Sheet
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  modalContainer: {
+  // Styles pour le Bottom Sheet
+  bottomSheetBackground: {
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    backgroundColor: "#F9F9F9", // Gris très clair
+  },
+  bottomSheet: {
+    zIndex: 2, // Doit être supérieur au zIndex des boutons
+  },
+  bottomSheetContent: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
+    paddingHorizontal: 20,
   },
-  modalView: {
-    width: 300,
-    height: 300,
-    backgroundColor: "white",
+  chevronContainer: {
+    alignItems: "center",
+    marginVertical: 5,
+  },
+  chevron: {
+    width: 40,
+    height: 5,
+    backgroundColor: "#000",
+    borderRadius: 2.5,
+  },
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#EDEDED",
     borderRadius: 10,
-    padding: 20,
-    alignItems: "center",
-    elevation: 5,
+    paddingHorizontal: 10,
+    marginBottom: 15,
+    height: 40,
   },
-  modalTitle: {
-    fontSize: 18,
+  searchInput: {
+    flex: 1,
+    height: "100%",
+  },
+  avatar: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    marginLeft: 10,
+  },
+  infoCard: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    padding: 15,
+    marginBottom: 20,
+    // Ombre pour la carte
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 3,
+  },
+  cardHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  iconContainer: {
+    marginRight: 10,
+  },
+  iconBackground: {
+    backgroundColor: "#D1C4E9", // Violet clair
+    padding: 10,
+    borderRadius: 25,
+  },
+  cardTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    flex: 1,
+  },
+  cardContent: {
+    marginTop: 15,
+  },
+  cardLabel: {
+    fontWeight: "bold",
+  },
+  cardValue: {
+    color: "#777",
     marginBottom: 10,
+  },
+  cardLink: {
+    color: "blue",
+    marginBottom: 10,
+  },
+  deleteButton: {
+    backgroundColor: "red",
+    paddingVertical: 15,
+    borderRadius: 10,
+    alignItems: "center",
+  },
+  deleteButtonText: {
+    color: "white",
     fontWeight: "bold",
   },
 });
