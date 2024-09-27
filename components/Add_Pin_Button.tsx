@@ -1,92 +1,122 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   TouchableOpacity,
   Text,
   StyleSheet,
   Modal,
-  Button,
+  TextInput,
 } from "react-native";
 import * as Location from "expo-location";
-import { Picker } from "@react-native-picker/picker";
+import { Picker } from "@react-native-picker/picker"; // Importez le Picker
 
-const Add_Pin_Button = ({ onAddPin }) => {
-  const [location, setLocation] = useState<Location.LocationObject | null>(
-    null
-  );
-  const [reason, setReason] = useState(""); // Pour stocker la raison sélectionnée
-  const [modalVisible, setModalVisible] = useState(false); // Pour gérer la visibilité du modal
+export default function Add_Pin_Button({ onAddPin }) {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [pinName, setPinName] = useState(""); // Nom du pin
+  const [location, setLocation] = useState(null);
+  const [selectedReason, setSelectedReason] = useState("banc"); // Raison par défaut
 
-  const getLocation = async () => {
-    // Demande de permission d'accès à la géolocalisation
-    let { status } = await Location.requestForegroundPermissionsAsync();
-    if (status !== "granted") {
-      console.log("Permission to access location was denied");
-      return;
+  useEffect(() => {
+    const getLocation = async () => {
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        console.log("Permission to access location was denied");
+        return;
+      }
+      let loc = await Location.getCurrentPositionAsync({});
+      setLocation(loc.coords);
+    };
+
+    if (modalVisible) {
+      getLocation();
     }
+  }, [modalVisible]);
 
-    // Obtention de la position actuelle
-    let loc = await Location.getCurrentPositionAsync({});
-    setLocation(loc);
-    setModalVisible(true); // Afficher le modal pour la sélection de raison
-  };
+  const handlePinConfirmation = () => {
+    console.log("Pin ajouté avec : ", {
+      name: pinName,
+      lat: location.latitude,
+      lon: location.longitude,
+      reason: selectedReason,
+    });
 
-  const insertDataToSupabase = async () => {
-    if (location && reason) {
-      const newPin = {
-        lat: location.coords.latitude,
-        lon: location.coords.longitude,
-        reason: reason,
-      };
+    if (location && pinName) {
+      onAddPin({
+        name: pinName,
+        lat: location.latitude,
+        lon: location.longitude,
+        reason: selectedReason,
+      });
 
-      // Appel de la fonction onAddPin pour ajouter un pin localement
-      onAddPin(newPin);
-
+      setPinName("");
       setModalVisible(false);
-      setReason(""); // Réinitialiser la raison pour la prochaine utilisation
     }
   };
 
   return (
-    <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={getLocation}>
+    <View>
+      <TouchableOpacity
+        onPress={() => setModalVisible(true)}
+        style={styles.button}
+      >
         <Text style={styles.plusSign}>+</Text>
       </TouchableOpacity>
 
       <Modal transparent={true} visible={modalVisible}>
         <View style={styles.modalContainer}>
           <View style={styles.modalView}>
-            <Text style={styles.modalTitle}>Sélectionnez une raison</Text>
+            <Text style={styles.modalTitle}>Ajouter un pin</Text>
 
+            {/* Nom du pin */}
+            <TextInput
+              placeholder="Nom du pin"
+              value={pinName}
+              onChangeText={setPinName}
+              style={styles.input}
+            />
+
+            {/* Picker pour choisir la raison */}
             <Picker
-              selectedValue={reason}
-              onValueChange={(itemValue) => setReason(itemValue)}
+              selectedValue={selectedReason}
+              onValueChange={(itemValue) => setSelectedReason(itemValue)}
               style={styles.picker}
             >
               <Picker.Item label="Banc" value="banc" />
-              <Picker.Item label="Travaux" value="travaux" />
               <Picker.Item label="Fontaine" value="fontaine" />
-              <Picker.Item label="Regroupement" value="regroupement" />
+              <Picker.Item label="Travaux" value="travaux" />
+              <Picker.Item label="Autre" value="autre" />
             </Picker>
 
-            <View style={styles.buttonContainer}>
-              <Button title="Annuler" onPress={() => setModalVisible(false)} />
-              <Button title="Confirmer" onPress={insertDataToSupabase} />
+            {/* Longitude et latitude */}
+            {location && (
+              <View>
+                <Text>Latitude : {location.latitude}</Text>
+                <Text>Longitude : {location.longitude}</Text>
+              </View>
+            )}
+
+            <View style={styles.buttonRow}>
+              <TouchableOpacity
+                style={styles.cancelButton}
+                onPress={() => setModalVisible(false)}
+              >
+                <Text style={styles.cancelButtonText}>Annuler</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.confirmButton}
+                onPress={handlePinConfirmation}
+              >
+                <Text style={styles.confirmButtonText}>Valider</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
       </Modal>
     </View>
   );
-};
+}
+
 const styles = StyleSheet.create({
-  container: {
-    position: "absolute",
-    bottom: 80,
-    left: 20,
-    justifyContent: "center",
-    alignItems: "center",
-  },
   button: {
     backgroundColor: "white",
     width: 60,
@@ -100,45 +130,77 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     elevation: 5,
   },
-  plusSign: {
-    fontSize: 30,
-    color: "black",
-  },
-  coords: {
-    marginTop: 10,
-  },
   modalContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
   modalView: {
-    width: 300,
-    height: 400,
+    width: "90%",
     backgroundColor: "white",
     borderRadius: 10,
     padding: 20,
     alignItems: "center",
-    justifyContent: "space-between", // Répartir l'espace entre les éléments du modal
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
     elevation: 5,
+  },
+  plusSign: {
+    fontSize: 30,
+    color: "black",
   },
   modalTitle: {
     fontSize: 18,
-    marginBottom: 10,
     fontWeight: "bold",
+    marginBottom: 20,
+  },
+  input: {
+    borderColor: "gray",
+    borderWidth: 1,
+    borderRadius: 5,
+    padding: 10,
+    width: "100%",
+    marginBottom: 20,
   },
   picker: {
     width: "100%",
-    height: 44,
+    height: 50,
+    marginBottom: 20,
   },
-  buttonContainer: {
+  buttonRow: {
     flexDirection: "row",
-    justifyContent: "space-between", // Espacer les boutons "Annuler" et "Confirmer"
+    justifyContent: "space-between",
+    marginTop: 20,
     width: "100%",
-    marginTop: "auto", // Pousse le conteneur de boutons en bas
-    marginBottom: 10, // Marge en bas du modal pour espacer des bords
+  },
+  cancelButton: {
+    backgroundColor: "red",
+    padding: 10,
+    borderRadius: 5,
+    flex: 1,
+    alignItems: "center",
+    marginRight: 10,
+  },
+  confirmButton: {
+    backgroundColor: "#1E90FF",
+    padding: 10,
+    borderRadius: 5,
+    flex: 1,
+    alignItems: "center",
+    marginLeft: 10,
+  },
+  cancelButtonText: {
+    color: "white",
+    fontWeight: "bold",
+  },
+  confirmButtonText: {
+    color: "white",
+    fontWeight: "bold",
   },
 });
-
-export default Add_Pin_Button;

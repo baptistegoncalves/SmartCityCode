@@ -1,24 +1,36 @@
-import React, { useEffect, useState } from 'react';
-import { View, Button, StyleSheet, Dimensions, KeyboardAvoidingView, Platform, Modal, Text, Alert } from 'react-native';
-import MapView, { Marker, Region } from 'react-native-maps';
-import * as Location from 'expo-location';
-import Add_Pin_Button from './Add_Pin_Button';
-import { createClient } from '@supabase/supabase-js';
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Button,
+  StyleSheet,
+  Dimensions,
+  KeyboardAvoidingView,
+  Platform,
+  Modal,
+  Text,
+  Alert,
+  TouchableOpacity,
+} from "react-native";
+import MapView, { Marker, Region } from "react-native-maps";
+import * as Location from "expo-location";
+import Add_Pin_Button from "./Add_Pin_Button";
+import { createClient } from "@supabase/supabase-js";
 
 const { width, height } = Dimensions.get("window");
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * (width / height);
 
 // Supabase configuration
-const supabaseUrl = 'https://tpzxhsjdxvqoroyflzpq.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ';
+const supabaseUrl = "https://tpzxhsjdxvqoroyflzpq.supabase.co";
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-// Types pour les pins et la localisation
 type Pin = {
   id: number | string;
   lat: number;
   lon: number;
+  name: string; // Ajoutez cette ligne
   reason: string;
 };
 
@@ -39,12 +51,10 @@ export default function MapScreen() {
 
   // Fonction pour récupérer les pins de Supabase
   const fetchPins = async () => {
-    const { data, error } = await supabase
-      .from('PinUser')
-      .select('*');
+    const { data, error } = await supabase.from("PinUser").select("*");
 
     if (error) {
-      console.error('Erreur lors de la récupération des pins:', error.message);
+      console.error("Erreur lors de la récupération des pins:", error.message);
     } else if (data) {
       setPins(data);
     }
@@ -54,8 +64,8 @@ export default function MapScreen() {
     // Récupérer la localisation de l'utilisateur
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== 'granted') {
-        console.log('Permission de localisation refusée');
+      if (status !== "granted") {
+        console.log("Permission de localisation refusée");
         return;
       }
 
@@ -97,25 +107,29 @@ export default function MapScreen() {
     }
   };
 
-  // Fonction pour ajouter un pin dans la base de données puis l'ajouter localement
-  const addPin = async (newPin: Omit<Pin, 'id'>) => {
+  const addPin = async (newPin: Omit<Pin, "id">) => {
     try {
-      // 1. Envoyer les données à la base de données Supabase
       const { data, error } = await supabase
-        .from('PinUser')
-        .insert([{ lat: newPin.lat, lon: newPin.lon, reason: newPin.reason }])
-        .select(); // Sélectionner l'élément inséré pour récupérer son ID
+        .from("PinUser")
+        .insert([
+          {
+            lat: newPin.lat,
+            lon: newPin.lon,
+            reason: newPin.reason,
+            name: newPin.name, // Include the name field here
+          },
+        ])
+        .select();
 
       if (error) {
-        throw new Error('Erreur lors de l\'ajout du pin dans la base de données');
+        throw new Error(
+          "Erreur lors de l'ajout du pin dans la base de données"
+        );
       }
 
-      // 2. Ajouter le pin avec l'ID réel renvoyé par la base de données
       const [insertedPin] = data;
       setPins((prevPins) => [...prevPins, insertedPin]);
-
     } catch (err) {
-      // Afficher une alerte en cas d'erreur
       Alert.alert("Erreur", err.message || "Impossible d'ajouter le pin.");
       console.error(err);
     }
@@ -130,14 +144,19 @@ export default function MapScreen() {
   // Fonction pour supprimer un pin
   const deletePin = async () => {
     if (selectedPin) {
-      const { error } = await supabase.from('PinUser').delete().eq('id', selectedPin.id);
+      const { error } = await supabase
+        .from("PinUser")
+        .delete()
+        .eq("id", selectedPin.id);
 
       if (error) {
         console.error("Erreur lors de la suppression du pin:", error.message);
         Alert.alert("Erreur", "Impossible de supprimer le pin.");
       } else {
         // Supprimer localement
-        setPins((prevPins) => prevPins.filter((pin) => pin.id !== selectedPin.id));
+        setPins((prevPins) =>
+          prevPins.filter((pin) => pin.id !== selectedPin.id)
+        );
         setModalVisible(false); // Fermer le modal après la suppression
       }
     }
@@ -145,7 +164,7 @@ export default function MapScreen() {
 
   return (
     <KeyboardAvoidingView
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.container}
     >
       <MapView
@@ -161,7 +180,6 @@ export default function MapScreen() {
               latitude: pin.lat,
               longitude: pin.lon,
             }}
-            title={pin.reason}
             onPress={() => openPinDetails(pin)} // Ouvrir le modal avec les détails du pin
           />
         ))}
@@ -172,20 +190,30 @@ export default function MapScreen() {
         <Add_Pin_Button onAddPin={addPin} />
       </View>
 
-      {/* Modal pour afficher les détails du pin sélectionné */}
       <Modal transparent={true} visible={modalVisible}>
         <View style={styles.modalContainer}>
           <View style={styles.modalView}>
             {selectedPin && (
               <>
                 <Text style={styles.modalTitle}>Détails du pin</Text>
-                <Text>Latitude: {selectedPin.lat}</Text>
-                <Text>Longitude: {selectedPin.lon}</Text>
-                <Text>Raison: {selectedPin.reason}</Text>
+                <Text>Nom : {selectedPin.name}</Text>
+                <Text>Latitude : {selectedPin.lat}</Text>
+                <Text>Longitude : {selectedPin.lon}</Text>
+                <Text>Raison : {selectedPin.reason}</Text>
 
-                <View style={styles.buttonContainer}>
-                  <Button title="Supprimer" onPress={deletePin} />
-                  <Button title="Ok" onPress={() => setModalVisible(false)} />
+                <View style={styles.buttonRow}>
+                  <TouchableOpacity
+                    style={styles.cancelButton}
+                    onPress={deletePin}
+                  >
+                    <Text style={styles.cancelButtonText}>Supprimer</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.confirmButton}
+                    onPress={() => setModalVisible(false)}
+                  >
+                    <Text style={styles.confirmButtonText}>OK</Text>
+                  </TouchableOpacity>
                 </View>
               </>
             )}
@@ -199,42 +227,42 @@ export default function MapScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   map: {
     width: width,
     height: height,
   },
   buttonContainer: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 60,
     left: 10,
-    backgroundColor: 'white',
+    backgroundColor: "white",
     borderRadius: 5,
     padding: 10,
     zIndex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   modalContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.5)",
   },
   modalView: {
     width: 300,
     height: 300,
-    backgroundColor: 'white',
+    backgroundColor: "white",
     borderRadius: 10,
     padding: 20,
-    alignItems: 'center',
+    alignItems: "center",
     elevation: 5,
   },
   modalTitle: {
     fontSize: 18,
     marginBottom: 10,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 });
