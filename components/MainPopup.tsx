@@ -1,58 +1,54 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from "react";
 import {
   View,
   Text,
-  TouchableOpacity,
-  Image,
   TextInput,
   StyleSheet,
   Animated,
-} from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
-import PagerView from 'react-native-pager-view';  // Importation de PagerView
-import ForYou from './ForYou';
-import TrafficInfo from './TrafficInfo';
-import avatarImage from '../assets/images_Popup/doug.jpg';
+  TouchableOpacity,
+  Dimensions,
+} from "react-native";
+import PagerView from "react-native-pager-view"; // Importation de PagerView
+import ForYou from "./ForYou";
+import TrafficInfo from "./TrafficInfo";
 
 interface MainPopupProps {
-  isOpen: boolean;
   togglePopup: () => void;
 }
 
-const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
-  const animation = useRef(new Animated.Value(0)).current;
+const MainPopup: React.FC<MainPopupProps> = ({ togglePopup }) => {
+  const screenHeight = Dimensions.get("window").height;
+  const maxPopupHeight = screenHeight * 0.85; // 85% de la hauteur de l'écran
+  const minPopupHeight = 160; // Hauteur minimale du pop-up
+
+  const animation = useRef(new Animated.Value(minPopupHeight)).current;
   const pagerRef = useRef<PagerView>(null); // Référence pour PagerView
-  const [selectedTab, setSelectedTab] = React.useState(0); // Tab index
-
-  useEffect(() => {
-    Animated.timing(animation, {
-      toValue: isOpen ? 1 : 0,
-      duration: 300,
-      useNativeDriver: true,
-    }).start();
-  }, [isOpen]);
-
-  const translateY = animation.interpolate({
-    inputRange: [0, 1],
-    outputRange: [564, 0], // Ajustez selon la hauteur souhaitée du pop-up lorsqu'il est fermé
-  });
+  const [selectedTab, setSelectedTab] = useState(0); // Tab index
+  const [isExpanded, setIsExpanded] = useState(false); // État pour suivre si le pop-up est étendu ou non
 
   const handlePageChange = (index: number) => {
     setSelectedTab(index);
     pagerRef.current?.setPage(index); // Gérer le changement de page
   };
 
+  const toggleHeight = () => {
+    const toValue = isExpanded ? minPopupHeight : maxPopupHeight;
+    Animated.timing(animation, {
+      toValue,
+      duration: 300,
+      useNativeDriver: false,
+    }).start();
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <Animated.View style={[styles.container, { transform: [{ translateY }] }]}>
-      {/* Flèche pour ouvrir/fermer le pop-up */}
-      <TouchableOpacity style={styles.arrowButton} onPress={togglePopup}>
-        <FontAwesome name={isOpen ? 'chevron-down' : 'chevron-up'} size={24} color="black" />
-      </TouchableOpacity>
+    <Animated.View style={[styles.container, { height: animation }]}>
+      {/* Barre pour ouvrir/fermer le pop-up */}
+      <TouchableOpacity style={styles.handleBar} onPress={toggleHeight} />
 
       {/* Barre de recherche */}
       <View style={styles.searchBar}>
         <TextInput placeholder="Maison" style={styles.searchInput} />
-        <Image source={avatarImage} style={styles.avatar} />
       </View>
 
       {/* Sélecteur d'onglets */}
@@ -62,7 +58,12 @@ const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
             onPress={() => handlePageChange(0)}
             style={[styles.tabButton, selectedTab === 0 && styles.activeTab]}
           >
-            <Text style={[styles.tabText, selectedTab === 0 && styles.activeTabText]}>
+            <Text
+              style={[
+                styles.tabText,
+                selectedTab === 0 && styles.activeTabText,
+              ]}
+            >
               Pour toi
             </Text>
           </TouchableOpacity>
@@ -70,7 +71,12 @@ const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
             onPress={() => handlePageChange(1)}
             style={[styles.tabButton, selectedTab === 1 && styles.activeTab]}
           >
-            <Text style={[styles.tabText, selectedTab === 1 && styles.activeTabText]}>
+            <Text
+              style={[
+                styles.tabText,
+                selectedTab === 1 && styles.activeTabText,
+              ]}
+            >
               Info
             </Text>
           </TouchableOpacity>
@@ -97,29 +103,29 @@ const MainPopup: React.FC<MainPopupProps> = ({ isOpen, togglePopup }) => {
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
     paddingTop: 16,
     paddingHorizontal: 16,
-    height: 700, // Hauteur fixe du pop-up
+    paddingBottom: 34, // Ajout de padding en bas pour éviter le masquage
   },
-  arrowButton: {
-    alignSelf: 'center',
-    backgroundColor: 'white',
-    borderRadius: 50,
-    padding: 5,
+  handleBar: {
+    alignSelf: "center",
+    width: 40,
+    height: 7,
+    borderRadius: 2.5,
+    backgroundColor: "#ccc",
     marginBottom: 10,
-    zIndex: 10,
   },
   searchBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#D9D9D9',
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#D9D9D9",
     borderRadius: 50,
     padding: 8,
     marginBottom: 16,
@@ -127,7 +133,7 @@ const styles = StyleSheet.create({
   searchInput: {
     flex: 1,
     paddingHorizontal: 16,
-    color: '#4A4A4A',
+    color: "#4A4A4A",
   },
   avatar: {
     width: 40,
@@ -136,16 +142,16 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
   tabSwitcher: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     marginBottom: 16,
   },
   tabContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '80%',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "80%",
   },
   tabButton: {
     paddingBottom: 10,
@@ -153,16 +159,16 @@ const styles = StyleSheet.create({
   },
   activeTab: {
     borderBottomWidth: 3,
-    borderBottomColor: '#858FFF',
+    borderBottomColor: "#858FFF",
   },
   tabText: {
     fontSize: 18,
-    color: '#808080',
+    color: "#808080",
   },
   activeTabText: {
     fontSize: 18,
-    fontWeight: 'bold',
-    color: '#000',
+    fontWeight: "bold",
+    color: "#000",
   },
   pagerView: {
     flex: 1,
