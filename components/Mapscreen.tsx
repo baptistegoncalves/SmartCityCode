@@ -25,7 +25,8 @@ const LONGITUDE_DELTA = LATITUDE_DELTA * (width / height);
 
 // Supabase configuration
 const supabaseUrl = "https://tpzxhsjdxvqoroyflzpq.supabase.co";
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Types pour les pins et la localisation
@@ -130,7 +131,9 @@ export default function MapScreen() {
         .select(); // Sélectionner l'élément inséré pour récupérer son ID
 
       if (error) {
-        throw new Error("Erreur lors de l'ajout du pin dans la base de données");
+        throw new Error(
+          "Erreur lors de l'ajout du pin dans la base de données"
+        );
       }
 
       // 2. Ajouter le pin avec l'ID réel renvoyé par la base de données
@@ -162,7 +165,9 @@ export default function MapScreen() {
         Alert.alert("Erreur", "Impossible de supprimer le pin.");
       } else {
         // Supprimer localement
-        setPins((prevPins) => prevPins.filter((pin) => pin.id !== selectedPin.id));
+        setPins((prevPins) =>
+          prevPins.filter((pin) => pin.id !== selectedPin.id)
+        );
         bottomSheetRef.current?.close(); // Fermer le Bottom Sheet après la suppression
         setSelectedPin(null);
       }
@@ -175,7 +180,7 @@ export default function MapScreen() {
       style={styles.container}
     >
       <MapView
-        style={styles.map}
+        style={[styles.map, { zIndex: 0 }]} // Assurez-vous que le zIndex de MapView soit le plus bas possible
         region={region || undefined}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
@@ -202,20 +207,18 @@ export default function MapScreen() {
         <Add_Pin_Button onAddPin={addPin} />
       </View>
 
-      {/* Bottom Sheet */}
       <BottomSheet
         ref={bottomSheetRef}
         index={-1} // Caché par défaut
         snapPoints={snapPoints}
         enablePanDownToClose={true}
         backgroundStyle={styles.bottomSheetBackground}
-        style={[styles.bottomSheet, { zIndex: 10 }]} // zIndex ajouté ici
+        style={[styles.bottomSheet, { zIndex: 10, elevation: 10 }]} // Ajout de `elevation` pour Android
       >
         {selectedPin && (
           <View style={styles.bottomSheetContent}>
             {/* Chevron */}
             <View style={styles.chevronContainer}>
-              <View style={styles.chevron} />
             </View>
 
             {/* Barre de recherche */}
