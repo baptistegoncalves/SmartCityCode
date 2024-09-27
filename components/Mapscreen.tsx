@@ -54,7 +54,7 @@ export default function MapScreen() {
 
   // Référence pour le Bottom Sheet
   const bottomSheetRef = useRef<BottomSheet>(null);
-  const snapPoints = useMemo(() => ["80%"], []); // Modifié pour remonter le BottomSheet
+  const snapPoints = useMemo(() => ["55%"], []); // Modifié pour remonter le BottomSheet
 
   // Fonction pour récupérer les pins de Supabase
   const fetchPins = async () => {
@@ -200,6 +200,8 @@ export default function MapScreen() {
 
       <View style={styles.buttonContainer}>
         <Button title="Recentrer" onPress={centerMap} />
+      </View>
+      <View style={styles.buttonContainer}>
         <Add_Pin_Button onAddPin={addPin} />
       </View>
 
@@ -214,8 +216,7 @@ export default function MapScreen() {
         {selectedPin && (
           <View style={styles.bottomSheetContent}>
             {/* Chevron */}
-            <View style={styles.chevronContainer}>
-            </View>
+            <View style={styles.chevronContainer}></View>
 
             {/* Barre de recherche */}
             <View style={styles.searchContainer}>
@@ -235,33 +236,32 @@ export default function MapScreen() {
               <View style={styles.cardHeader}>
                 <View style={styles.iconContainer}>
                   <View style={styles.iconBackground}>
-                    <FontAwesome name="home" size={24} color="white" />
+                    <FontAwesome name="home" size={24} color="blue" />
                   </View>
                 </View>
                 <Text style={styles.cardTitle}>{selectedPin.name}</Text>
-                <FontAwesome
-                  name="map-pin"
-                  size={16}
-                  color="red"
-                  style={{ marginLeft: 5 }}
-                />
+                <Text style={styles.pinTitle}>📍</Text>
               </View>
 
-              {/* Informations détaillées */}
               <View style={styles.cardContent}>
-                <Text style={styles.cardLabel}>Nom :</Text>
-                <Text style={styles.cardValue}>{selectedPin.name}</Text>
-
-                <Text style={styles.cardLabel}>Longitude :</Text>
-                <Text style={styles.cardValue}>{selectedPin.lon}</Text>
-
-                <Text style={styles.cardLabel}>Latitude :</Text>
-                <Text style={styles.cardValue}>{selectedPin.lat}</Text>
-
-                <Text style={styles.cardLabel}>Raison :</Text>
-                <TouchableOpacity>
-                  <Text style={styles.cardLink}>{selectedPin.reason}</Text>
-                </TouchableOpacity>
+                <View style={styles.row}>
+                  <Text style={styles.cardLabel}>Nom :</Text>
+                  <Text style={styles.cardValue}>{selectedPin.name}</Text>
+                </View>
+                <View style={styles.row}>
+                  <Text style={styles.cardLabel}>Longitude :</Text>
+                  <Text style={styles.cardValue}>{selectedPin.lon}</Text>
+                </View>
+                <View style={styles.row}>
+                  <Text style={styles.cardLabel}>Latitude :</Text>
+                  <Text style={styles.cardValue}>{selectedPin.lat}</Text>
+                </View>
+                <View style={styles.row}>
+                  <Text style={styles.cardLabel}>Raison :</Text>
+                  <TouchableOpacity>
+                    <Text style={styles.cardLink}>{selectedPin.reason}</Text>
+                  </TouchableOpacity>
+                </View>
               </View>
             </View>
 
@@ -333,7 +333,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   infoCard: {
-    backgroundColor: "#fff",
+    backgroundColor: "rgba(255, 255, 255, 0.9)", // Blanc avec opacité réduite
     borderRadius: 10,
     padding: 15,
     marginBottom: 20,
@@ -351,7 +351,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   iconBackground: {
-    backgroundColor: "#D1C4E9",
+    backgroundColor: "rgba(66, 133, 244, 0.2)", // Bleu avec opacité réduite
     padding: 10,
     borderRadius: 25,
   },
@@ -360,28 +360,40 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     flex: 1,
   },
+  pinTitle: {
+    fontSize: 25,
+  },
   cardContent: {
     marginTop: 15,
   },
+  row: {
+    flexDirection: "row", // Aligner les éléments sur la même ligne
+    justifyContent: "space-between", // Espacer les éléments
+    alignItems: "center",
+    marginBottom: 10, // Espacement entre les lignes
+  },
   cardLabel: {
     fontWeight: "bold",
+    flex: 1,
   },
   cardValue: {
     color: "#777",
-    marginBottom: 10,
+    flex: 2,
+    textAlign: "right", // Aligner le texte à droite pour le rendre uniforme
   },
   cardLink: {
     color: "blue",
     marginBottom: 10,
   },
   deleteButton: {
-    backgroundColor: "red",
+    backgroundColor: "rgba(255, 0, 0, 0.15)",
     paddingVertical: 15,
     borderRadius: 10,
     alignItems: "center",
+    opacity: 0.8,
   },
   deleteButtonText: {
-    color: "white",
+    color: "red",
     fontWeight: "bold",
   },
 });

@@ -82,7 +82,6 @@ export default function Add_Pin_Button({ onAddPin }) {
               <Picker.Item label="Autre" value="autre" />
             </Picker>
 
-            {/* Longitude et latitude */}
             {location && (
               <View>
                 <Text>Latitude : {location.latitude}</Text>
@@ -175,7 +174,6 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   cancelButton: {
-    backgroundColor: "red",
     padding: 10,
     borderRadius: 5,
     flex: 1,
@@ -183,7 +181,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   confirmButton: {
-    backgroundColor: "#1E90FF",
     padding: 10,
     borderRadius: 5,
     flex: 1,
@@ -191,11 +188,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   cancelButtonText: {
-    color: "white",
+    color: "red",
     fontWeight: "bold",
   },
   confirmButtonText: {
-    color: "white",
+    color: "#1E90FF",
     fontWeight: "bold",
   },
 });
