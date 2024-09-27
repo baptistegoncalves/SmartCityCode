@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Button, StyleSheet } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-import { Asset } from 'expo-asset';
 
 interface Camera {
   nom: string;
@@ -15,19 +14,33 @@ interface Camera {
 const CameraMap: React.FC = () => {
   const [cameraLocations, setCameraLocations] = useState<Camera[]>([]);
 
-
-  const loadCamerasFromJSON = async () => {
+  // Fonction pour charger les données des caméras depuis l'API
+  const loadCamerasFromAPI = async () => {
     try {
-      const results: Camera[] = require('../assets/datasets/Camera_Lyon_lon_lat.json'); // Charger directement le fichier JSON
-      setCameraLocations(results);
-      console.log(results); // Vérifier les données chargées
+      const response = await fetch(
+        'https://data.grandlyon.com/fr/datapusher/ws/rdata/pvo_patrimoine_voirie.pvocameracriter/all.json?maxfeatures=-1&start=1'
+      );
+      const data = await response.json();
+      
+      // Récupérer les données pertinentes et les stocker dans le state
+      const cameras = data.values.map((camera: any) => ({
+        nom: camera.nom,
+        id: camera.identifiant, // Assure que cela correspond au champ de l'API
+        observation: camera.observation,
+        gid: camera.gid,
+        lon: parseFloat(camera.lon),
+        lat: parseFloat(camera.lat),
+      }));
+
+      setCameraLocations(cameras);
+      console.log(cameras); // Vérifier les données chargées
     } catch (error) {
-      console.error('Error loading JSON file:', error);
+      console.error('Error loading data from API:', error);
     }
   };
 
   useEffect(() => {
-    loadCamerasFromJSON(); // Charger les données JSON lorsque le composant est monté
+    loadCamerasFromAPI(); // Charger les données de l'API lorsque le composant est monté
   }, []);
 
   return (
@@ -47,15 +60,15 @@ const CameraMap: React.FC = () => {
             key={camera.id}
             coordinate={{
               latitude: camera.lat,
-              longitude: camera.lon,  
+              longitude: camera.lon,
             }}
-            title={`Caméra ${camera.id}`}
+            title={`Caméra ${camera.nom}`}
             description={camera.observation || 'Aucune description'}
           />
         ))}
       </MapView>
       <View style={styles.buttonContainer}>
-        <Button title="Recharger les caméras" onPress={loadCamerasFromJSON} />
+        <Button title="Recharger les caméras" onPress={loadCamerasFromAPI} />
       </View>
     </View>
   );

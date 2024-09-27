@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-  Alert,
-  Button,
-  KeyboardAvoidingView,
-  Platform,
-} from "react-native";
+import { View, StyleSheet, Dimensions, Alert, Button, KeyboardAvoidingView, Platform } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 
@@ -37,7 +29,6 @@ function MapScreen() {
   const [cameraLocations, setCameraLocations] = useState<Camera[]>([]);
   const [showCameras, setShowCameras] = useState(false); // Ajouter un état pour gérer l'affichage des caméras
 
-  // Charger la localisation actuelle
   useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
@@ -68,21 +59,34 @@ function MapScreen() {
     })();
   }, []);
 
-  // Fonction pour charger les données des caméras depuis un fichier JSON
-  const loadCamerasFromJSON = async () => {
+  // Fonction pour charger les données des caméras depuis l'API
+  const loadCamerasFromAPI = async () => {
     try {
-      const results: Camera[] = require('../assets/datasets/Camera_Lyon_lon_lat.json'); // Charger le JSON localement
-      setCameraLocations(results);
-      console.log(results);
+      const response = await fetch(
+        'https://data.grandlyon.com/fr/datapusher/ws/rdata/pvo_patrimoine_voirie.pvocameracriter/all.json?maxfeatures=-1&start=1'
+      );
+      const data = await response.json();
+      
+      const cameras = data.values.map((camera: any) => ({
+        nom: camera.nom,
+        id: camera.identifiant,
+        observation: camera.observation,
+        gid: camera.gid,
+        lon: parseFloat(camera.lon),
+        lat: parseFloat(camera.lat),
+      }));
+
+      setCameraLocations(cameras);
+      console.log(cameras);
     } catch (error) {
-      console.error("Error loading JSON file:", error);
+      console.error("Error loading data from API:", error);
     }
   };
 
   // Gérer l'affichage des caméras
   const toggleCameras = async () => {
     if (!showCameras) {
-      await loadCamerasFromJSON(); // Charger les caméras si elles ne sont pas encore affichées
+      await loadCamerasFromAPI(); // Charger les caméras depuis l'API si elles ne sont pas encore affichées
     }
     setShowCameras(!showCameras); // Basculer l'état d'affichage des caméras
   };
@@ -118,7 +122,7 @@ function MapScreen() {
                 latitude: camera.lat,
                 longitude: camera.lon,
               }}
-              title={`Caméra ${camera.id}`}
+              title={`Caméra ${camera.nom}`}
               description={camera.observation || "Aucune description"}
             />
           ))}
