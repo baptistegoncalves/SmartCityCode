@@ -14,6 +14,6 @@ def remove_columns_from_csv(input_file, output_file, columns_to_remove):
 
 input_file = "./assets/datasets/biotope.temperature_device.csv"
 output_file = "./assets/datasets/Capteurs_temperatures_lon_lat.csv"
-columns_to_remove = ["nom","address","insee","status","battery_level"]
+columns_to_remove = ["nom","address","insee","battery_level"]
 
 remove_columns_from_csv(input_file, output_file, columns_to_remove)
