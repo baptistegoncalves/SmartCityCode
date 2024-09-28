@@ -1,46 +1,40 @@
-import * as React from "react";
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-  Alert,
-  Button,
-  KeyboardAvoidingView,
-  Platform,
-  Text,
-} from "react-native";
-import MapView from "react-native-maps";
-import * as Location from "expo-location";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import React from 'react';
+import MapView, { Marker } from 'react-native-maps';
+import { StyleSheet, View, Dimensions, Button, KeyboardAvoidingView, Platform, Alert } from 'react-native';
+import * as Location from 'expo-location';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 type RootStackParamList = {
   Home: undefined;
   Map: undefined;
 };
 
-type MapScreenProps = NativeStackScreenProps<RootStackParamList, "Map">;
+type MapScreenProps = NativeStackScreenProps<RootStackParamList, 'Map'> & {
+  benches: Array<any>;
+  parks: Array<any>;
+  noiseZones: Array<any>;
+};
 
-const { width, height } = Dimensions.get("window");
+const { width, height } = Dimensions.get('window');
 const ASPECT_RATIO = width / height;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-function Mapscreen({ navigation }: MapScreenProps) {
+function MapScreen({ benches, parks, noiseZones }: MapScreenProps) {
   const [region, setRegion] = React.useState({
-    latitude: 37.78825,
-    longitude: -122.4324,
+    latitude: 48.8566, // Default to Paris coordinates
+    longitude: 2.3522,
     latitudeDelta: LATITUDE_DELTA,
     longitudeDelta: LONGITUDE_DELTA,
   });
 
-  const [location, setLocation] =
-    React.useState<Location.LocationObject | null>(null);
+  const [location, setLocation] = React.useState<Location.LocationObject | null>(null);
 
   React.useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        Alert.alert("Permission to access location was denied");
+      if (status !== 'granted') {
+        Alert.alert('Permission to access location was denied');
         return;
       }
 
@@ -79,7 +73,7 @@ function Mapscreen({ navigation }: MapScreenProps) {
 
   return (
     <KeyboardAvoidingView
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={styles.container}
     >
       <MapView
@@ -87,7 +81,61 @@ function Mapscreen({ navigation }: MapScreenProps) {
         region={region}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
-      />
+      >
+        {/* Render markers for benches */}
+        {benches.map((bench, index) => {
+          const lat = parseFloat(bench.lat);
+          const lon = parseFloat(bench.lon);
+          if (!isNaN(lat) && !isNaN(lon)) {
+            return (
+              <Marker
+                key={`bench-${index}`}
+                coordinate={{ latitude: lat, longitude: lon }}
+                title={`Bench ${bench.gid}`}
+                pinColor="blue"
+              />
+            );
+          } else {
+            return null;
+          }
+        })}
+
+        {/* Render markers for parks */}
+        {parks.map((park, index) => {
+          const lat = parseFloat(park.lat);
+          const lon = parseFloat(park.lon);
+          if (!isNaN(lat) && !isNaN(lon)) {
+            return (
+              <Marker
+                key={`park-${index}`}
+                coordinate={{ latitude: lat, longitude: lon }}
+                title={park.nom}
+                pinColor="green"
+              />
+            );
+          } else {
+            return null;
+          }
+        })}
+
+        {/* Render markers for noise zones */}
+        {noiseZones.map((zone, index) => {
+          const lat = parseFloat(zone.lat);
+          const lon = parseFloat(zone.lon);
+          if (!isNaN(lat) && !isNaN(lon)) {
+            return (
+              <Marker
+                key={`zone-${index}`}
+                coordinate={{ latitude: lat, longitude: lon }}
+                title={`Noise Zone: ${zone.nom}`}
+                pinColor="red"
+              />
+            );
+          } else {
+            return null;
+          }
+        })}
+      </MapView>
       <View style={styles.buttonContainer}>
         <Button title="Recenter" onPress={centerMap} />
       </View>
@@ -98,22 +146,20 @@ function Mapscreen({ navigation }: MapScreenProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
   },
   map: {
     width: width,
     height: height,
   },
   buttonContainer: {
-    position: "absolute",
-    bottom: 60, // Ajustez cette valeur pour positionner le bouton pas trop en bas
+    position: 'absolute',
+    bottom: 60,
     left: 10,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     borderRadius: 5,
     padding: 10,
-    zIndex: 1, // Assurez-vous que le bouton est au-dessus de la carte
+    zIndex: 1,
   },
 });
 
-export default Mapscreen;
+export default MapScreen;
