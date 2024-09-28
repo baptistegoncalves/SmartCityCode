@@ -1,0 +1,122 @@
+[
+    {
+        "nom": "Lyon - Perrache",
+        "identifiant": "219",
+        "observation": "Direction : Lyon - Perrache",
+        "gid": "34",
+        "lon": 4.81978206524302,
+        "lat": 45.752358292668035
+    },
+    {
+        "nom": "A43 - Grenoble",
+        "identifiant": "223",
+        "observation": "Direction : A43 - Grenoble",
+        "gid": "45",
+        "lon": 4.889340308405491,
+        "lat": 45.7303241140097
+    },
+    {
+        "nom": "Porte de Gerland",
+        "identifiant": "259",
+        "observation": "Direction : Porte de Gerland",
+        "gid": "40",
+        "lon": 4.830317178921582,
+        "lat": 45.726733643986854
+    },
+    {
+        "nom": "Grange Blanche",
+        "identifiant": "220",
+        "observation": "Direction : Grange Blanche",
+        "gid": "42",
+        "lon": 4.859580532693839,
+        "lat": 45.749583639329465
+    },
+    {
+        "nom": "Lyon Centre",
+        "identifiant": "224",
+        "observation": "Direction : Lyon Centre",
+        "gid": "33",
+        "lon": 4.886462962217632,
+        "lat": 45.73088472995471
+    },
+    {
+        "nom": "Porte de Valvert",
+        "identifiant": "257",
+        "observation": "Direction : Porte de Valvert",
+        "gid": "39",
+        "lon": 4.781296863340424,
+        "lat": 45.76378027768377
+    },
+    {
+        "nom": "Lyon - Villeurbanne",
+        "identifiant": "254",
+        "observation": "Direction : Lyon - Villeurbanne",
+        "gid": "35",
+        "lon": 4.860406657181313,
+        "lat": 45.78824630748842
+    },
+    {
+        "nom": "Porte de La Pape",
+        "identifiant": "256",
+        "observation": "Direction : Porte de La Doua",
+        "gid": "38",
+        "lon": 4.89207214940456,
+        "lat": 45.78343514865332
+    },
+    {
+        "nom": "Porte des Alpes",
+        "identifiant": "255",
+        "observation": "Direction : Porte des Alpes",
+        "gid": "37",
+        "lon": 4.920109360759982,
+        "lat": 45.72302417490705
+    },
+    {
+        "nom": "Eurexpo",
+        "identifiant": "253",
+        "observation": "Direction : Eurexpo",
+        "gid": "36",
+        "lon": 4.9275236512071805,
+        "lat": 45.727110306497984
+    },
+    {
+        "nom": "M7 - Marseille",
+        "identifiant": "258",
+        "observation": "Direction : M7 - Marseille",
+        "gid": "32",
+        "lon": 4.815703578083396,
+        "lat": 45.72886109647263
+    },
+    {
+        "nom": "La Soie",
+        "identifiant": "222",
+        "observation": "Direction : Porte de La Soie",
+        "gid": "44",
+        "lon": 4.929567963895573,
+        "lat": 45.76641253718141
+    },
+    {
+        "nom": "Tunnel Croix Rousse",
+        "identifiant": "218",
+        "observation": "Direction : Tunnel de la Croix Rousse",
+        "gid": "31",
+        "lon": 4.808118262515052,
+        "lat": 45.77489339523771
+    },
+    {
+        "nom": "A7 - Paris",
+        "identifiant": "261",
+        "observation": "Direction : M6 - Paris",
+        "gid": "41",
+        "lon": 4.802788030091653,
+        "lat": 45.763523711361294
+    },
+    {
+        "nom": "Caluire",
+        "identifiant": "221",
+        "observation": "Direction : Caluire",
+        "gid": "43",
+        "lon": 4.858734847452429,
+        "lat": 45.771690997683244
+    }
+]
