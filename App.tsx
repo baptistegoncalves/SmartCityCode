@@ -1,13 +1,22 @@
 import React from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
-import Login from './components/Login';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import DataLoader from './components/DataLoader'; 
+
+type RootStackParamList = {
+  Map: undefined;
+};
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="dark-content" />
-      <Login />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Map">
+        <Stack.Screen name="Map" component={DataLoader} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

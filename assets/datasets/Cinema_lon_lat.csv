@@ -1,0 +1,34 @@
+nom;commune;horaires;source;gid;lon;lat
+Les Alizés;Bron;;Open Street Map;1;4,9151378999999995;45,7311533
+Alpha;Charbonnières-les-Bains;;Open Street Map;3;4,7394523;45,7800005
+Écully cinéma;Écully;;Open Street Map;5;4,7781944;45,7792667
+Cinéma Rex;Neuville-sur-Saône;;Open Street Map;7;4,8415825;45,874689
+La Maison du Peuple;Pierre-Bénite;;Open Street Map;8;4,8231402;45,7039147
+Le Lem;Tassin-la-Demi-Lune;;Open Street Map;10;4,7609045;45,7614042
+Pathé Carré de Soie;Vaulx-en-Velin;Mo-Su,PH 10:00-00:30;Open Street Map;12;4,9211252;45,7643796
+Cinéma Le Polaris;Corbas;;Open Street Map;14;4,8969716;45,6689154
+Le Toboggan;Décines-Charpieu;;Open Street Map;15;4,9557118;45,7688223
+Le Meliès;Caluire-et-Cuire;ouverture fonction des films;Open Street Map;2;4,8667976;45,7977767
+L'Aqueduc;Dardilly;;Open Street Map;4;4,7544059;45,8121479
+Iris;Francheville;;Open Street Map;6;4,7681793;45,7337323
+Ciné Mourguet;Sainte-Foy-lès-Lyon;;Open Street Map;9;4,8000792;45,7359223
+Les Amphis;Vaulx-en-Velin;;Open Street Map;11;4,9181789;45,7883605
+Cinéma Gérard-Philipe;Vénissieux;;Open Street Map;13;4,8694348;45,697118
+Ciné-Meyzieu;Meyzieu;;Open Street Map;16;5,0032585;45,7648443
+Cinéma Opéra;Lyon 1er Arrondissement;;Open Street Map;19;4,8351154;45,7673064
+Comœdia;Lyon 7e Arrondissement;Mo-Su 10:30-22:00;Open Street Map;31;4,8355185;45,7474
+Centre culturel Jean Moulin;Mions;;Open Street Map;17;4,9576725;45,6668763
+Le Cinéma;Lyon 1er Arrondissement;;Open Street Map;20;4,8339773;45,768538
+Lumière Terreaux;Lyon 1er Arrondissement;;Open Street Map;21;4,8341916;45,7653286
+Ciné-Café Aquarium;Lyon 4e Arrondissement;We-Sa 14:30-19:30;Open Street Map;28;4,8314443;45,7766424
+UGC Ciné Cité Confluence;Lyon 2e Arrondissement;Mo-Sa 10:00-20:00;Open Street Map;24;4,8181777;45,7404586
+Lumière Fourmi;Lyon 3e Arrondissement;Mo-Su 15:00-22:00;Open Street Map;25;4,8437817;45,76328
+UGC Ciné Cité Part-Dieu;Lyon 3e Arrondissement;;Open Street Map;26;4,8562726;45,760451
+CIFA Saint-Denis;Lyon 4e Arrondissement;;Open Street Map;27;4,8318408;45,7800934
+UGC Astoria;Lyon 6e Arrondissement;;Open Street Map;30;4,8531531999999995;45,7696956
+Institut Lumière;Lyon 8e Arrondissement;"Tu-Fr 18:30-21:30; Sa,Su 14:00-18:00";Open Street Map;32;4,8697489;45,7453857
+CinéDuchère;Lyon 9e Arrondissement;pas d'horaire d'ouverture fixe, dépends des horaires de films;Open Street Map;33;4,800902;45,7883325
+Lumière Bellecour;Lyon 2e Arrondissement;;Open Street Map;22;4,8356065;45,757431
+Le Grand Scénario;Saint-Priest;;Open Street Map;34;4,9375445;45,6948909
+Bellecombe;Lyon 6e Arrondissement;;Open Street Map;29;4,8662503;45,7658165
+Pathé Bellecour;Lyon 2e Arrondissement;24/7;Open Street Map;23;4,83488;45,7586907
