@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   StyleSheet,
@@ -7,35 +7,39 @@ import {
   Button,
   KeyboardAvoidingView,
   Platform,
-  Text,
 } from "react-native";
-import MapView from "react-native-maps";
+import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import MainPopup from "./MainPopup"; // Importez MainPopup
 
-type RootStackParamList = {
-  Home: undefined;
-  Map: undefined;
+type Camera = {
+  nom: string;
+  id: string;
+  observation?: string;
+  gid: string;
+  lon: number;
+  lat: number;
 };
-
-type MapScreenProps = NativeStackScreenProps<RootStackParamList, "Map">;
 
 const { width, height } = Dimensions.get("window");
 const ASPECT_RATIO = width / height;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-function MapScreen({ navigation }: MapScreenProps) {
-  const [region, setRegion] = React.useState({
+function MapScreen() {
+  const [region, setRegion] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
     latitudeDelta: LATITUDE_DELTA,
     longitudeDelta: LONGITUDE_DELTA,
   });
 
-  const [location, setLocation] =
-    React.useState<Location.LocationObject | null>(null);
+  const [location, setLocation] = useState<Location.LocationObject | null>(
+    null
+  );
+  const [cameraLocations, setCameraLocations] = useState<Camera[]>([]);
+  const [showCameras, setShowCameras] = useState(false); // Ajouter un état pour gérer l'affichage des caméras
 
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
 
@@ -69,6 +73,38 @@ function MapScreen({ navigation }: MapScreenProps) {
     })();
   }, []);
 
+  // Fonction pour charger les données des caméras depuis l'API
+  const loadCamerasFromAPI = async () => {
+    try {
+      const response = await fetch(
+        "https://data.grandlyon.com/fr/datapusher/ws/rdata/pvo_patrimoine_voirie.pvocameracriter/all.json?maxfeatures=-1&start=1"
+      );
+      const data = await response.json();
+
+      const cameras = data.values.map((camera: any) => ({
+        nom: camera.nom,
+        id: camera.identifiant,
+        observation: camera.observation,
+        gid: camera.gid,
+        lon: parseFloat(camera.lon),
+        lat: parseFloat(camera.lat),
+      }));
+
+      setCameraLocations(cameras);
+      console.log(cameras);
+    } catch (error) {
+      console.error("Error loading data from API:", error);
+    }
+  };
+
+  // Gérer l'affichage des caméras
+  const toggleCameras = async () => {
+    if (!showCameras) {
+      await loadCamerasFromAPI(); // Charger les caméras depuis l'API si elles ne sont pas encore affichées
+    }
+    setShowCameras(!showCameras); // Basculer l'état d'affichage des caméras
+  };
+
   const centerMap = () => {
     if (location) {
       setRegion({
@@ -94,9 +130,27 @@ function MapScreen({ navigation }: MapScreenProps) {
         region={region}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
-      />
+      >
+        {/* Afficher les marqueurs des caméras si l'état showCameras est activé */}
+        {showCameras &&
+          cameraLocations.map((camera) => (
+            <Marker
+              key={camera.id}
+              coordinate={{
+                latitude: camera.lat,
+                longitude: camera.lon,
+              }}
+              title={`Caméra ${camera.nom}`}
+              description={camera.observation || "Aucune description"}
+            />
+          ))}
+      </MapView>
       <View style={styles.buttonContainer}>
         <Button title="Recenter" onPress={centerMap} />
+        <Button
+          title={showCameras ? "Masquer les Caméras" : "Voir Caméras"}
+          onPress={toggleCameras}
+        />
       </View>
       <MainPopup togglePopup={togglePopup} />
     </KeyboardAvoidingView>
@@ -120,7 +174,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 5,
     padding: 10,
-    zIndex: 1, // Assurez-vous que le bouton est au-dessus de la carte
+    zIndex: 1,
   },
 });
 
