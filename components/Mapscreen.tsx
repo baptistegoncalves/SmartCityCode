@@ -7,25 +7,17 @@ import {
   Button,
   KeyboardAvoidingView,
   Platform,
-  Text,
 } from "react-native";
-import MapView from "react-native-maps";
+import MapView, { Circle } from "react-native-maps";
 import * as Location from "expo-location";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-
-type RootStackParamList = {
-  Home: undefined;
-  Map: undefined;
-};
-
-type MapScreenProps = NativeStackScreenProps<RootStackParamList, "Map">;
+import capteursData from "../capteurs_data.json"; // Assurez-vous que le chemin est correct
 
 const { width, height } = Dimensions.get("window");
 const ASPECT_RATIO = width / height;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-function Mapscreen({ navigation }: MapScreenProps) {
+function Mapscreen() {
   const [region, setRegion] = React.useState({
     latitude: 37.78825,
     longitude: -122.4324,
@@ -33,8 +25,7 @@ function Mapscreen({ navigation }: MapScreenProps) {
     longitudeDelta: LONGITUDE_DELTA,
   });
 
-  const [location, setLocation] =
-    React.useState<Location.LocationObject | null>(null);
+  const [location, setLocation] = React.useState<Location.LocationObject | null>(null);
 
   React.useEffect(() => {
     (async () => {
@@ -87,7 +78,23 @@ function Mapscreen({ navigation }: MapScreenProps) {
         region={region}
         onRegionChangeComplete={setRegion}
         showsUserLocation={true}
-      />
+      >
+        {capteursData.map((capteur, index) => (
+          <Circle
+            key={index}
+            center={{ latitude: capteur.lat, longitude: capteur.lon }}
+            radius={2600} // Taille du cercle en mètres (ajustez cette valeur pour changer la taille)
+            strokeColor="rgba(0, 150, 255, 0.5)" // Couleur du contour du cercle
+            fillColor={
+              capteur.temperature !== null
+                ? `rgba(255, ${Math.max(0, 255 - capteur.temperature * 5)}, 0, 0.3)`
+                : "rgba(100, 100, 100, 0.3)"
+            } // Couleur du remplissage change en fonction de la température
+            zIndex={1}
+            onPress={() => Alert.alert("Température", `Température : ${capteur.temperature}°C`)}
+          />
+        ))}
+      </MapView>
       <View style={styles.buttonContainer}>
         <Button title="Recenter" onPress={centerMap} />
       </View>
@@ -107,12 +114,11 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     position: "absolute",
-    bottom: 60, // Ajustez cette valeur pour positionner le bouton pas trop en bas
+    bottom: 60,
     left: 10,
     backgroundColor: "white",
     borderRadius: 5,
-    padding: 10,
-    zIndex: 1, // Assurez-vous que le bouton est au-dessus de la carte
+    padding: 1,
   },
 });
 

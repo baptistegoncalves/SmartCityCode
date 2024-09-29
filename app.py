@@ -1,7 +1,5 @@
-from flask import Flask, jsonify
 import requests
-
-app = Flask(__name__)
+import json
 
 # API pour récupérer les capteurs
 SENSORS_API_URL = "https://data.grandlyon.com/fr/datapusher/ws/rdata/biotope.temperature_device/all.json?maxfeatures=-1&start=1"
@@ -54,16 +52,21 @@ def get_sensors_with_temperature():
                 "datemaj": capteur["datemaj"],
             }
         )
-
     return capteurs_with_temp
 
 
-# Route API pour renvoyer les capteurs avec les températures
-@app.route("/api/capteurs", methods=["GET"])
-def capteurs():
-    data = get_sensors_with_temperature()
-    return jsonify(data)
+# Fonction pour sauvegarder les données dans un fichier JSON
+def save_data_to_json(data, filename="capteurs_data.json"):
+    try:
+        with open(filename, 'w', encoding='utf-8') as json_file:
+            json.dump(data, json_file, ensure_ascii=False, indent=4)
+        print(f"Données enregistrées dans {filename}")
+    except IOError as e:
+        print(f"Erreur lors de l'écriture des données dans le fichier JSON: {e}")
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Récupération des données des capteurs avec températures
+    capteurs_data = get_sensors_with_temperature()
+    # Sauvegarder les données dans un fichier JSON
+    save_data_to_json(capteurs_data)

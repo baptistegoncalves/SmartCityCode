@@ -1,0 +1,173 @@
+[
+    {
+        "deveui": "70b3d580a01005fd",
+        "nom": "SL-T-P6",
+        "lat": 45.760798,
+        "lon": 4.852945,
+        "status": "inactive",
+        "temperature": 7.875,
+        "datemaj": "2022-07-04 08:19:43+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100644",
+        "nom": "SL-T-G10",
+        "lat": 45.775154,
+        "lon": 4.998943,
+        "status": "inactive",
+        "temperature": 7.875,
+        "datemaj": "2021-05-17 16:21:53+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100543",
+        "nom": "SL-T-P1",
+        "lat": 45.763484,
+        "lon": 4.851277,
+        "status": "inactive",
+        "temperature": 7.875,
+        "datemaj": "2023-11-08 02:06:26+01:00"
+    },
+    {
+        "deveui": "70b3d580a01007a5",
+        "nom": "SL-T-G7",
+        "lat": 45.806979,
+        "lon": 4.821077,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:30:29+02:00"
+    },
+    {
+        "deveui": "70b3d580a01006cf",
+        "nom": "SL-T-G5",
+        "lat": 45.778851,
+        "lon": 4.778705,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:49:41+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100652",
+        "nom": "SL-T-G8",
+        "lat": 45.857197,
+        "lon": 4.802012,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:56:20+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100600",
+        "nom": "SL-T-P7",
+        "lat": 45.759356,
+        "lon": 4.852123,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:32:38+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100742",
+        "nom": "SL-T-G6",
+        "lat": 45.803818,
+        "lon": 4.719458,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:59:21+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100623",
+        "nom": "SL-T-G9",
+        "lat": 45.758908,
+        "lon": 4.928605,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:42:28+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100654",
+        "nom": "SL-T-G2",
+        "lat": 45.743602,
+        "lon": 4.840917,
+        "status": "inactive",
+        "temperature": 7.875,
+        "datemaj": "2023-12-25 21:04:59+01:00"
+    },
+    {
+        "deveui": "70b3d580a0100656",
+        "nom": "SL-T-G3",
+        "lat": 45.672827,
+        "lon": 4.823831,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:49:57+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100549",
+        "nom": "SL-T-P2",
+        "lat": 45.761757,
+        "lon": 4.851705,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:48:26+02:00"
+    },
+    {
+        "deveui": "70b3d580a01005fa",
+        "nom": "SL-T-P5",
+        "lat": 45.76032,
+        "lon": 4.851946,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:52:30+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100648",
+        "nom": "SL-T-G12",
+        "lat": 45.689378,
+        "lon": 4.956662,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:45:45+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100647",
+        "nom": "SL-T-G11",
+        "lat": 45.710283,
+        "lon": 4.903666,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:48:48+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100657",
+        "nom": "SL-T-G4",
+        "lat": 45.613456,
+        "lon": 4.800357,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:03:29+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100605",
+        "nom": "SL-T-P8",
+        "lat": 45.758465,
+        "lon": 4.852542,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:46:12+02:00"
+    },
+    {
+        "deveui": "70b3d580a0100550",
+        "nom": "SL-T-P4",
+        "lat": 45.760508,
+        "lon": 4.849077,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:55:01+02:00"
+    },
+    {
+        "deveui": "70b3d580a010054c",
+        "nom": "SL-T-P3",
+        "lat": 45.761145,
+        "lon": 4.851818,
+        "status": "active",
+        "temperature": 7.875,
+        "datemaj": "2024-09-29 21:47:15+02:00"
+    }
+]
