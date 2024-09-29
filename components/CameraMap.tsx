@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { View, Button, StyleSheet } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import React, { useState, useEffect } from "react";
+import { View, Button, StyleSheet } from "react-native";
+import MapView, { Marker } from "react-native-maps";
 
 interface Camera {
   nom: string;
@@ -18,10 +18,9 @@ const CameraMap: React.FC = () => {
   const loadCamerasFromAPI = async () => {
     try {
       const response = await fetch(
-        'https://data.grandlyon.com/fr/datapusher/ws/rdata/pvo_patrimoine_voirie.pvocameracriter/all.json?maxfeatures=-1&start=1'
+        "https://data.grandlyon.com/fr/datapusher/ws/rdata/pvo_patrimoine_voirie.pvocameracriter/all.json?maxfeatures=-1&start=1"
       );
       const data = await response.json();
-      
       // Récupérer les données pertinentes et les stocker dans le state
       const cameras = data.values.map((camera: any) => ({
         nom: camera.nom,
@@ -31,11 +30,10 @@ const CameraMap: React.FC = () => {
         lon: parseFloat(camera.lon),
         lat: parseFloat(camera.lat),
       }));
-
       setCameraLocations(cameras);
       console.log(cameras); // Vérifier les données chargées
     } catch (error) {
-      console.error('Error loading data from API:', error);
+      console.error("Error loading data from API:", error);
     }
   };
 
@@ -63,7 +61,7 @@ const CameraMap: React.FC = () => {
               longitude: camera.lon,
             }}
             title={`Caméra ${camera.nom}`}
-            description={camera.observation || 'Aucune description'}
+            description={camera.observation || "Aucune description"}
           />
         ))}
       </MapView>
@@ -79,11 +77,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   map: {
-    width: '100%',
-    height: '90%',
+    width: "100%",
+    height: "90%",
   },
   buttonContainer: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 10,
     left: 10,
     right: 10,
