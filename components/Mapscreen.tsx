@@ -83,13 +83,13 @@ function Mapscreen() {
           <Circle
             key={index}
             center={{ latitude: capteur.lat, longitude: capteur.lon }}
-            radius={2600} // Taille du cercle en mètres (ajustez cette valeur pour changer la taille)
-            strokeColor="rgba(0, 150, 255, 0.5)" // Couleur du contour du cercle
+            radius={3000} // Taille du cercle en mètres (ajustez cette valeur pour changer la taille)
+            strokeColor="rgba(255, 0, 0, 0.5)" // Couleur du contour du cercle (rouge)
             fillColor={
               capteur.temperature !== null
-                ? `rgba(255, ${Math.max(0, 255 - capteur.temperature * 5)}, 0, 0.3)`
+                ? `rgba(255, 0, 0, ${Math.min(1, capteur.temperature / 50)})`
                 : "rgba(100, 100, 100, 0.3)"
-            } // Couleur du remplissage change en fonction de la température
+            } // Couleur de remplissage rouge qui varie selon la température
             zIndex={1}
             onPress={() => Alert.alert("Température", `Température : ${capteur.temperature}°C`)}
           />
