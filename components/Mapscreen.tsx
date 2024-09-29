@@ -1,3 +1,4 @@
+// MapScreen.tsx
 import React, { useEffect, useState, useRef, useMemo } from "react";
 import {
   View,
@@ -6,19 +7,18 @@ import {
   Dimensions,
   KeyboardAvoidingView,
   Platform,
-  Text,
   Alert,
   TextInput,
-  TouchableOpacity,
   Image,
+  Text,
 } from "react-native";
 import MapView, { Marker, Region } from "react-native-maps";
 import BottomSheet from "@gorhom/bottom-sheet";
 import * as Location from "expo-location";
 import Add_Pin_Button from "./Add_Pin_Button";
 import { createClient } from "@supabase/supabase-js";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
-import { Picker } from "@react-native-picker/picker";
+import PinDetailsPopup from "./PinDetailsPopup";
+import AddPinPopup from "./AddPinPopup";
 
 const { width, height } = Dimensions.get("window");
 const LATITUDE_DELTA = 0.0922;
@@ -26,7 +26,8 @@ const LONGITUDE_DELTA = LATITUDE_DELTA * (width / height);
 
 // Configuration Supabase
 const supabaseUrl = "https://tpzxhsjdxvqoroyflzpq.supabase.co";
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Types pour les pins et la localisation
@@ -54,11 +55,6 @@ export default function MapScreen() {
   const [bottomSheetMode, setBottomSheetMode] = useState<
     "closed" | "pinDetails" | "addPin" | "success"
   >("closed");
-  const [newPinName, setNewPinName] = useState("");
-  const [newPinReason, setNewPinReason] = useState("banc");
-  const [addPinLocation, setAddPinLocation] = useState<LocationObject | null>(
-    null
-  );
 
   // Référence pour le Bottom Sheet
   const bottomSheetRef = useRef<BottomSheet>(null);
@@ -93,7 +89,7 @@ export default function MapScreen() {
         longitudeDelta: LONGITUDE_DELTA,
       });
 
-      // Surveiller les changements de position en temps réel
+      // Surveiller les changements de position
       Location.watchPositionAsync(
         {
           accuracy: Location.Accuracy.High,
@@ -110,22 +106,6 @@ export default function MapScreen() {
     fetchPins();
   }, []);
 
-  // Obtenir la localisation lors de l'ajout d'un pin
-  useEffect(() => {
-    if (bottomSheetMode === "addPin") {
-      const getLocation = async () => {
-        let { status } = await Location.requestForegroundPermissionsAsync();
-        if (status !== "granted") {
-          console.log("Permission de localisation refusée");
-          return;
-        }
-        let loc = await Location.getCurrentPositionAsync({});
-        setAddPinLocation(loc);
-      };
-      getLocation();
-    }
-  }, [bottomSheetMode]);
-
   // Fonction pour recentrer la carte sur la position actuelle
   const centerMap = () => {
     if (location) {
@@ -135,47 +115,6 @@ export default function MapScreen() {
         latitudeDelta: LATITUDE_DELTA,
         longitudeDelta: LONGITUDE_DELTA,
       });
-    }
-  };
-
-  // Fonction pour ajouter un pin
-  const handleAddPin = async () => {
-    if (addPinLocation && newPinName) {
-      const newPin = {
-        name: newPinName,
-        lat: addPinLocation.coords.latitude,
-        lon: addPinLocation.coords.longitude,
-        reason: newPinReason,
-      };
-      try {
-        const { data, error } = await supabase
-          .from("PinUser")
-          .insert([
-            {
-              lat: newPin.lat,
-              lon: newPin.lon,
-              reason: newPin.reason,
-              name: newPin.name,
-            },
-          ])
-          .select();
-        if (error) {
-          throw new Error("Erreur lors de l'ajout du pin dans la base de données");
-        }
-        const [insertedPin] = data;
-        setPins((prevPins) => [...prevPins, insertedPin]);
-        // Réinitialiser le formulaire
-        setNewPinName("");
-        setNewPinReason("banc");
-        setAddPinLocation(null);
-        // Afficher le pop-up de succès
-        setBottomSheetMode("success");
-      } catch (err: any) {
-        Alert.alert("Erreur", err.message || "Impossible d'ajouter le pin.");
-        console.error(err);
-      }
-    } else {
-      Alert.alert("Erreur", "Veuillez entrer un nom pour le pin.");
     }
   };
 
@@ -205,9 +144,52 @@ export default function MapScreen() {
         console.error("Erreur lors de la suppression du pin:", error.message);
         Alert.alert("Erreur", "Impossible de supprimer le pin.");
       } else {
-        setPins((prevPins) => prevPins.filter((pin) => pin.id !== selectedPin.id));
+        setPins((prevPins) =>
+          prevPins.filter((pin) => pin.id !== selectedPin.id)
+        );
         closeBottomSheet();
       }
+    }
+  };
+
+  // Fonction pour gérer l'ajout d'un nouveau pin
+  const handleAddPin = async (
+    name: string,
+    reason: string,
+    location: Location.LocationObject
+  ) => {
+    const newPin = {
+      name,
+      lat: location.coords.latitude,
+      lon: location.coords.longitude,
+      reason,
+    };
+    try {
+      const { data, error } = await supabase
+        .from("PinUser")
+        .insert([
+          {
+            lat: newPin.lat,
+            lon: newPin.lon,
+            reason: newPin.reason,
+            name: newPin.name,
+          },
+        ])
+        .select();
+      if (error) {
+        throw new Error(
+          "Erreur lors de l'ajout du pin dans la base de données"
+        );
+      }
+      const [insertedPin] = data;
+      setPins((prevPins) => [...prevPins, insertedPin]);
+      setBottomSheetMode("success");
+      setTimeout(() => {
+        closeBottomSheet();
+      }, 1500);
+    } catch (err: any) {
+      Alert.alert("Erreur", err.message || "Impossible d'ajouter le pin.");
+      console.error(err);
     }
   };
 
@@ -241,19 +223,17 @@ export default function MapScreen() {
 
       <View style={styles.buttonContainer}>
         <Button title="Recentrer" onPress={centerMap} />
-        {bottomSheetMode === "closed" && (
-          <Add_Pin_Button
-            onPress={() => {
-              setBottomSheetMode("addPin");
-              bottomSheetRef.current?.snapToIndex(0);
-            }}
-          />
-        )}
+        <Add_Pin_Button
+          onPress={() => {
+            setBottomSheetMode("addPin");
+            bottomSheetRef.current?.snapToIndex(0);
+          }}
+        />
       </View>
 
       <BottomSheet
         ref={bottomSheetRef}
-        index={-1} // Caché par défaut
+        index={-1}
         snapPoints={snapPoints}
         enablePanDownToClose={true}
         backgroundStyle={styles.bottomSheetBackground}
@@ -261,168 +241,25 @@ export default function MapScreen() {
         onClose={() => setBottomSheetMode("closed")}
       >
         {bottomSheetMode === "pinDetails" && selectedPin && (
-          <View style={styles.bottomSheetContent}>
-            {/* Chevron */}
-            <View style={styles.chevronContainer}>
-              <View style={styles.chevron} />
-            </View>
-
-            {/* Barre de recherche */}
-            <View style={styles.searchContainer}>
-              <TextInput
-                style={styles.searchInput}
-                placeholder="Rechercher..."
-                placeholderTextColor="#aaa"
-              />
-              <Image
-                source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")} // Remplacez par le chemin de votre image
-                style={styles.avatar}
-              />
-            </View>
-
-            {/* Détails du pin */}
-            <View style={styles.infoCard}>
-              <View style={styles.cardHeader}>
-                <View style={styles.iconContainer}>
-                  <View style={styles.iconBackground}>
-                    <FontAwesome name="home" size={24} color="blue" />
-                  </View>
-                </View>
-                <Text style={styles.cardTitle}>{selectedPin.name}</Text>
-                <Text style={styles.pinTitle}>📍</Text>
-              </View>
-
-              <View style={styles.cardContent}>
-                <View style={styles.row}>
-                  <Text style={styles.cardLabel}>Nom :</Text>
-                  <Text style={styles.cardValue}>{selectedPin.name}</Text>
-                </View>
-                <View style={styles.row}>
-                  <Text style={styles.cardLabel}>Longitude :</Text>
-                  <Text style={styles.cardValue}>{selectedPin.lon}</Text>
-                </View>
-                <View style={styles.row}>
-                  <Text style={styles.cardLabel}>Latitude :</Text>
-                  <Text style={styles.cardValue}>{selectedPin.lat}</Text>
-                </View>
-                <View style={styles.row}>
-                  <Text style={styles.cardLabel}>Raison :</Text>
-                  <TouchableOpacity>
-                    <Text style={styles.cardLink}>{selectedPin.reason}</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-            </View>
-
-            {/* Bouton Supprimer */}
-            <TouchableOpacity style={styles.deleteButton} onPress={deletePin}>
-              <Text style={styles.deleteButtonText}>Supprimer</Text>
-            </TouchableOpacity>
-          </View>
+          <PinDetailsPopup
+            selectedPin={selectedPin}
+            deletePin={deletePin}
+            closeBottomSheet={closeBottomSheet}
+          />
         )}
 
         {bottomSheetMode === "addPin" && (
-          <View style={styles.bottomSheetContent}>
-            {/* Chevron */}
-            <View style={styles.chevronContainer}>
-              <View style={styles.chevron} />
-            </View>
-
-            {/* Barre de recherche */}
-            <View style={styles.searchContainer}>
-              <TextInput
-                style={styles.searchInput}
-                placeholder="Rechercher..."
-                placeholderTextColor="#aaa"
-              />
-              <Image
-                source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")} // Remplacez par le chemin de votre image
-                style={styles.avatar}
-              />
-            </View>
-
-            {/* Section principale : Ajouter un pin */}
-            <View style={styles.infoCard}>
-              <View style={styles.cardHeader}>
-                <View style={styles.iconContainer}>
-                  <View style={styles.iconBackground}>
-                    <FontAwesome name="plus" size={24} color="white" />
-                  </View>
-                </View>
-                <Text style={styles.cardTitle}>Ajouter un pin</Text>
-                <FontAwesome
-                  name="map-pin"
-                  size={16}
-                  color="red"
-                  style={{ marginLeft: 5 }}
-                />
-              </View>
-
-              {/* Champs d'information */}
-              <View style={styles.cardContent}>
-                {/* Nom */}
-                <View style={styles.row}>
-                  <Text style={styles.cardLabel}>Nom :</Text>
-                  <TextInput
-                    style={styles.cardInput}
-                    placeholder="Entrez le nom du pin"
-                    value={newPinName}
-                    onChangeText={setNewPinName}
-                  />
-                </View>
-
-                {/* Longitude */}
-                {addPinLocation && (
-                  <View style={styles.row}>
-                    <Text style={styles.cardLabel}>Longitude :</Text>
-                    <Text style={styles.cardValue}>
-                      {addPinLocation.coords.longitude}
-                    </Text>
-                  </View>
-                )}
-
-                {/* Latitude */}
-                {addPinLocation && (
-                  <View style={styles.row}>
-                    <Text style={styles.cardLabel}>Latitude :</Text>
-                    <Text style={styles.cardValue}>
-                      {addPinLocation.coords.latitude}
-                    </Text>
-                  </View>
-                )}
-
-                {/* Raison */}
-                <View style={styles.row}>
-                  <Text style={styles.cardLabel}>Raison :</Text>
-                  <Picker
-                    selectedValue={newPinReason}
-                    onValueChange={(itemValue) => setNewPinReason(itemValue)}
-                    style={styles.picker}
-                  >
-                    <Picker.Item label="Banc" value="banc" />
-                    <Picker.Item label="Fontaine" value="fontaine" />
-                    <Picker.Item label="Travaux" value="travaux" />
-                    <Picker.Item label="Autre" value="autre" />
-                  </Picker>
-                </View>
-              </View>
-            </View>
-
-            {/* Bouton Valider */}
-            <TouchableOpacity style={styles.validateButton} onPress={handleAddPin}>
-              <Text style={styles.validateButtonText}>Valider</Text>
-            </TouchableOpacity>
-          </View>
+          <AddPinPopup
+            handleAddPin={handleAddPin}
+            closeBottomSheet={closeBottomSheet}
+          />
         )}
 
         {bottomSheetMode === "success" && (
           <View style={styles.bottomSheetContent}>
-            {/* Chevron */}
             <View style={styles.chevronContainer}>
               <View style={styles.chevron} />
             </View>
-
-            {/* Barre de recherche */}
             <View style={styles.searchContainer}>
               <TextInput
                 style={styles.searchInput}
@@ -430,15 +267,13 @@ export default function MapScreen() {
                 placeholderTextColor="#aaa"
               />
               <Image
-                source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")} // Remplacez par le chemin de votre image
+                source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")}
                 style={styles.avatar}
               />
             </View>
-
-            {/* Message de confirmation */}
             <View style={styles.successMessageContainer}>
               <Text style={styles.successMessageText}>
-                📍 Pin ajouter avec succès
+                📍 Pin ajouté avec succès
               </Text>
             </View>
           </View>
@@ -510,91 +345,6 @@ const styles = StyleSheet.create({
     height: 30,
     borderRadius: 15,
     marginLeft: 10,
-  },
-  infoCard: {
-    backgroundColor: "rgba(255, 255, 255, 0.9)",
-    borderRadius: 10,
-    padding: 15,
-    marginBottom: 20,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
-    elevation: 3,
-  },
-  cardHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  iconContainer: {
-    marginRight: 10,
-  },
-  iconBackground: {
-    backgroundColor: "rgba(66, 133, 244, 0.2)",
-    padding: 10,
-    borderRadius: 25,
-  },
-  cardTitle: {
-    fontSize: 20,
-    fontWeight: "bold",
-    flex: 1,
-  },
-  pinTitle: {
-    fontSize: 25,
-  },
-  cardContent: {
-    marginTop: 15,
-  },
-  row: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 10,
-  },
-  cardLabel: {
-    fontWeight: "bold",
-    flex: 1,
-  },
-  cardValue: {
-    color: "#777",
-    flex: 2,
-    textAlign: "right",
-  },
-  cardInput: {
-    flex: 2,
-    borderBottomColor: "#ccc",
-    borderBottomWidth: 1,
-    textAlign: "right",
-  },
-  picker: {
-    flex: 2,
-    height: 50,
-  },
-  cardLink: {
-    color: "blue",
-    marginBottom: 10,
-  },
-  validateButton: {
-    backgroundColor: "rgba(66, 133, 244, 0.25)",
-    paddingVertical: 15,
-    borderRadius: 10,
-    alignItems: "center",
-    marginTop: 20,
-  },
-  validateButtonText: {
-    color: "#4285F4",
-    fontWeight: "bold",
-  },
-  deleteButton: {
-    backgroundColor: "rgba(255, 0, 0, 0.15)",
-    paddingVertical: 15,
-    borderRadius: 10,
-    alignItems: "center",
-    opacity: 0.8,
-  },
-  deleteButtonText: {
-    color: "red",
-    fontWeight: "bold",
   },
   successMessageContainer: {
     backgroundColor: "rgba(0, 255, 0, 0.2)",
