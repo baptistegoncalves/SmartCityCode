@@ -7,17 +7,20 @@
     "icon": "./assets/imageAriane/logoyourway.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/imageAriane/logoyourway.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "094079"
+      "bundleIdentifier": "094079",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show your position on the map"
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/imageAriane/logoyourway.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
