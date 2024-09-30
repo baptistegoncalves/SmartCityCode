@@ -1,6 +1,6 @@
 import BottomSheet from "@gorhom/bottom-sheet";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { createClient } from "@supabase/supabase-js"; // Importez createClient de Supabase
+import { createClient } from "@supabase/supabase-js";
 import * as Location from "expo-location";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -17,24 +17,30 @@ import {
 } from "react-native";
 import MapView, { Circle, Marker } from "react-native-maps";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import noiseData from "../assets/datasets/bruit.mesures_observatoire_acoustique.json"; // Importez votre fichier JSON
-import pollutionDataJson from "../assets/datasets/poll.json"; // Importez votre fichier JSON
+import noiseData from "../assets/datasets/bruit.mesures_observatoire_acoustique.json";
+import pollutionDataJson from "../assets/datasets/poll.json";
 import Add_Pin_Button from "./Add_Pin_Button";
 import AddPinPopup from "./AddPinPopup";
-import MainPopup from "./MainPopup"; // Importez MainPopup
-import OptionSelector from "./OptionSelector"; // Importez OptionSelector
+import MainPopup from "./MainPopup";
+import OptionSelector from "./OptionSelector";
 import PinDetailsPopup from "./PinDetailsPopup";
+import capteursData from "../capteurs_data.json";
+
 const { width, height } = Dimensions.get("window");
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * (width / height);
+
 const options = ["Chaud", "Sécurité", "Sain", "Calme"] as const;
 type Option = (typeof options)[number];
+
 type RootStackParamList = {
   Home: undefined;
   Map: undefined;
   CameraMap: undefined;
 };
+
 type MapScreenProps = NativeStackScreenProps<RootStackParamList, "Map">;
+
 interface Camera {
   nom: string;
   id: string;
@@ -43,6 +49,7 @@ interface Camera {
   lon: number;
   lat: number;
 }
+
 type Pin = {
   id: number | string;
   lat: number;
@@ -50,12 +57,7 @@ type Pin = {
   name: string;
   reason: string;
 };
-type LocationObject = {
-  coords: {
-    latitude: number;
-    longitude: number;
-  };
-};
+
 interface PollutionData {
   aqi: number;
   city: {
@@ -68,10 +70,18 @@ interface PollutionData {
     pm25: { v: number };
   };
 }
+
+interface Capteur {
+  lat: number;
+  lon: number;
+  temperature: number | null;
+  // Ajoutez d'autres propriétés si nécessaire
+}
+
 const supabaseUrl = "https://tpzxhsjdxvqoroyflzpq.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
+const supabaseKey = "VOTRE_CLE_SUPABASE"; // Remplacez par votre clé Supabase
 const supabase = createClient(supabaseUrl, supabaseKey);
+
 function MapScreen({ navigation }: MapScreenProps) {
   const [region, setRegion] = useState({
     latitude: 37.78825,
@@ -91,7 +101,6 @@ function MapScreen({ navigation }: MapScreenProps) {
   const [bottomSheetMode, setBottomSheetMode] = useState<
     "closed" | "pinDetails" | "addPin" | "success"
   >("closed");
-  // Référence pour le Bottom Sheet
   const bottomSheetRef = useRef<BottomSheet>(null);
   const snapPoints = useMemo(() => ["50%"], []);
   const [pollutionData, setPollutionData] = useState<PollutionData | null>(
@@ -107,6 +116,7 @@ function MapScreen({ navigation }: MapScreenProps) {
       setPins(data);
     }
   };
+
   useEffect(() => {
     // Récupérer la localisation de l'utilisateur
     (async () => {
@@ -138,40 +148,39 @@ function MapScreen({ navigation }: MapScreenProps) {
     // Charger les pins depuis Supabase
     fetchPins();
   }, []);
+
   const loadCamerasFromAPI = async () => {
     try {
       const response = await fetch(
         "https://data.grandlyon.com/fr/datapusher/ws/rdata/pvo_patrimoine_voirie.pvocameracriter/all.json?maxfeatures=-1&start=1"
       );
       const data = await response.json();
-      // Récupérer les données pertinentes et les stocker dans le state
       const cameras = data.values.map((camera: any) => ({
         nom: camera.nom,
-        id: camera.identifiant, // Assure que cela correspond au champ de l'API
+        id: camera.identifiant,
         observation: camera.observation,
         gid: camera.gid,
         lon: parseFloat(camera.lon),
         lat: parseFloat(camera.lat),
       }));
       setCameraLocations(cameras);
-      console.log(cameras); // Vérifier les données chargées
     } catch (error) {
       console.error("Error loading data from API:", error);
     }
   };
+
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
   };
+
   const handleSelectOption = (option: Option) => {
     setSelectedOptions((prevSelectedOptions) => {
       if (prevSelectedOptions.includes(option)) {
-        // Si l'option "Sécurité" est désélectionnée, vider les caméras
         if (option === "Sécurité") {
           setCameraLocations([]);
         }
         return prevSelectedOptions.filter((opt) => opt !== option);
       } else {
-        // Si l'option "Sécurité" est sélectionnée, charger les caméras
         if (option === "Sécurité") {
           loadCamerasFromAPI();
         }
@@ -179,13 +188,14 @@ function MapScreen({ navigation }: MapScreenProps) {
       }
     });
   };
+
   const toggleOptions = () => {
     setShowOptions(!showOptions);
     if (isPopupOpen) {
-      setIsPopupOpen(false); // Fermer le pop-up si les options sont affichées
+      setIsPopupOpen(false);
     }
   };
-  // Fonction pour obtenir la couleur en fonction du niveau de bruit
+
   const getColorFromNoiseLevel = (noiseLevel: number) => {
     const intensity = Math.min(
       255,
@@ -194,13 +204,13 @@ function MapScreen({ navigation }: MapScreenProps) {
     const red = 255;
     const green = 255 - intensity;
     const blue = 255 - intensity;
-    return `rgba(${red}, ${green}, ${blue}, 0.3)`; // Ajustez l'opacité ici (0.3 pour une opacité plus faible)
+    return `rgba(${red}, ${green}, ${blue}, 0.3)`;
   };
-  // Fonction pour obtenir le rayon en fonction du niveau de bruit
+
   const getRadiusFromNoiseLevel = (noiseLevel: number) => {
-    return Math.min(500, Math.max(50, (noiseLevel * 10) / 2)); // Diviser le rayon par 2
+    return Math.min(500, Math.max(50, (noiseLevel * 10) / 2));
   };
-  // Fonction pour recentrer la carte sur la position actuelle
+
   const centerMap = () => {
     if (location) {
       setRegion({
@@ -211,19 +221,19 @@ function MapScreen({ navigation }: MapScreenProps) {
       });
     }
   };
-  // Fonction pour fermer le Bottom Sheet
+
   const closeBottomSheet = () => {
     bottomSheetRef.current?.close();
     setBottomSheetMode("closed");
     setSelectedPin(null);
   };
-  // Fonction pour ouvrir les détails du pin
+
   const openPinDetails = (pin: Pin) => {
     setSelectedPin(pin);
     setBottomSheetMode("pinDetails");
     bottomSheetRef.current?.snapToIndex(0);
   };
-  // Fonction pour supprimer un pin
+
   const deletePin = async () => {
     if (selectedPin) {
       const { error } = await supabase
@@ -241,7 +251,7 @@ function MapScreen({ navigation }: MapScreenProps) {
       }
     }
   };
-  // Fonction pour gérer l'ajout d'un nouveau pin
+
   const handleAddPin = async (
     name: string,
     reason: string,
@@ -281,6 +291,7 @@ function MapScreen({ navigation }: MapScreenProps) {
       console.error(err);
     }
   };
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -296,19 +307,17 @@ function MapScreen({ navigation }: MapScreenProps) {
         {cameraLocations.map((camera) => (
           <Marker
             key={camera.id}
-            coordinate={{
-              latitude: camera.lat,
-              longitude: camera.lon,
-            }}
+            coordinate={{ latitude: camera.lat, longitude: camera.lon }}
             title={`Caméra ${camera.nom}`}
             description={camera.observation || "Aucune description"}
           />
         ))}
+
         {/* Affichage des cercles de bruit uniquement si l'option "Calme" est sélectionnée */}
         {selectedOptions.includes("Calme") &&
           noiseData.values
-            .filter((noisePoint: any) => noisePoint.lden > 65) // Filtrer les points de bruit > 65 dB
-            .map((noisePoint: any, index: number) => (
+            .filter((noisePoint) => noisePoint.lden > 65)
+            .map((noisePoint, index) => (
               <Circle
                 key={index}
                 center={{
@@ -320,6 +329,7 @@ function MapScreen({ navigation }: MapScreenProps) {
                 strokeColor="rgba(0,0,0,0.2)"
               />
             ))}
+
         {/* Affichage des données de pollution */}
         {pollutionData && (
           <Marker
@@ -341,22 +351,50 @@ function MapScreen({ navigation }: MapScreenProps) {
             </View>
           </Marker>
         )}
+
+        {/* Affichage des pins */}
         {pins.map((pin) => (
           <Marker
             key={pin.id}
-            coordinate={{
-              latitude: pin.lat,
-              longitude: pin.lon,
-            }}
+            coordinate={{ latitude: pin.lat, longitude: pin.lon }}
             title={pin.name}
             description={pin.reason}
             onPress={() => openPinDetails(pin)}
           />
         ))}
+
+        {/* Affichage des capteurs */}
+        {capteursData.map((capteur: Capteur, index) => (
+          <Marker
+            key={index}
+            coordinate={{ latitude: capteur.lat, longitude: capteur.lon }}
+            onPress={() =>
+              Alert.alert(
+                "Température",
+                `Température : ${capteur.temperature}°C`
+              )
+            }
+            opacity={0}
+          >
+            <Circle
+              center={{ latitude: capteur.lat, longitude: capteur.lon }}
+              radius={3000}
+              strokeColor="rgba(255, 0, 0, 0.5)"
+              fillColor={
+                capteur.temperature !== null
+                  ? `rgba(255, 0, 0, ${Math.min(1, capteur.temperature / 50)})`
+                  : "rgba(100, 100, 100, 0.3)"
+              }
+              zIndex={1}
+            />
+          </Marker>
+        ))}
       </MapView>
+
       <TouchableOpacity style={styles.toggleButton} onPress={toggleOptions}>
         <FontAwesome name="bars" size={24} color="black" />
       </TouchableOpacity>
+
       {showOptions && (
         <View style={styles.optionsContainer}>
           <OptionSelector
@@ -365,7 +403,9 @@ function MapScreen({ navigation }: MapScreenProps) {
           />
         </View>
       )}
+
       {!showOptions && <MainPopup togglePopup={togglePopup} />}
+
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.recenterButton} onPress={centerMap}>
           <FontAwesome name="location-arrow" size={24} color="black" />
@@ -377,6 +417,7 @@ function MapScreen({ navigation }: MapScreenProps) {
           }}
         />
       </View>
+
       <BottomSheet
         ref={bottomSheetRef}
         index={-1}
@@ -426,6 +467,7 @@ function MapScreen({ navigation }: MapScreenProps) {
     </KeyboardAvoidingView>
   );
 }
+
 const getColorFromAQI = (aqi: number): string => {
   if (aqi <= 50) return "green";
   if (aqi <= 100) return "yellow";
@@ -434,6 +476,7 @@ const getColorFromAQI = (aqi: number): string => {
   if (aqi <= 300) return "purple";
   return "maroon";
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -547,6 +590,8 @@ const styles = StyleSheet.create({
     color: "green",
     fontWeight: "bold",
     fontSize: 16,
+    padding: 1,
   },
 });
+
 export default MapScreen;
