@@ -1,17 +1,18 @@
-// AddPinPopup.tsx
-import React, { useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  TextInput,
-  Image,
-  Alert,
-} from "react-native";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { Picker } from "@react-native-picker/picker";
 import * as Location from "expo-location";
+import React, { useEffect, useState } from "react";
+import {
+  Alert,
+  Image,
+  KeyboardAvoidingView,
+  Platform,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 type AddPinPopupProps = {
   handleAddPin: (
@@ -56,90 +57,93 @@ const AddPinPopup: React.FC<AddPinPopupProps> = ({
   };
 
   return (
-    <View style={styles.bottomSheetContent}>
-      {/* Barre de recherche */}
-      <View style={styles.searchContainer}>
-        <TextInput
-          style={styles.searchInput}
-          placeholder="Rechercher..."
-          placeholderTextColor="#aaa"
-        />
-        <Image
-          source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")}
-          style={styles.avatar}
-        />
-      </View>
-
-      {/* Formulaire d'ajout de pin */}
-      <View style={styles.infoCard}>
-        <View style={styles.cardHeader}>
-          <View style={styles.iconContainer}>
-            <View style={styles.iconBackground}>
-              <FontAwesome name="plus" size={24} color="white" />
-            </View>
-          </View>
-          <Text style={styles.cardTitle}>Ajouter un Pin 📍</Text>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
+      <View style={styles.bottomSheetContent}>
+        {/* Barre de recherche */}
+        <View style={styles.searchContainer}>
+          <TextInput
+            style={styles.searchInput}
+            placeholder="Rechercher..."
+            placeholderTextColor="#aaa"
+          />
+          <Image
+            source={require("../assets/ImageBaptiste/LuffyAvatar.jpeg")}
+            style={styles.avatar}
+          />
         </View>
-
-        {/* Champs du formulaire */}
-        <View style={styles.cardContent}>
-          {/* Nom */}
-          <View style={styles.row}>
-            <Text style={styles.cardLabel}>Nom :</Text>
-            <TextInput
-              style={styles.cardInput}
-              placeholder="Entrez le nom du pin"
-              value={newPinName}
-              onChangeText={setNewPinName}
-            />
+        {/* Formulaire d'ajout de pin */}
+        <View style={styles.infoCard}>
+          <View style={styles.cardHeader}>
+            <View style={styles.iconContainer}>
+              <View style={styles.iconBackground}>
+                <FontAwesome name="plus" size={24} color="white" />
+              </View>
+            </View>
+            <Text style={styles.cardTitle}>Ajouter un Pin 📍</Text>
           </View>
-
-          {addPinLocation && (
+          {/* Champs du formulaire */}
+          <View style={styles.cardContent}>
+            {/* Nom */}
             <View style={styles.row}>
-              <Text style={styles.cardLabel}>Longitude :</Text>
-              <Text style={styles.cardValue}>
-                {addPinLocation.coords.longitude}
-              </Text>
+              <Text style={styles.cardLabel}>Nom :</Text>
+              <TextInput
+                style={styles.cardInput}
+                placeholder="Entrez le nom du pin"
+                value={newPinName}
+                onChangeText={setNewPinName}
+              />
             </View>
-          )}
-
-          {addPinLocation && (
+            {addPinLocation && (
+              <View style={styles.row}>
+                <Text style={styles.cardLabel}>Longitude :</Text>
+                <Text style={styles.cardValue}>
+                  {addPinLocation.coords.longitude}
+                </Text>
+              </View>
+            )}
+            {addPinLocation && (
+              <View style={styles.row}>
+                <Text style={styles.cardLabel}>Latitude :</Text>
+                <Text style={styles.cardValue}>
+                  {addPinLocation.coords.latitude}
+                </Text>
+              </View>
+            )}
             <View style={styles.row}>
-              <Text style={styles.cardLabel}>Latitude :</Text>
-              <Text style={styles.cardValue}>
-                {addPinLocation.coords.latitude}
-              </Text>
+              <Text style={styles.cardLabel}>Raison :</Text>
+              <Picker
+                selectedValue={newPinReason}
+                onValueChange={(itemValue) => setNewPinReason(itemValue)}
+                style={styles.picker}
+              >
+                <Picker.Item label="Banc" value="banc" />
+                <Picker.Item label="Fontaine" value="fontaine" />
+                <Picker.Item label="Travaux" value="travaux" />
+                <Picker.Item label="Autre" value="autre" />
+              </Picker>
             </View>
-          )}
-
-          <View style={styles.row}>
-            <Text style={styles.cardLabel}>Raison :</Text>
-            <Picker
-              selectedValue={newPinReason}
-              onValueChange={(itemValue) => setNewPinReason(itemValue)}
-              style={styles.picker}
-            >
-              <Picker.Item label="Banc" value="banc" />
-              <Picker.Item label="Fontaine" value="fontaine" />
-              <Picker.Item label="Travaux" value="travaux" />
-              <Picker.Item label="Autre" value="autre" />
-            </Picker>
           </View>
         </View>
+        {/* Bouton Valider */}
+        <TouchableOpacity style={styles.validateButton} onPress={onAddPin}>
+          <Text style={styles.validateButtonText}>Valider</Text>
+        </TouchableOpacity>
       </View>
-
-      {/* Bouton Valider */}
-      <TouchableOpacity style={styles.validateButton} onPress={onAddPin}>
-        <Text style={styles.validateButtonText}>Valider</Text>
-      </TouchableOpacity>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
   bottomSheetContent: {
     flex: 1,
     paddingHorizontal: 20,
+    justifyContent: "center",
   },
   chevronContainer: {
     alignItems: "center",
@@ -225,6 +229,7 @@ const styles = StyleSheet.create({
   picker: {
     flex: 2,
     height: 50,
+    top: -70,
   },
   validateButton: {
     backgroundColor: "rgba(66, 133, 244, 0.25)",
@@ -232,6 +237,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: "center",
     marginTop: 20,
+    top: -20,
   },
   validateButtonText: {
     color: "#4285F4",

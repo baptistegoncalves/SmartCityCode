@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     position: "absolute",
-    bottom: 50,
+    bottom: 300, // Ajustez cette valeur selon vos besoins
     left: 20,
     right: 20,
     zIndex: 1,

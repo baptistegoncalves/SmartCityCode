@@ -1,28 +1,28 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
+import BottomSheet from "@gorhom/bottom-sheet";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { createClient } from "@supabase/supabase-js"; // Importez createClient de Supabase
+import * as Location from "expo-location";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-  View,
-  Button,
-  StyleSheet,
-  Dimensions,
   Alert,
+  Dimensions,
+  Image,
   KeyboardAvoidingView,
   Platform,
-  TextInput,
-  Image,
+  StyleSheet,
   Text,
+  TextInput,
   TouchableOpacity,
+  View,
 } from "react-native";
-import MapView, { Marker, Circle } from "react-native-maps";
-import * as Location from "expo-location";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import MapView, { Circle, Marker } from "react-native-maps";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
+import noiseData from "../assets/datasets/bruit.mesures_observatoire_acoustique.json"; // Importez votre fichier JSON
+import Add_Pin_Button from "./Add_Pin_Button";
+import AddPinPopup from "./AddPinPopup";
 import MainPopup from "./MainPopup"; // Importez MainPopup
 import OptionSelector from "./OptionSelector"; // Importez OptionSelector
-import noiseData from "../assets/datasets/bruit.mesures_observatoire_acoustique.json"; // Importez votre fichier JSON
-import BottomSheet from "@gorhom/bottom-sheet";
-import Add_Pin_Button from "./Add_Pin_Button";
 import PinDetailsPopup from "./PinDetailsPopup";
-import AddPinPopup from "./AddPinPopup";
-import { createClient } from "@supabase/supabase-js"; // Importez createClient de Supabase
 
 const { width, height } = Dimensions.get("window");
 const LATITUDE_DELTA = 0.0922;
@@ -74,7 +74,9 @@ function MapScreen({ navigation }: MapScreenProps) {
     latitudeDelta: LATITUDE_DELTA,
     longitudeDelta: LONGITUDE_DELTA,
   });
-  const [location, setLocation] = useState<Location.LocationObject | null>(null);
+  const [location, setLocation] = useState<Location.LocationObject | null>(
+    null
+  );
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState<Option[]>([]);
   const [showOptions, setShowOptions] = useState(false);
@@ -87,7 +89,7 @@ function MapScreen({ navigation }: MapScreenProps) {
 
   // Référence pour le Bottom Sheet
   const bottomSheetRef = useRef<BottomSheet>(null);
-  const snapPoints = useMemo(() => ["55%"], []);
+  const snapPoints = useMemo(() => ["50%"], []);
 
   // Fonction pour récupérer les pins de Supabase
   const fetchPins = async () => {
@@ -338,19 +340,21 @@ function MapScreen({ navigation }: MapScreenProps) {
         ))}
       </MapView>
       <TouchableOpacity style={styles.toggleButton} onPress={toggleOptions}>
-        <Text style={styles.toggleButtonText}>
-          {showOptions ? "Hide Options" : "Show Options"}
-        </Text>
+        <FontAwesome name="bars" size={24} color="black" />
       </TouchableOpacity>
       {showOptions && (
-        <OptionSelector
-          selectedOptions={selectedOptions}
-          onSelectOption={handleSelectOption}
-        />
+        <View style={styles.optionsContainer}>
+          <OptionSelector
+            selectedOptions={selectedOptions}
+            onSelectOption={handleSelectOption}
+          />
+        </View>
       )}
       {!showOptions && <MainPopup togglePopup={togglePopup} />}
       <View style={styles.buttonContainer}>
-        <Button title="Recentrer" onPress={centerMap} />
+        <TouchableOpacity style={styles.recenterButton} onPress={centerMap}>
+          <FontAwesome name="location-arrow" size={24} color="black" />
+        </TouchableOpacity>
         <Add_Pin_Button
           onPress={() => {
             setBottomSheetMode("addPin");
@@ -418,9 +422,41 @@ const styles = StyleSheet.create({
     height: height,
   },
   toggleButton: {
+    backgroundColor: "white",
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+    top: -392,
+    left: 323,
+  },
+  toggleButtonText: {
+    color: "black",
+  },
+  recenterButton: {
+    backgroundColor: "white",
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+    top: -250,
+    left: 313,
+  },
+  optionsContainer: {
     position: "absolute",
-    top: 50,
-    bottom: 60,
+    bottom: -200,
     left: 10,
     right: 10,
     backgroundColor: "white",
@@ -428,10 +464,11 @@ const styles = StyleSheet.create({
     padding: 10,
     zIndex: 1,
   },
-  toggleButtonText: {
-    color: "black",
-  },
   buttonContainer: {
+    position: "absolute",
+    bottom: 10,
+    left: 10,
+    right: 10,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",

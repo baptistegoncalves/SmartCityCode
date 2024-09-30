@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 import "react-native-gesture-handler";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import CameraMap from "./components/CameraMap"; // Assurez-vous que ce chemin est correct
 import Login from "./components/Login";
 import MapScreen from "./components/Mapscreen"; // Assurez-vous que le nom du fichier est correct
@@ -17,16 +18,18 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Login"
-        screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Map" component={MapScreen} />
-        <Stack.Screen name="CameraMap" component={CameraMap} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Login"
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Map" component={MapScreen} />
+          <Stack.Screen name="CameraMap" component={CameraMap} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 };
 

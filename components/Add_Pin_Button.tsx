@@ -1,7 +1,11 @@
 import React from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function Add_Pin_Button({ onPress }) {
+interface AddPinButtonProps {
+  onPress: () => void;
+}
+
+export default function Add_Pin_Button({ onPress }: AddPinButtonProps) {
   return (
     <View>
       <TouchableOpacity onPress={onPress} style={styles.button}>
@@ -24,9 +28,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.8,
     shadowRadius: 2,
     elevation: 5,
+    top: -180,
   },
   plusSign: {
     fontSize: 30,
     color: "black",
+    top: -2,
   },
 });
