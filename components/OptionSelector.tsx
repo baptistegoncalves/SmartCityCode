@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const options = ["Rapide", "Sécurité", "Sain", "Calme"] as const;
+const options = ["Chaud", "Sécurité", "Sain", "Calme"] as const;
 type Option = (typeof options)[number];
 
 interface OptionSelectorProps {
@@ -15,8 +15,8 @@ const OptionSelector: React.FC<OptionSelectorProps> = ({
 }) => {
   const getOptionStyle = (option: Option) => {
     switch (option) {
-      case "Rapide":
-        return styles.rapide;
+      case "Chaud":
+        return styles.Chaud;
       case "Sécurité":
         return styles.sécurité;
       case "Sain":
@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
     bottom: 300, // Ajustez cette valeur selon vos besoins
     left: 20,
     right: 20,
-    zIndex: 1,
     alignSelf: "center",
   },
   option: {
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
   optionText: {
     color: "black",
   },
-  rapide: {
+  Chaud: {
     backgroundColor: "#FFC085",
   },
   sécurité: {
