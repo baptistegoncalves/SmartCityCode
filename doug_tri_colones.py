@@ -12,8 +12,8 @@ def remove_columns_from_csv(input_file, output_file, columns_to_remove):
         print(f"Erreur lors du nettoyage du fichier {input_file}: {e}")
 
 
-input_file = "./assets/datasets/Points_arret_reseau_TCL_lon_lat.csv"
-output_file = "./assets/cleaned_datasets/Points_arret_reseau_TCL_lon_lat.csv"
-columns_to_remove = []
+input_file = "./assets/datasets/biotope.temperature_device.csv"
+output_file = "./assets/datasets/Capteurs_temperatures_lon_lat.csv"
+columns_to_remove = ["nom","address","insee","battery_level"]
 
 remove_columns_from_csv(input_file, output_file, columns_to_remove)

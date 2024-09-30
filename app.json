@@ -25,7 +25,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/imageAriane/logoyourway.png"
+      "favicon": "./assets/icon.png"
     }
   }
 }
