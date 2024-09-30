@@ -1,0 +1,4 @@
+https://api.waqi.info/feed/@3023/?token=228c734a63afb58b6160717d606d1863fef968e3
+
+infos sur l'api :
+https://aqicn.org/data-platform/api/H3023/fr/

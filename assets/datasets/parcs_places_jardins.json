@@ -1,0 +1,6097 @@
+[
+    {
+        "nom": "Place Puvis de Chavannes",
+        "indiccanop": "0,57",
+        "gid": "1"
+    },
+    {
+        "nom": "Allce des Carlines",
+        "indiccanop": "0,12",
+        "gid": "2"
+    },
+    {
+        "nom": "Place Jean de la Fontaine",
+        "indiccanop": "0,11",
+        "gid": "3"
+    },
+    {
+        "nom": "Place Jean Jaurès",
+        "indiccanop": "0,39",
+        "gid": "4"
+    },
+    {
+        "nom": "Square Séraphin Bouvier",
+        "indiccanop": "0,00",
+        "gid": "5"
+    },
+    {
+        "nom": "Place Kellermann",
+        "indiccanop": "0,45",
+        "gid": "6"
+    },
+    {
+        "nom": "Passage de la Traille",
+        "indiccanop": "0,48",
+        "gid": "7"
+    },
+    {
+        "nom": "Place Roger Salengro",
+        "indiccanop": "0,32",
+        "gid": "8"
+    },
+    {
+        "nom": "Square du 19 Mars 1962",
+        "indiccanop": "0,49",
+        "gid": "9"
+    },
+    {
+        "nom": "Place Arles Dufour",
+        "indiccanop": "0,00",
+        "gid": "10"
+    },
+    {
+        "nom": "Parc Chabrières Arles",
+        "indiccanop": "0,64",
+        "gid": "11"
+    },
+    {
+        "nom": "Jardin du Cuir",
+        "indiccanop": "0,60",
+        "gid": "21"
+    },
+    {
+        "nom": "Square Monseigneur Alfred Ancel",
+        "indiccanop": "0,91",
+        "gid": "22"
+    },
+    {
+        "nom": "Place des Pavillons",
+        "indiccanop": "0,82",
+        "gid": "23"
+    },
+    {
+        "nom": "Place Bénédict Tessier",
+        "indiccanop": "0,86",
+        "gid": "82"
+    },
+    {
+        "nom": "Place des Compagnons de la Chanson",
+        "indiccanop": "0,73",
+        "gid": "83"
+    },
+    {
+        "nom": "Parc Victor Basch",
+        "indiccanop": "0,15",
+        "gid": "12"
+    },
+    {
+        "nom": "Place du Tertre",
+        "indiccanop": "0,54",
+        "gid": "13"
+    },
+    {
+        "nom": "Place de l'Ecole",
+        "indiccanop": "0,35",
+        "gid": "24"
+    },
+    {
+        "nom": "Voie Verte Hall Tony Garnier",
+        "indiccanop": "0,00",
+        "gid": "25"
+    },
+    {
+        "nom": "Place Giovanni Da Verazzano",
+        "indiccanop": "0,55",
+        "gid": "176"
+    },
+    {
+        "nom": "Parc des Minguettes",
+        "indiccanop": "0,48",
+        "gid": "14"
+    },
+    {
+        "nom": "Mail de la Bicherée",
+        "indiccanop": "0,16",
+        "gid": "15"
+    },
+    {
+        "nom": "Square du 11 Novembre 1918",
+        "indiccanop": "0,35",
+        "gid": "16"
+    },
+    {
+        "nom": "Place des Quatre Chemins",
+        "indiccanop": "0,84",
+        "gid": "17"
+    },
+    {
+        "nom": "Place Salvador Allende",
+        "indiccanop": "0,00",
+        "gid": "18"
+    },
+    {
+        "nom": "Place Jeanne d'Arc",
+        "indiccanop": "0,00",
+        "gid": "19"
+    },
+    {
+        "nom": "Plaine des jeux de Gerland",
+        "indiccanop": "0,16",
+        "gid": "20"
+    },
+    {
+        "nom": "Place Sathonay",
+        "indiccanop": "0,92",
+        "gid": "217"
+    },
+    {
+        "nom": "Square Monod",
+        "indiccanop": "0,38",
+        "gid": "26"
+    },
+    {
+        "nom": "Place des Docteurs Mérieux",
+        "indiccanop": "0,11",
+        "gid": "27"
+    },
+    {
+        "nom": "Parvis René Descartes",
+        "indiccanop": "0,00",
+        "gid": "28"
+    },
+    {
+        "nom": "Square Jean Vallier",
+        "indiccanop": "0,60",
+        "gid": "29"
+    },
+    {
+        "nom": "Place A. Morin",
+        "indiccanop": "1,00",
+        "gid": "30"
+    },
+    {
+        "nom": "Jardin Gabriel Rosset",
+        "indiccanop": "0,00",
+        "gid": "31"
+    },
+    {
+        "nom": "Place du Général Leclerc",
+        "indiccanop": "0,34",
+        "gid": "32"
+    },
+    {
+        "nom": "Jardin Georges Duthy",
+        "indiccanop": "0,40",
+        "gid": "33"
+    },
+    {
+        "nom": "Jardin Georges Duthy",
+        "indiccanop": "0,43",
+        "gid": "34"
+    },
+    {
+        "nom": "Place Jean-Désiré Trait",
+        "indiccanop": "0,55",
+        "gid": "35"
+    },
+    {
+        "nom": "Square Saint-Exupéry",
+        "indiccanop": "0,25",
+        "gid": "36"
+    },
+    {
+        "nom": "Square du Commandant Ayasse",
+        "indiccanop": "0,99",
+        "gid": "37"
+    },
+    {
+        "nom": "Jardin des Arbuzzes",
+        "indiccanop": "0,00",
+        "gid": "38"
+    },
+    {
+        "nom": "Square Clément Marot",
+        "indiccanop": "0,83",
+        "gid": "39"
+    },
+    {
+        "nom": "Jardin Marie Madeleine Fourcade",
+        "indiccanop": "0,45",
+        "gid": "40"
+    },
+    {
+        "nom": "Jardin François Raclet",
+        "indiccanop": "0,00",
+        "gid": "41"
+    },
+    {
+        "nom": "Place des Mariniers",
+        "indiccanop": "0,70",
+        "gid": "42"
+    },
+    {
+        "nom": "Petite Place des Sallins",
+        "indiccanop": "0,26",
+        "gid": "43"
+    },
+    {
+        "nom": "Jardin aquatique Jean Couty",
+        "indiccanop": "0,14",
+        "gid": "44"
+    },
+    {
+        "nom": "Jardin aquatique Jean Couty",
+        "indiccanop": "0,00",
+        "gid": "45"
+    },
+    {
+        "nom": "Jardin du TOL",
+        "indiccanop": "0,04",
+        "gid": "84"
+    },
+    {
+        "nom": "Jardin d'Erevan",
+        "indiccanop": "0,41",
+        "gid": "46"
+    },
+    {
+        "nom": "Jardin aquatique Ouagadougou",
+        "indiccanop": "0,05",
+        "gid": "47"
+    },
+    {
+        "nom": "Square Général Delfosse",
+        "indiccanop": "0,46",
+        "gid": "48"
+    },
+    {
+        "nom": "Jardin de L'Hippodrome",
+        "indiccanop": "0,68",
+        "gid": "49"
+    },
+    {
+        "nom": "Place des Archives",
+        "indiccanop": "0,00",
+        "gid": "50"
+    },
+    {
+        "nom": "Place Gensoul",
+        "indiccanop": "0,67",
+        "gid": "51"
+    },
+    {
+        "nom": "Place d'Ainay",
+        "indiccanop": "0,76",
+        "gid": "52"
+    },
+    {
+        "nom": "Square Janmot",
+        "indiccanop": "0,86",
+        "gid": "53"
+    },
+    {
+        "nom": "Place Gailleton",
+        "indiccanop": "0,49",
+        "gid": "54"
+    },
+    {
+        "nom": "Square Widor",
+        "indiccanop": "0,80",
+        "gid": "55"
+    },
+    {
+        "nom": "Place Antoine Vollon",
+        "indiccanop": "0,45",
+        "gid": "56"
+    },
+    {
+        "nom": "Place Antonin Gourjus",
+        "indiccanop": "0,00",
+        "gid": "57"
+    },
+    {
+        "nom": "Place des Célestins",
+        "indiccanop": "0,41",
+        "gid": "58"
+    },
+    {
+        "nom": "Place Francisque Regaud",
+        "indiccanop": "0,85",
+        "gid": "59"
+    },
+    {
+        "nom": "Place des Cordeliers",
+        "indiccanop": "0,38",
+        "gid": "60"
+    },
+    {
+        "nom": "Place Antoine Rivoire",
+        "indiccanop": "0,92",
+        "gid": "61"
+    },
+    {
+        "nom": "Place Saint Nizier",
+        "indiccanop": "0,00",
+        "gid": "62"
+    },
+    {
+        "nom": "Ilot de la paix",
+        "indiccanop": "0,10",
+        "gid": "63"
+    },
+    {
+        "nom": "Place Gabriel Rambaud",
+        "indiccanop": "0,98",
+        "gid": "64"
+    },
+    {
+        "nom": "Square Jean Tricou",
+        "indiccanop": "0,72",
+        "gid": "79"
+    },
+    {
+        "nom": "Square Père Chaillet",
+        "indiccanop": "0,00",
+        "gid": "80"
+    },
+    {
+        "nom": "Jardin des mures",
+        "indiccanop": "0,12",
+        "gid": "85"
+    },
+    {
+        "nom": "Esplanade Lichfield",
+        "indiccanop": "0,40",
+        "gid": "65"
+    },
+    {
+        "nom": "Place Clair Tisseur",
+        "indiccanop": "0,00",
+        "gid": "66"
+    },
+    {
+        "nom": "Place Lieutenant Soubeirat",
+        "indiccanop": "0,47",
+        "gid": "67"
+    },
+    {
+        "nom": "Place Antonin Poncet",
+        "indiccanop": "0,19",
+        "gid": "68"
+    },
+    {
+        "nom": "Place Antonin Poncet",
+        "indiccanop": "0,26",
+        "gid": "69"
+    },
+    {
+        "nom": "Place Ampère",
+        "indiccanop": "0,37",
+        "gid": "70"
+    },
+    {
+        "nom": "Square Charcot",
+        "indiccanop": "0,24",
+        "gid": "71"
+    },
+    {
+        "nom": "Place Laurent Paul",
+        "indiccanop": "0,23",
+        "gid": "72"
+    },
+    {
+        "nom": "Place Cesar Geoffray",
+        "indiccanop": "0,65",
+        "gid": "73"
+    },
+    {
+        "nom": "Promenade Violette Germain",
+        "indiccanop": "0,60",
+        "gid": "74"
+    },
+    {
+        "nom": "Place de l'Europe",
+        "indiccanop": "0,44",
+        "gid": "75"
+    },
+    {
+        "nom": "Place du Chater",
+        "indiccanop": "0,22",
+        "gid": "76"
+    },
+    {
+        "nom": "Place de l'Hôtel de Ville",
+        "indiccanop": "0,19",
+        "gid": "77"
+    },
+    {
+        "nom": "Square du Floralies",
+        "indiccanop": "0,38",
+        "gid": "78"
+    },
+    {
+        "nom": "Parc de la Mairie du 5e",
+        "indiccanop": "0,44",
+        "gid": "81"
+    },
+    {
+        "nom": "Parc des Muriares",
+        "indiccanop": "0,56",
+        "gid": "86"
+    },
+    {
+        "nom": "Jardin Docteur Schweitzer",
+        "indiccanop": "0,67",
+        "gid": "87"
+    },
+    {
+        "nom": "Place Hippolyte Péragut",
+        "indiccanop": "0,14",
+        "gid": "88"
+    },
+    {
+        "nom": "Square Gabrielle Dupond-Ebrard",
+        "indiccanop": "0,64",
+        "gid": "89"
+    },
+    {
+        "nom": "Parc de la Garde",
+        "indiccanop": "0,90",
+        "gid": "90"
+    },
+    {
+        "nom": "Parc de Champvert",
+        "indiccanop": "0,71",
+        "gid": "91"
+    },
+    {
+        "nom": "Square du CS Champvert",
+        "indiccanop": "0,82",
+        "gid": "92"
+    },
+    {
+        "nom": "Parc de la Chapelle",
+        "indiccanop": "0,67",
+        "gid": "93"
+    },
+    {
+        "nom": "Parc des Hautefeuilles",
+        "indiccanop": "0,87",
+        "gid": "94"
+    },
+    {
+        "nom": "Place de Trion",
+        "indiccanop": "0,96",
+        "gid": "95"
+    },
+    {
+        "nom": "Square des Basses Verchores",
+        "indiccanop": "0,88",
+        "gid": "96"
+    },
+    {
+        "nom": "Place Eugène Wernert",
+        "indiccanop": "0,52",
+        "gid": "97"
+    },
+    {
+        "nom": "Square des Deux Amants",
+        "indiccanop": "0,95",
+        "gid": "98"
+    },
+    {
+        "nom": "Square du Béal",
+        "indiccanop": "0,64",
+        "gid": "99"
+    },
+    {
+        "nom": "Jardin Joannus Masset",
+        "indiccanop": "0,29",
+        "gid": "128"
+    },
+    {
+        "nom": "Place Fernand Rey",
+        "indiccanop": "0,67",
+        "gid": "218"
+    },
+    {
+        "nom": "Jardin de la Vallonière",
+        "indiccanop": "0,62",
+        "gid": "100"
+    },
+    {
+        "nom": "Jardin Pierre Thévenin",
+        "indiccanop": "0,46",
+        "gid": "101"
+    },
+    {
+        "nom": "Place du 158eme régiment d'infanterie",
+        "indiccanop": "0,00",
+        "gid": "102"
+    },
+    {
+        "nom": "Jardin des pivoines Sarra",
+        "indiccanop": "0,49",
+        "gid": "103"
+    },
+    {
+        "nom": "Place Bourgneuf",
+        "indiccanop": "0,98",
+        "gid": "104"
+    },
+    {
+        "nom": "Place Ennemont Fousseret",
+        "indiccanop": "0,00",
+        "gid": "105"
+    },
+    {
+        "nom": "Jardin du Boeuf",
+        "indiccanop": "0,89",
+        "gid": "106"
+    },
+    {
+        "nom": "Jardin de la Basoche",
+        "indiccanop": "0,00",
+        "gid": "107"
+    },
+    {
+        "nom": "Square des Estrées",
+        "indiccanop": "0,92",
+        "gid": "108"
+    },
+    {
+        "nom": "Jardin du Conservatoire de Musique",
+        "indiccanop": "0,71",
+        "gid": "109"
+    },
+    {
+        "nom": "Place de l'Antiquaille",
+        "indiccanop": "0,86",
+        "gid": "110"
+    },
+    {
+        "nom": "Jardin Théatre Romain Fourvière",
+        "indiccanop": "0,21",
+        "gid": "111"
+    },
+    {
+        "nom": "Parc de la Visitation",
+        "indiccanop": "0,57",
+        "gid": "112"
+    },
+    {
+        "nom": "Jardin Francine Chollet",
+        "indiccanop": "0,00",
+        "gid": "113"
+    },
+    {
+        "nom": "Jardin Père François Varillon",
+        "indiccanop": "0,46",
+        "gid": "114"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,00",
+        "gid": "509"
+    },
+    {
+        "nom": "Place Père François Varillon",
+        "indiccanop": "0,90",
+        "gid": "115"
+    },
+    {
+        "nom": "Jardin Jean Choux",
+        "indiccanop": "0,85",
+        "gid": "116"
+    },
+    {
+        "nom": "Jardin de Montreal",
+        "indiccanop": "0,63",
+        "gid": "117"
+    },
+    {
+        "nom": "Square Fillon",
+        "indiccanop": "0,84",
+        "gid": "118"
+    },
+    {
+        "nom": "Jardin Pierre Bossan",
+        "indiccanop": "0,34",
+        "gid": "119"
+    },
+    {
+        "nom": "Place des Minimes",
+        "indiccanop": "0,60",
+        "gid": "120"
+    },
+    {
+        "nom": "Jardin de l'Antiquaille Minimes",
+        "indiccanop": "0,56",
+        "gid": "121"
+    },
+    {
+        "nom": "Place du Port-Neuf",
+        "indiccanop": "0,00",
+        "gid": "122"
+    },
+    {
+        "nom": "Place de la Commanderie",
+        "indiccanop": "0,00",
+        "gid": "123"
+    },
+    {
+        "nom": "Place François Bertras",
+        "indiccanop": "0,22",
+        "gid": "124"
+    },
+    {
+        "nom": "Jardin Bâtonnier Valensio",
+        "indiccanop": "0,78",
+        "gid": "125"
+    },
+    {
+        "nom": "Place Benoît Crepu",
+        "indiccanop": "0,00",
+        "gid": "126"
+    },
+    {
+        "nom": "Esplanade Lina Cretet",
+        "indiccanop": "0,22",
+        "gid": "127"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,00",
+        "gid": "510"
+    },
+    {
+        "nom": "Square de l'observance",
+        "indiccanop": "0,47",
+        "gid": "129"
+    },
+    {
+        "nom": "Place Jean Monnet",
+        "indiccanop": "0,36",
+        "gid": "130"
+    },
+    {
+        "nom": "Place de la Rhodiaceta",
+        "indiccanop": "0,00",
+        "gid": "131"
+    },
+    {
+        "nom": "Place de la Rhodiaceta",
+        "indiccanop": "0,00",
+        "gid": "132"
+    },
+    {
+        "nom": "Place de la Rhodiaceta",
+        "indiccanop": "0,00",
+        "gid": "133"
+    },
+    {
+        "nom": "Parc Michèle Mollard",
+        "indiccanop": "0,55",
+        "gid": "134"
+    },
+    {
+        "nom": "Place Dumas de Loire",
+        "indiccanop": "1,00",
+        "gid": "135"
+    },
+    {
+        "nom": "Place Alfred de Vanderpol",
+        "indiccanop": "0,66",
+        "gid": "136"
+    },
+    {
+        "nom": "Place du Port Mouton",
+        "indiccanop": "0,00",
+        "gid": "137"
+    },
+    {
+        "nom": "Place du Marché Mairie du 9e",
+        "indiccanop": "0,00",
+        "gid": "138"
+    },
+    {
+        "nom": "Place Ferber",
+        "indiccanop": "0,88",
+        "gid": "139"
+    },
+    {
+        "nom": "Place de l'Abbé Pierre",
+        "indiccanop": "0,15",
+        "gid": "154"
+    },
+    {
+        "nom": "Square Compas Raison",
+        "indiccanop": "0,21",
+        "gid": "155"
+    },
+    {
+        "nom": "Square des Marronniers",
+        "indiccanop": "0,69",
+        "gid": "156"
+    },
+    {
+        "nom": "Square Averroas",
+        "indiccanop": "0,09",
+        "gid": "157"
+    },
+    {
+        "nom": "Jardin de la Sauvegarde",
+        "indiccanop": "0,54",
+        "gid": "158"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,00",
+        "gid": "511"
+    },
+    {
+        "nom": "Parc Montel",
+        "indiccanop": "0,64",
+        "gid": "140"
+    },
+    {
+        "nom": "Square Tanneurs",
+        "indiccanop": "0,32",
+        "gid": "141"
+    },
+    {
+        "nom": "Jardin Terrasse Perrache",
+        "indiccanop": "0,30",
+        "gid": "142"
+    },
+    {
+        "nom": "Jardin Terrasse Perrache",
+        "indiccanop": "0,00",
+        "gid": "143"
+    },
+    {
+        "nom": "Square Roquette",
+        "indiccanop": "0,00",
+        "gid": "144"
+    },
+    {
+        "nom": "Square Roquette Valmy",
+        "indiccanop": "0,31",
+        "gid": "145"
+    },
+    {
+        "nom": "Square Nérard",
+        "indiccanop": "0,45",
+        "gid": "146"
+    },
+    {
+        "nom": "Jardin Marietton",
+        "indiccanop": "0,22",
+        "gid": "147"
+    },
+    {
+        "nom": "Square Tabard",
+        "indiccanop": "0,91",
+        "gid": "148"
+    },
+    {
+        "nom": "Square André Canard",
+        "indiccanop": "0,00",
+        "gid": "149"
+    },
+    {
+        "nom": "Jardin Jean Fournier",
+        "indiccanop": "0,05",
+        "gid": "150"
+    },
+    {
+        "nom": "Square du Château",
+        "indiccanop": "0,30",
+        "gid": "151"
+    },
+    {
+        "nom": "Square Jean Fournier",
+        "indiccanop": "0,87",
+        "gid": "152"
+    },
+    {
+        "nom": "Square de la Duchère",
+        "indiccanop": "0,40",
+        "gid": "153"
+    },
+    {
+        "nom": "Place Quai de bellevue",
+        "indiccanop": "0,62",
+        "gid": "276"
+    },
+    {
+        "nom": "Square des 400",
+        "indiccanop": "0,51",
+        "gid": "159"
+    },
+    {
+        "nom": "Square de Beer Sheva",
+        "indiccanop": "0,04",
+        "gid": "160"
+    },
+    {
+        "nom": "Place Bachaga Boualem",
+        "indiccanop": "0,46",
+        "gid": "161"
+    },
+    {
+        "nom": "Parc de Balmont",
+        "indiccanop": "0,88",
+        "gid": "162"
+    },
+    {
+        "nom": "Square de Foucade",
+        "indiccanop": "0,62",
+        "gid": "163"
+    },
+    {
+        "nom": "Place du Pérollier",
+        "indiccanop": "0,47",
+        "gid": "164"
+    },
+    {
+        "nom": "Place de la Mairie",
+        "indiccanop": "0,64",
+        "gid": "165"
+    },
+    {
+        "nom": "Square Claude Girardon",
+        "indiccanop": "0,80",
+        "gid": "166"
+    },
+    {
+        "nom": "Square de la Fontaine",
+        "indiccanop": "0,58",
+        "gid": "167"
+    },
+    {
+        "nom": "Place de l'Abbé Boursier",
+        "indiccanop": "0,00",
+        "gid": "168"
+    },
+    {
+        "nom": "Place Louis Pradel",
+        "indiccanop": "0,29",
+        "gid": "169"
+    },
+    {
+        "nom": "Place Marc Morel",
+        "indiccanop": "0,96",
+        "gid": "170"
+    },
+    {
+        "nom": "Place Leonard Peyrat",
+        "indiccanop": "0,62",
+        "gid": "171"
+    },
+    {
+        "nom": "Place Leonard Peyrat",
+        "indiccanop": "0,86",
+        "gid": "172"
+    },
+    {
+        "nom": "Jardin des Rivieres",
+        "indiccanop": "0,46",
+        "gid": "173"
+    },
+    {
+        "nom": "Jardin des Saules",
+        "indiccanop": "0,49",
+        "gid": "174"
+    },
+    {
+        "nom": "Place Giovanni Da Verazzano",
+        "indiccanop": "0,20",
+        "gid": "175"
+    },
+    {
+        "nom": "Jardin des Trembles",
+        "indiccanop": "0,00",
+        "gid": "177"
+    },
+    {
+        "nom": "Square Morlot",
+        "indiccanop": "0,99",
+        "gid": "178"
+    },
+    {
+        "nom": "Square Sédaillan",
+        "indiccanop": "0,51",
+        "gid": "179"
+    },
+    {
+        "nom": "Square Edouard Mouriquand",
+        "indiccanop": "0,92",
+        "gid": "180"
+    },
+    {
+        "nom": "Square Edouard Mouriquand",
+        "indiccanop": "1,00",
+        "gid": "181"
+    },
+    {
+        "nom": "Jardin de L'île Barbe",
+        "indiccanop": "0,92",
+        "gid": "182"
+    },
+    {
+        "nom": "Jardin de l'île Barbe",
+        "indiccanop": "0,98",
+        "gid": "183"
+    },
+    {
+        "nom": "Place Henri Barbusse",
+        "indiccanop": "0,00",
+        "gid": "184"
+    },
+    {
+        "nom": "Place Henri Barbusse",
+        "indiccanop": "0,15",
+        "gid": "185"
+    },
+    {
+        "nom": "Parc de la Mairie Annexe du 9e",
+        "indiccanop": "0,91",
+        "gid": "186"
+    },
+    {
+        "nom": "Place de Saint Rambert",
+        "indiccanop": "0,37",
+        "gid": "187"
+    },
+    {
+        "nom": "Parc Saint Rambert",
+        "indiccanop": "0,38",
+        "gid": "188"
+    },
+    {
+        "nom": "Parc de Montpellas",
+        "indiccanop": "0,74",
+        "gid": "189"
+    },
+    {
+        "nom": "Place Bernard Schonberg",
+        "indiccanop": "0,00",
+        "gid": "190"
+    },
+    {
+        "nom": "Place du Forez",
+        "indiccanop": "0,00",
+        "gid": "215"
+    },
+    {
+        "nom": "Parc de Grand Champ",
+        "indiccanop": "0,56",
+        "gid": "191"
+    },
+    {
+        "nom": "Jardin Mur du Roc",
+        "indiccanop": "0,92",
+        "gid": "192"
+    },
+    {
+        "nom": "Place Maurice Barriot",
+        "indiccanop": "0,89",
+        "gid": "193"
+    },
+    {
+        "nom": "Jardin des Trois Gouttes",
+        "indiccanop": "0,32",
+        "gid": "194"
+    },
+    {
+        "nom": "Square Paul Cazanne",
+        "indiccanop": "0,55",
+        "gid": "195"
+    },
+    {
+        "nom": "Square Maurice Ravel",
+        "indiccanop": "1,00",
+        "gid": "196"
+    },
+    {
+        "nom": "Square Pierre Puget",
+        "indiccanop": "0,75",
+        "gid": "197"
+    },
+    {
+        "nom": "Place Auguste Gouverne",
+        "indiccanop": "0,84",
+        "gid": "198"
+    },
+    {
+        "nom": "Place de la République",
+        "indiccanop": "0,15",
+        "gid": "199"
+    },
+    {
+        "nom": "Place Chanoine Chatard",
+        "indiccanop": "0,54",
+        "gid": "200"
+    },
+    {
+        "nom": "Square Eugène Varlin",
+        "indiccanop": "0,14",
+        "gid": "474"
+    },
+    {
+        "nom": "Square du Vergoin",
+        "indiccanop": "0,53",
+        "gid": "201"
+    },
+    {
+        "nom": "Place des Terreaux",
+        "indiccanop": "0,00",
+        "gid": "202"
+    },
+    {
+        "nom": "Place de la Comédie",
+        "indiccanop": "0,00",
+        "gid": "203"
+    },
+    {
+        "nom": "Place Tobie Robatel",
+        "indiccanop": "0,44",
+        "gid": "204"
+    },
+    {
+        "nom": "Place saint Vincent",
+        "indiccanop": "0,00",
+        "gid": "205"
+    },
+    {
+        "nom": "Place Tolozan",
+        "indiccanop": "0,93",
+        "gid": "206"
+    },
+    {
+        "nom": "Place du Griffon",
+        "indiccanop": "0,25",
+        "gid": "207"
+    },
+    {
+        "nom": "Square du Thou",
+        "indiccanop": "0,00",
+        "gid": "208"
+    },
+    {
+        "nom": "Jardin Croix Paquet",
+        "indiccanop": "0,83",
+        "gid": "209"
+    },
+    {
+        "nom": "Square de Villemanzy",
+        "indiccanop": "0,34",
+        "gid": "210"
+    },
+    {
+        "nom": "Place Colbert",
+        "indiccanop": "0,86",
+        "gid": "211"
+    },
+    {
+        "nom": "Place Chardonnet",
+        "indiccanop": "0,98",
+        "gid": "212"
+    },
+    {
+        "nom": "Jardin Burdeau",
+        "indiccanop": "0,00",
+        "gid": "213"
+    },
+    {
+        "nom": "Jardin Dalle Rozier",
+        "indiccanop": "0,00",
+        "gid": "214"
+    },
+    {
+        "nom": "Place des Capucins",
+        "indiccanop": "0,00",
+        "gid": "216"
+    },
+    {
+        "nom": "Jardin des Plantes",
+        "indiccanop": "0,40",
+        "gid": "219"
+    },
+    {
+        "nom": "Jardin de la Grande Cpte",
+        "indiccanop": "0,52",
+        "gid": "220"
+    },
+    {
+        "nom": "Square de l'Alma",
+        "indiccanop": "0,52",
+        "gid": "221"
+    },
+    {
+        "nom": "Parc Sutter",
+        "indiccanop": "0,70",
+        "gid": "222"
+    },
+    {
+        "nom": "Place Morel",
+        "indiccanop": "0,47",
+        "gid": "223"
+    },
+    {
+        "nom": "Jardin Morel",
+        "indiccanop": "0,47",
+        "gid": "224"
+    },
+    {
+        "nom": "Square Soeur Louise",
+        "indiccanop": "0,00",
+        "gid": "225"
+    },
+    {
+        "nom": "Jardin Close Saint Benoit",
+        "indiccanop": "0,00",
+        "gid": "226"
+    },
+    {
+        "nom": "Place Rouville",
+        "indiccanop": "0,54",
+        "gid": "227"
+    },
+    {
+        "nom": "Place Port de Neuville",
+        "indiccanop": "0,97",
+        "gid": "228"
+    },
+    {
+        "nom": "Square Saint-Vincent",
+        "indiccanop": "0,90",
+        "gid": "229"
+    },
+    {
+        "nom": "Jardin de la Butte",
+        "indiccanop": "0,91",
+        "gid": "230"
+    },
+    {
+        "nom": "Place des Chartreux",
+        "indiccanop": "0,96",
+        "gid": "231"
+    },
+    {
+        "nom": "Square Carquillat",
+        "indiccanop": "0,24",
+        "gid": "232"
+    },
+    {
+        "nom": "Square Roger Duplat",
+        "indiccanop": "0,71",
+        "gid": "233"
+    },
+    {
+        "nom": "Place Serin",
+        "indiccanop": "0,74",
+        "gid": "234"
+    },
+    {
+        "nom": "Square Hugues Limonti",
+        "indiccanop": "0,77",
+        "gid": "503"
+    },
+    {
+        "nom": "Place Michel Servet",
+        "indiccanop": "0,00",
+        "gid": "235"
+    },
+    {
+        "nom": "Place Chazette",
+        "indiccanop": "0,00",
+        "gid": "236"
+    },
+    {
+        "nom": "Jardin Bodin Magneval",
+        "indiccanop": "0,55",
+        "gid": "237"
+    },
+    {
+        "nom": "Square de Vaucansson",
+        "indiccanop": "0,37",
+        "gid": "238"
+    },
+    {
+        "nom": "Jardin aux simples",
+        "indiccanop": "0,00",
+        "gid": "239"
+    },
+    {
+        "nom": "Jardin B.Frangin Dejean",
+        "indiccanop": "0,88",
+        "gid": "240"
+    },
+    {
+        "nom": "Jardin B.Frangin Dejean",
+        "indiccanop": "0,97",
+        "gid": "241"
+    },
+    {
+        "nom": "Place Tabareau",
+        "indiccanop": "0,75",
+        "gid": "242"
+    },
+    {
+        "nom": "Place Millaud",
+        "indiccanop": "0,84",
+        "gid": "243"
+    },
+    {
+        "nom": "Place des Tapis",
+        "indiccanop": "0,07",
+        "gid": "244"
+    },
+    {
+        "nom": "Place de la Croix-Rousse",
+        "indiccanop": "0,28",
+        "gid": "245"
+    },
+    {
+        "nom": "Esplanade du Gros Caillou",
+        "indiccanop": "0,07",
+        "gid": "246"
+    },
+    {
+        "nom": "Esplanade du Gros Caillou",
+        "indiccanop": "0,14",
+        "gid": "247"
+    },
+    {
+        "nom": "Jardin Francis Deswarte",
+        "indiccanop": "0,74",
+        "gid": "248"
+    },
+    {
+        "nom": "Place Saint Jacques",
+        "indiccanop": "0,12",
+        "gid": "249"
+    },
+    {
+        "nom": "Place Bertone",
+        "indiccanop": "1,00",
+        "gid": "250"
+    },
+    {
+        "nom": "Jardin Guylaine Gouzou-Testud",
+        "indiccanop": "0,00",
+        "gid": "251"
+    },
+    {
+        "nom": "Jardin Clos Carret",
+        "indiccanop": "0,13",
+        "gid": "252"
+    },
+    {
+        "nom": "Place Croix de Bois",
+        "indiccanop": "0,00",
+        "gid": "253"
+    },
+    {
+        "nom": "Place Flammarion",
+        "indiccanop": "0,68",
+        "gid": "254"
+    },
+    {
+        "nom": "Place Picard",
+        "indiccanop": "0,94",
+        "gid": "255"
+    },
+    {
+        "nom": "Parc Francis Popy",
+        "indiccanop": "0,65",
+        "gid": "256"
+    },
+    {
+        "nom": "Place Emilie Chanel",
+        "indiccanop": "0,79",
+        "gid": "257"
+    },
+    {
+        "nom": "Parc Villa Chazière",
+        "indiccanop": "0,48",
+        "gid": "258"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,42",
+        "gid": "504"
+    },
+    {
+        "nom": "Petit Parc Serin",
+        "indiccanop": "0,60",
+        "gid": "259"
+    },
+    {
+        "nom": "Place Adrien Godien",
+        "indiccanop": "0,00",
+        "gid": "260"
+    },
+    {
+        "nom": "Jardin Saint Eucher",
+        "indiccanop": "1,00",
+        "gid": "261"
+    },
+    {
+        "nom": "Jardin de la Boucle",
+        "indiccanop": "0,22",
+        "gid": "262"
+    },
+    {
+        "nom": "Square Niel",
+        "indiccanop": "0,00",
+        "gid": "263"
+    },
+    {
+        "nom": "Square Polnard",
+        "indiccanop": "0,78",
+        "gid": "264"
+    },
+    {
+        "nom": "Place du Commandant Arnaud",
+        "indiccanop": "0,60",
+        "gid": "265"
+    },
+    {
+        "nom": "Place Mattelon",
+        "indiccanop": "0,91",
+        "gid": "266"
+    },
+    {
+        "nom": "Place Joannes Ambre",
+        "indiccanop": "0,08",
+        "gid": "267"
+    },
+    {
+        "nom": "Jardin Rosa Mir",
+        "indiccanop": "0,20",
+        "gid": "268"
+    },
+    {
+        "nom": "Place Edouard Charret",
+        "indiccanop": "0,24",
+        "gid": "269"
+    },
+    {
+        "nom": "Square Bouvier",
+        "indiccanop": "0,78",
+        "gid": "270"
+    },
+    {
+        "nom": "Square Gustave Auguste Ferrié",
+        "indiccanop": "0,81",
+        "gid": "271"
+    },
+    {
+        "nom": "Jardin d'Ypres",
+        "indiccanop": "0,88",
+        "gid": "272"
+    },
+    {
+        "nom": "Square Ninon Vallin",
+        "indiccanop": "0,72",
+        "gid": "273"
+    },
+    {
+        "nom": "Bois de la Caille",
+        "indiccanop": "0,99",
+        "gid": "274"
+    },
+    {
+        "nom": "Place Jules Ferry",
+        "indiccanop": "0,48",
+        "gid": "275"
+    },
+    {
+        "nom": "Place Laurent Bonnevay",
+        "indiccanop": "0,48",
+        "gid": "277"
+    },
+    {
+        "nom": "Place Laurent Bonnevay",
+        "indiccanop": "0,32",
+        "gid": "278"
+    },
+    {
+        "nom": "Place Laurent Bonnevay",
+        "indiccanop": "0,18",
+        "gid": "279"
+    },
+    {
+        "nom": "Square Jean Corbel",
+        "indiccanop": "0,70",
+        "gid": "282"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,25",
+        "gid": "283"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,12",
+        "gid": "284"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,97",
+        "gid": "285"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,67",
+        "gid": "286"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,97",
+        "gid": "505"
+    },
+    {
+        "nom": "Parc de la Jeunesse",
+        "indiccanop": "0,70",
+        "gid": "280"
+    },
+    {
+        "nom": "Parc de la Jeunesse",
+        "indiccanop": "0,83",
+        "gid": "281"
+    },
+    {
+        "nom": "Place de Crépieux",
+        "indiccanop": "0,26",
+        "gid": "299"
+    },
+    {
+        "nom": "Place du traitre de Romes",
+        "indiccanop": "0,00",
+        "gid": "300"
+    },
+    {
+        "nom": "Voie Verte Léopold Sédar Senghor",
+        "indiccanop": "0,00",
+        "gid": "301"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,83",
+        "gid": "506"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,48",
+        "gid": "287"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,52",
+        "gid": "288"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,81",
+        "gid": "289"
+    },
+    {
+        "nom": "Voie de la Dombes",
+        "indiccanop": "0,77",
+        "gid": "290"
+    },
+    {
+        "nom": "Square jean Pellet",
+        "indiccanop": "0,30",
+        "gid": "291"
+    },
+    {
+        "nom": "Place Christophe Colomb",
+        "indiccanop": "0,93",
+        "gid": "292"
+    },
+    {
+        "nom": "Place Valentin Hauy",
+        "indiccanop": "0,41",
+        "gid": "293"
+    },
+    {
+        "nom": "Place Gutenberg",
+        "indiccanop": "0,15",
+        "gid": "294"
+    },
+    {
+        "nom": "Place Louis Braille",
+        "indiccanop": "0,02",
+        "gid": "295"
+    },
+    {
+        "nom": "Place du Docteur Frederic Dugoujon",
+        "indiccanop": "0,15",
+        "gid": "296"
+    },
+    {
+        "nom": "Place de l'Eglise",
+        "indiccanop": "0,00",
+        "gid": "297"
+    },
+    {
+        "nom": "Square André Lassagne",
+        "indiccanop": "0,34",
+        "gid": "298"
+    },
+    {
+        "nom": "Voie Verte Léopold Sédar Senghor",
+        "indiccanop": "0,00",
+        "gid": "302"
+    },
+    {
+        "nom": "Place Jean de Verrazane",
+        "indiccanop": "0,03",
+        "gid": "303"
+    },
+    {
+        "nom": "Square Nadaud Leclerc",
+        "indiccanop": "0,38",
+        "gid": "304"
+    },
+    {
+        "nom": "Square des 44 enfants d'Izieu",
+        "indiccanop": "0,00",
+        "gid": "305"
+    },
+    {
+        "nom": "Square Jules Guesde",
+        "indiccanop": "0,10",
+        "gid": "306"
+    },
+    {
+        "nom": "Parc Clos Layat",
+        "indiccanop": "0,06",
+        "gid": "307"
+    },
+    {
+        "nom": "Parc du Moulin e Vent",
+        "indiccanop": "0,00",
+        "gid": "308"
+    },
+    {
+        "nom": "Place Julien Duret",
+        "indiccanop": "0,47",
+        "gid": "309"
+    },
+    {
+        "nom": "Place Ennemond Romand",
+        "indiccanop": "0,58",
+        "gid": "310"
+    },
+    {
+        "nom": "Place Ennemond Romand",
+        "indiccanop": "0,27",
+        "gid": "311"
+    },
+    {
+        "nom": "Jardin de Pressensé",
+        "indiccanop": "0,09",
+        "gid": "312"
+    },
+    {
+        "nom": "Place des Anciens Combattants",
+        "indiccanop": "0,96",
+        "gid": "313"
+    },
+    {
+        "nom": "Jardin René et Madeleine Caille",
+        "indiccanop": "0,46",
+        "gid": "314"
+    },
+    {
+        "nom": "Place du 8 Mai 1945",
+        "indiccanop": "0,26",
+        "gid": "315"
+    },
+    {
+        "nom": "Square des Amariques",
+        "indiccanop": "0,00",
+        "gid": "316"
+    },
+    {
+        "nom": "Square Renée Mayoud Visconti",
+        "indiccanop": "0,42",
+        "gid": "317"
+    },
+    {
+        "nom": "Jardin Viviani",
+        "indiccanop": "0,04",
+        "gid": "318"
+    },
+    {
+        "nom": "Square Serpollieres",
+        "indiccanop": "0,34",
+        "gid": "319"
+    },
+    {
+        "nom": "Square Picod",
+        "indiccanop": "0,07",
+        "gid": "320"
+    },
+    {
+        "nom": "Square Normandie-Niemen",
+        "indiccanop": "0,31",
+        "gid": "321"
+    },
+    {
+        "nom": "Square du 14e Zouave",
+        "indiccanop": "0,71",
+        "gid": "322"
+    },
+    {
+        "nom": "Place Louis Lebret",
+        "indiccanop": "0,27",
+        "gid": "323"
+    },
+    {
+        "nom": "Jardin du Presbytère",
+        "indiccanop": "0,48",
+        "gid": "324"
+    },
+    {
+        "nom": "Place Professeur Joseph Renault",
+        "indiccanop": "0,00",
+        "gid": "361"
+    },
+    {
+        "nom": "Place Belleville",
+        "indiccanop": "0,38",
+        "gid": "325"
+    },
+    {
+        "nom": "Parc Léon Pfeffer",
+        "indiccanop": "0,65",
+        "gid": "326"
+    },
+    {
+        "nom": "Square benoit Bernard",
+        "indiccanop": "0,00",
+        "gid": "327"
+    },
+    {
+        "nom": "Jardin Chollat",
+        "indiccanop": "0,73",
+        "gid": "328"
+    },
+    {
+        "nom": "Place Mendès France",
+        "indiccanop": "0,00",
+        "gid": "329"
+    },
+    {
+        "nom": "Place du 11 Novembre 1918",
+        "indiccanop": "0,34",
+        "gid": "330"
+    },
+    {
+        "nom": "Square Varichon",
+        "indiccanop": "0,45",
+        "gid": "331"
+    },
+    {
+        "nom": "Jardin du Corps Expeditionnaire Français en Italie",
+        "indiccanop": "0,34",
+        "gid": "332"
+    },
+    {
+        "nom": "Promenade Juliette Guillot",
+        "indiccanop": "0,00",
+        "gid": "333"
+    },
+    {
+        "nom": "Promenade Juliette Guillot",
+        "indiccanop": "0,00",
+        "gid": "334"
+    },
+    {
+        "nom": "Place Général André",
+        "indiccanop": "0,59",
+        "gid": "335"
+    },
+    {
+        "nom": "Jardin Marie Ducher",
+        "indiccanop": "0,61",
+        "gid": "336"
+    },
+    {
+        "nom": "Square Michaud",
+        "indiccanop": "0,02",
+        "gid": "337"
+    },
+    {
+        "nom": "Jardin Jean Mermoz",
+        "indiccanop": "0,32",
+        "gid": "338"
+    },
+    {
+        "nom": "Place André Latarjet",
+        "indiccanop": "0,30",
+        "gid": "339"
+    },
+    {
+        "nom": "Square de l'Agora",
+        "indiccanop": "0,43",
+        "gid": "340"
+    },
+    {
+        "nom": "Place Leon Sublet",
+        "indiccanop": "0,24",
+        "gid": "341"
+    },
+    {
+        "nom": "Place Leon Sublet",
+        "indiccanop": "0,26",
+        "gid": "342"
+    },
+    {
+        "nom": "Place Jules Grandclement",
+        "indiccanop": "0,04",
+        "gid": "343"
+    },
+    {
+        "nom": "Square Jean XXIII",
+        "indiccanop": "0,69",
+        "gid": "362"
+    },
+    {
+        "nom": "Jardin Promenade Léa et Napoléon Bullukian",
+        "indiccanop": "0,22",
+        "gid": "363"
+    },
+    {
+        "nom": "Jardin Cazeneuve",
+        "indiccanop": "0,14",
+        "gid": "344"
+    },
+    {
+        "nom": "Place Louis Jouvet",
+        "indiccanop": "0,77",
+        "gid": "345"
+    },
+    {
+        "nom": "Square Laurent Bonneway",
+        "indiccanop": "0,75",
+        "gid": "346"
+    },
+    {
+        "nom": "Square Martin Luther King",
+        "indiccanop": "0,00",
+        "gid": "347"
+    },
+    {
+        "nom": "Square Caroline Aigle",
+        "indiccanop": "0,34",
+        "gid": "348"
+    },
+    {
+        "nom": "Place Sangnier",
+        "indiccanop": "0,76",
+        "gid": "349"
+    },
+    {
+        "nom": "Place Julie Daubié",
+        "indiccanop": "0,57",
+        "gid": "350"
+    },
+    {
+        "nom": "Jardin Genton",
+        "indiccanop": "0,61",
+        "gid": "351"
+    },
+    {
+        "nom": "Jardin du Combattant d'Indochine",
+        "indiccanop": "0,41",
+        "gid": "352"
+    },
+    {
+        "nom": "Jardin Antoine Perrin",
+        "indiccanop": "0,80",
+        "gid": "353"
+    },
+    {
+        "nom": "Square Adolphe Lafont",
+        "indiccanop": "0,34",
+        "gid": "354"
+    },
+    {
+        "nom": "Square Thomas Blanchet",
+        "indiccanop": "1,00",
+        "gid": "355"
+    },
+    {
+        "nom": "Square Jean de Torcy",
+        "indiccanop": "0,46",
+        "gid": "356"
+    },
+    {
+        "nom": "Square Jean de Torcy",
+        "indiccanop": "0,47",
+        "gid": "357"
+    },
+    {
+        "nom": "Square du Transvaal",
+        "indiccanop": "0,45",
+        "gid": "358"
+    },
+    {
+        "nom": "Jardin Bargoin",
+        "indiccanop": "0,40",
+        "gid": "359"
+    },
+    {
+        "nom": "Square Professeur Morat",
+        "indiccanop": "0,19",
+        "gid": "360"
+    },
+    {
+        "nom": "Place d'Arsonval",
+        "indiccanop": "0,90",
+        "gid": "364"
+    },
+    {
+        "nom": "Place Ambroise Courtois",
+        "indiccanop": "0,32",
+        "gid": "365"
+    },
+    {
+        "nom": "Jardin du Docteur René Biot",
+        "indiccanop": "0,47",
+        "gid": "366"
+    },
+    {
+        "nom": "Square Berchet",
+        "indiccanop": "0,18",
+        "gid": "367"
+    },
+    {
+        "nom": "Square de la Laïcite",
+        "indiccanop": "0,30",
+        "gid": "368"
+    },
+    {
+        "nom": "Square de la Fraternité",
+        "indiccanop": "0,00",
+        "gid": "369"
+    },
+    {
+        "nom": "Jardin Marius Berliet",
+        "indiccanop": "0,26",
+        "gid": "370"
+    },
+    {
+        "nom": "Jardin Saint Nestor",
+        "indiccanop": "0,42",
+        "gid": "371"
+    },
+    {
+        "nom": "Square Henri Pensier",
+        "indiccanop": "0,00",
+        "gid": "372"
+    },
+    {
+        "nom": "Square Saint Hippolyte",
+        "indiccanop": "0,67",
+        "gid": "373"
+    },
+    {
+        "nom": "Place de Stalingrad",
+        "indiccanop": "0,76",
+        "gid": "374"
+    },
+    {
+        "nom": "Square du Béguin",
+        "indiccanop": "0,36",
+        "gid": "375"
+    },
+    {
+        "nom": "Square René Bayet",
+        "indiccanop": "0,00",
+        "gid": "376"
+    },
+    {
+        "nom": "Square du Brigadier Voituret",
+        "indiccanop": "0,49",
+        "gid": "377"
+    },
+    {
+        "nom": "Place Jean Macé",
+        "indiccanop": "0,85",
+        "gid": "378"
+    },
+    {
+        "nom": "Place Jean Macé",
+        "indiccanop": "0,85",
+        "gid": "379"
+    },
+    {
+        "nom": "Place Jean Macé",
+        "indiccanop": "0,98",
+        "gid": "380"
+    },
+    {
+        "nom": "Place Jean Macé",
+        "indiccanop": "1,00",
+        "gid": "381"
+    },
+    {
+        "nom": "Square Chevreul",
+        "indiccanop": "0,09",
+        "gid": "382"
+    },
+    {
+        "nom": "Place Saint Louis",
+        "indiccanop": "0,43",
+        "gid": "383"
+    },
+    {
+        "nom": "Square Aristide Briand",
+        "indiccanop": "0,79",
+        "gid": "384"
+    },
+    {
+        "nom": "Place Aristide Briand",
+        "indiccanop": "1,00",
+        "gid": "385"
+    },
+    {
+        "nom": "Place Adb El-Kader",
+        "indiccanop": "1,00",
+        "gid": "386"
+    },
+    {
+        "nom": "Place Victor Basch",
+        "indiccanop": "0,91",
+        "gid": "387"
+    },
+    {
+        "nom": "Place Victor Basch",
+        "indiccanop": "0,67",
+        "gid": "388"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,41",
+        "gid": "507"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,17",
+        "gid": "508"
+    },
+    {
+        "nom": "Jardin Saint Michel",
+        "indiccanop": "0,72",
+        "gid": "389"
+    },
+    {
+        "nom": "Square Mazagran",
+        "indiccanop": "0,09",
+        "gid": "390"
+    },
+    {
+        "nom": "Place du Prado",
+        "indiccanop": "1,00",
+        "gid": "391"
+    },
+    {
+        "nom": "Place du Commandant Bulard",
+        "indiccanop": "0,00",
+        "gid": "392"
+    },
+    {
+        "nom": "Square Deperet",
+        "indiccanop": "0,82",
+        "gid": "393"
+    },
+    {
+        "nom": "Place Ollier",
+        "indiccanop": "0,34",
+        "gid": "394"
+    },
+    {
+        "nom": "Square Raspail",
+        "indiccanop": "1,00",
+        "gid": "395"
+    },
+    {
+        "nom": "Square Raspail",
+        "indiccanop": "0,49",
+        "gid": "396"
+    },
+    {
+        "nom": "Square Calmette",
+        "indiccanop": "0,70",
+        "gid": "397"
+    },
+    {
+        "nom": "Place de Weingarten",
+        "indiccanop": "0,27",
+        "gid": "398"
+    },
+    {
+        "nom": "Square André Lacroix",
+        "indiccanop": "0,89",
+        "gid": "399"
+    },
+    {
+        "nom": "Place de la Liberté",
+        "indiccanop": "0,00",
+        "gid": "400"
+    },
+    {
+        "nom": "Place Baptiste Curial",
+        "indiccanop": "0,18",
+        "gid": "401"
+    },
+    {
+        "nom": "Square Ampère",
+        "indiccanop": "0,00",
+        "gid": "402"
+    },
+    {
+        "nom": "Place Georges Brassens",
+        "indiccanop": "0,00",
+        "gid": "403"
+    },
+    {
+        "nom": "Square de la Pagère",
+        "indiccanop": "0,09",
+        "gid": "404"
+    },
+    {
+        "nom": "Place Gaillard Romanet",
+        "indiccanop": "0,17",
+        "gid": "405"
+    },
+    {
+        "nom": "Place Jules Hottin",
+        "indiccanop": "0,62",
+        "gid": "406"
+    },
+    {
+        "nom": "Square Farrère",
+        "indiccanop": "0,98",
+        "gid": "407"
+    },
+    {
+        "nom": "Square Noël Aymard",
+        "indiccanop": "0,47",
+        "gid": "408"
+    },
+    {
+        "nom": "Place Claudia",
+        "indiccanop": "0,79",
+        "gid": "409"
+    },
+    {
+        "nom": "Square Viala",
+        "indiccanop": "0,67",
+        "gid": "410"
+    },
+    {
+        "nom": "Place Charles Dufraine",
+        "indiccanop": "0,87",
+        "gid": "411"
+    },
+    {
+        "nom": "Bois des Chênes",
+        "indiccanop": "0,99",
+        "gid": "412"
+    },
+    {
+        "nom": "Jardin du Château",
+        "indiccanop": "0,67",
+        "gid": "413"
+    },
+    {
+        "nom": "Place du Château",
+        "indiccanop": "1,00",
+        "gid": "414"
+    },
+    {
+        "nom": "Jardin Richard Vitton",
+        "indiccanop": "0,00",
+        "gid": "415"
+    },
+    {
+        "nom": "Place Kimmerling",
+        "indiccanop": "0,72",
+        "gid": "416"
+    },
+    {
+        "nom": "Place d'Espagne",
+        "indiccanop": "0,60",
+        "gid": "417"
+    },
+    {
+        "nom": "Square Maurice Ferreol",
+        "indiccanop": "0,41",
+        "gid": "418"
+    },
+    {
+        "nom": "Square Marcel Doret",
+        "indiccanop": "0,55",
+        "gid": "419"
+    },
+    {
+        "nom": "Square de la Concorde",
+        "indiccanop": "0,21",
+        "gid": "420"
+    },
+    {
+        "nom": "Place Saint Charles",
+        "indiccanop": "0,00",
+        "gid": "421"
+    },
+    {
+        "nom": "Parc Marx Dormoy",
+        "indiccanop": "0,80",
+        "gid": "422"
+    },
+    {
+        "nom": "Square Alban Vistel",
+        "indiccanop": "0,24",
+        "gid": "444"
+    },
+    {
+        "nom": "Place Ronde",
+        "indiccanop": "0,10",
+        "gid": "423"
+    },
+    {
+        "nom": "Place Antoinette",
+        "indiccanop": "0,00",
+        "gid": "424"
+    },
+    {
+        "nom": "Place de la Reconnaissance",
+        "indiccanop": "0,99",
+        "gid": "425"
+    },
+    {
+        "nom": "Parc George Bazin",
+        "indiccanop": "0,60",
+        "gid": "426"
+    },
+    {
+        "nom": "Place Louise",
+        "indiccanop": "0,00",
+        "gid": "427"
+    },
+    {
+        "nom": "Place des Poilus",
+        "indiccanop": "0,00",
+        "gid": "428"
+    },
+    {
+        "nom": "Place des Poilus",
+        "indiccanop": "0,00",
+        "gid": "429"
+    },
+    {
+        "nom": "Place des Poilus",
+        "indiccanop": "0,00",
+        "gid": "430"
+    },
+    {
+        "nom": "Place des Poilus",
+        "indiccanop": "0,00",
+        "gid": "431"
+    },
+    {
+        "nom": "Place Henri",
+        "indiccanop": "0,24",
+        "gid": "432"
+    },
+    {
+        "nom": "Place Antoine Gallay",
+        "indiccanop": "0,00",
+        "gid": "433"
+    },
+    {
+        "nom": "Place Antoine Gallay",
+        "indiccanop": "0,00",
+        "gid": "434"
+    },
+    {
+        "nom": "Square de l'Est",
+        "indiccanop": "0,00",
+        "gid": "435"
+    },
+    {
+        "nom": "Square Jules Verne",
+        "indiccanop": "0,85",
+        "gid": "436"
+    },
+    {
+        "nom": "Jardin Barra",
+        "indiccanop": "0,00",
+        "gid": "437"
+    },
+    {
+        "nom": "Square Rebatel",
+        "indiccanop": "0,26",
+        "gid": "438"
+    },
+    {
+        "nom": "Square St Maximin",
+        "indiccanop": "0,00",
+        "gid": "439"
+    },
+    {
+        "nom": "Square Jean Reverzy",
+        "indiccanop": "0,83",
+        "gid": "440"
+    },
+    {
+        "nom": "Parc Professeur Paul Sisley",
+        "indiccanop": "0,71",
+        "gid": "441"
+    },
+    {
+        "nom": "Square Roger Brechan",
+        "indiccanop": "0,20",
+        "gid": "442"
+    },
+    {
+        "nom": "Square René Fusier",
+        "indiccanop": "0,72",
+        "gid": "443"
+    },
+    {
+        "nom": "Esplanade du Dauphin",
+        "indiccanop": "0,22",
+        "gid": "445"
+    },
+    {
+        "nom": "Jardin Château Sans Souci",
+        "indiccanop": "0,38",
+        "gid": "446"
+    },
+    {
+        "nom": "Place Rouget de l'Isle",
+        "indiccanop": "0,85",
+        "gid": "447"
+    },
+    {
+        "nom": "Square Lacassagne",
+        "indiccanop": "0,61",
+        "gid": "448"
+    },
+    {
+        "nom": "Jardin de l'Abbe Boisard",
+        "indiccanop": "0,51",
+        "gid": "449"
+    },
+    {
+        "nom": "Jardin Joseph Kaplan",
+        "indiccanop": "0,12",
+        "gid": "450"
+    },
+    {
+        "nom": "Square Bir Hakeim",
+        "indiccanop": "0,65",
+        "gid": "451"
+    },
+    {
+        "nom": "Jardin Lavoisier",
+        "indiccanop": "0,00",
+        "gid": "452"
+    },
+    {
+        "nom": "Place Danton",
+        "indiccanop": "0,00",
+        "gid": "453"
+    },
+    {
+        "nom": "Jardin d'Essling",
+        "indiccanop": "0,82",
+        "gid": "454"
+    },
+    {
+        "nom": "Place des Martyrs de la Risistance",
+        "indiccanop": "1,00",
+        "gid": "455"
+    },
+    {
+        "nom": "Square Pierre Pelloux",
+        "indiccanop": "1,00",
+        "gid": "456"
+    },
+    {
+        "nom": "Place Pierre Simon Ballanche",
+        "indiccanop": "0,00",
+        "gid": "457"
+    },
+    {
+        "nom": "Place Gabriel Peri",
+        "indiccanop": "0,36",
+        "gid": "458"
+    },
+    {
+        "nom": "Place Gabriel Peri",
+        "indiccanop": "0,28",
+        "gid": "459"
+    },
+    {
+        "nom": "Place Antonin Jutard",
+        "indiccanop": "0,00",
+        "gid": "460"
+    },
+    {
+        "nom": "Jardin des Berges Mari Sklodowska-Curie",
+        "indiccanop": "0,16",
+        "gid": "461"
+    },
+    {
+        "nom": "Place Bahadourian",
+        "indiccanop": "0,11",
+        "gid": "462"
+    },
+    {
+        "nom": "Place Voltaire",
+        "indiccanop": "1,00",
+        "gid": "463"
+    },
+    {
+        "nom": "Place Voltaire",
+        "indiccanop": "0,99",
+        "gid": "464"
+    },
+    {
+        "nom": "Place Voltaire",
+        "indiccanop": "1,00",
+        "gid": "465"
+    },
+    {
+        "nom": "Jardin Chaponnay Voltaire",
+        "indiccanop": "0,00",
+        "gid": "466"
+    },
+    {
+        "nom": "Square Edison",
+        "indiccanop": "0,00",
+        "gid": "467"
+    },
+    {
+        "nom": "Square Sainte-Marie Perrin",
+        "indiccanop": "0,75",
+        "gid": "468"
+    },
+    {
+        "nom": "Square Desaix",
+        "indiccanop": "0,48",
+        "gid": "469"
+    },
+    {
+        "nom": "Jardin Pierre Renaudel",
+        "indiccanop": "1,00",
+        "gid": "470"
+    },
+    {
+        "nom": "Jardin Commandant Aubertin",
+        "indiccanop": "0,70",
+        "gid": "471"
+    },
+    {
+        "nom": "Voie Verte Bouchut",
+        "indiccanop": "0,75",
+        "gid": "472"
+    },
+    {
+        "nom": "Place Guichard",
+        "indiccanop": "0,79",
+        "gid": "473"
+    },
+    {
+        "nom": "Place Charles Beraudier",
+        "indiccanop": "0,16",
+        "gid": "475"
+    },
+    {
+        "nom": "Place de Milan",
+        "indiccanop": "0,28",
+        "gid": "476"
+    },
+    {
+        "nom": "Place de la Vilette",
+        "indiccanop": "0,00",
+        "gid": "477"
+    },
+    {
+        "nom": "Place de Francfort",
+        "indiccanop": "0,00",
+        "gid": "478"
+    },
+    {
+        "nom": "Jardin Soeur Jeanne Jugan",
+        "indiccanop": "0,47",
+        "gid": "479"
+    },
+    {
+        "nom": "Square d'Aunigny",
+        "indiccanop": "0,02",
+        "gid": "480"
+    },
+    {
+        "nom": "Square du Sacrr Coeur",
+        "indiccanop": "0,62",
+        "gid": "481"
+    },
+    {
+        "nom": "Place Saint Anne",
+        "indiccanop": "0,69",
+        "gid": "482"
+    },
+    {
+        "nom": "Square Combet Descombes",
+        "indiccanop": "0,00",
+        "gid": "483"
+    },
+    {
+        "nom": "Place de la Ferrandière",
+        "indiccanop": "0,80",
+        "gid": "484"
+    },
+    {
+        "nom": "Square de la Roseraie",
+        "indiccanop": "0,60",
+        "gid": "485"
+    },
+    {
+        "nom": "Jardin des Tout-Petits",
+        "indiccanop": "0,87",
+        "gid": "486"
+    },
+    {
+        "nom": "Square du  Bataillon Carmagnole Liberte",
+        "indiccanop": "0,85",
+        "gid": "487"
+    },
+    {
+        "nom": "Square Florian",
+        "indiccanop": "0,36",
+        "gid": "488"
+    },
+    {
+        "nom": "Place Camille Joly",
+        "indiccanop": "0,50",
+        "gid": "489"
+    },
+    {
+        "nom": "Place de la Déportation",
+        "indiccanop": "0,00",
+        "gid": "490"
+    },
+    {
+        "nom": "Esplanade Part-Dieu",
+        "indiccanop": "0,00",
+        "gid": "491"
+    },
+    {
+        "nom": "Voie Verte des Halles",
+        "indiccanop": "0,00",
+        "gid": "492"
+    },
+    {
+        "nom": "Square Moncey",
+        "indiccanop": "0,80",
+        "gid": "493"
+    },
+    {
+        "nom": "Place Marc Aron",
+        "indiccanop": "0,01",
+        "gid": "494"
+    },
+    {
+        "nom": "Jardin du Nouveau Palais de Justice",
+        "indiccanop": "0,41",
+        "gid": "495"
+    },
+    {
+        "nom": "Square Delestraint",
+        "indiccanop": "0,80",
+        "gid": "496"
+    },
+    {
+        "nom": "Jardin des berges Aletta Jacobs",
+        "indiccanop": "0,04",
+        "gid": "497"
+    },
+    {
+        "nom": "Jardin des berges Reine Astrid",
+        "indiccanop": "0,24",
+        "gid": "498"
+    },
+    {
+        "nom": "Square Jussieu",
+        "indiccanop": "0,87",
+        "gid": "499"
+    },
+    {
+        "nom": "Place Ernest Cavellini",
+        "indiccanop": "0,20",
+        "gid": "500"
+    },
+    {
+        "nom": "Square Pierre brossolette",
+        "indiccanop": "0,19",
+        "gid": "501"
+    },
+    {
+        "nom": "Square Pierre Brossolette",
+        "indiccanop": "0,36",
+        "gid": "502"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,00",
+        "gid": "512"
+    },
+    {
+        "nom": "Voie Verte Garibaldi",
+        "indiccanop": "0,24",
+        "gid": "513"
+    },
+    {
+        "nom": "Square Manouchian",
+        "indiccanop": "0,23",
+        "gid": "514"
+    },
+    {
+        "nom": "Jardin de l'Embellie",
+        "indiccanop": "0,15",
+        "gid": "515"
+    },
+    {
+        "nom": "Parc de Vaillant Couturier",
+        "indiccanop": "0,60",
+        "gid": "516"
+    },
+    {
+        "nom": "Jardin des Berges Amalia Rodrigues",
+        "indiccanop": "0,24",
+        "gid": "517"
+    },
+    {
+        "nom": "Place Edgard Quinet",
+        "indiccanop": "0,63",
+        "gid": "518"
+    },
+    {
+        "nom": "Square de L'ossuaire",
+        "indiccanop": "0,11",
+        "gid": "519"
+    },
+    {
+        "nom": "Square Louis Blanc",
+        "indiccanop": "0,98",
+        "gid": "520"
+    },
+    {
+        "nom": "Jardin Garibaldi Europe",
+        "indiccanop": "0,35",
+        "gid": "521"
+    },
+    {
+        "nom": "Square Jérome Bererd",
+        "indiccanop": "1,00",
+        "gid": "522"
+    },
+    {
+        "nom": "Place Maréchal Lyautey",
+        "indiccanop": "0,58",
+        "gid": "523"
+    },
+    {
+        "nom": "Jardin Cardinal Villot",
+        "indiccanop": "0,94",
+        "gid": "524"
+    },
+    {
+        "nom": "Place Jacques Elmaleh",
+        "indiccanop": "0,64",
+        "gid": "525"
+    },
+    {
+        "nom": "Jardin des 3 Renards",
+        "indiccanop": "0,58",
+        "gid": "526"
+    },
+    {
+        "nom": "Square de la Légion d'Honneur",
+        "indiccanop": "0,00",
+        "gid": "527"
+    },
+    {
+        "nom": "Place Kleber",
+        "indiccanop": "0,44",
+        "gid": "528"
+    },
+    {
+        "nom": "Place Kleber",
+        "indiccanop": "0,00",
+        "gid": "529"
+    },
+    {
+        "nom": "Place Kleber",
+        "indiccanop": "0,26",
+        "gid": "530"
+    },
+    {
+        "nom": "Place Kleber",
+        "indiccanop": "0,00",
+        "gid": "531"
+    },
+    {
+        "nom": "Place René Deroudille",
+        "indiccanop": "0,36",
+        "gid": "532"
+    },
+    {
+        "nom": "Square des Droits de l'Enfant",
+        "indiccanop": "0,40",
+        "gid": "533"
+    },
+    {
+        "nom": "Place Genéral Brosset",
+        "indiccanop": "0,00",
+        "gid": "534"
+    },
+    {
+        "nom": "Place Genéral Brosset",
+        "indiccanop": "0,04",
+        "gid": "535"
+    },
+    {
+        "nom": "Jardin Thiers",
+        "indiccanop": "0,18",
+        "gid": "536"
+    },
+    {
+        "nom": "Square Gabriel Péri",
+        "indiccanop": "0,95",
+        "gid": "537"
+    },
+    {
+        "nom": "Place Charles Hernu",
+        "indiccanop": "0,20",
+        "gid": "538"
+    },
+    {
+        "nom": "Place Charles Hernu",
+        "indiccanop": "0,19",
+        "gid": "539"
+    },
+    {
+        "nom": "Place Charles Hernu",
+        "indiccanop": "0,00",
+        "gid": "540"
+    },
+    {
+        "nom": "Place Charles Hernu",
+        "indiccanop": "0,52",
+        "gid": "541"
+    },
+    {
+        "nom": "Place Charles Hernu",
+        "indiccanop": "0,00",
+        "gid": "542"
+    },
+    {
+        "nom": "Place des Passementiers",
+        "indiccanop": "0,45",
+        "gid": "543"
+    },
+    {
+        "nom": "Square Roger Palanche et Rent Vidal",
+        "indiccanop": "0,00",
+        "gid": "544"
+    },
+    {
+        "nom": "Jardin d'Inkermann",
+        "indiccanop": "0,96",
+        "gid": "545"
+    },
+    {
+        "nom": "Square General Marcel Descour",
+        "indiccanop": "0,32",
+        "gid": "546"
+    },
+    {
+        "nom": "Jardin des Charmettes",
+        "indiccanop": "0,73",
+        "gid": "547"
+    },
+    {
+        "nom": "Square René Pellet",
+        "indiccanop": "0,67",
+        "gid": "548"
+    },
+    {
+        "nom": "Esplanade Sakharov",
+        "indiccanop": "0,74",
+        "gid": "549"
+    },
+    {
+        "nom": "Square des Ancients Combattants d'Afrique du Nord",
+        "indiccanop": "0,61",
+        "gid": "550"
+    },
+    {
+        "nom": "Parc Jacques Prévert",
+        "indiccanop": "0,59",
+        "gid": "551"
+    },
+    {
+        "nom": "Place Docteur Lazare Goujon",
+        "indiccanop": "0,16",
+        "gid": "552"
+    },
+    {
+        "nom": "Square Henry Bertrand",
+        "indiccanop": "0,84",
+        "gid": "553"
+    },
+    {
+        "nom": "Place Pierre Mendès France",
+        "indiccanop": "0,04",
+        "gid": "554"
+    },
+    {
+        "nom": "Square Georges Lévy",
+        "indiccanop": "0,73",
+        "gid": "555"
+    },
+    {
+        "nom": "Square Plaine Robinson",
+        "indiccanop": "0,64",
+        "gid": "556"
+    },
+    {
+        "nom": "Square Dreieich",
+        "indiccanop": "0,77",
+        "gid": "557"
+    },
+    {
+        "nom": "Jardin des berges Renata Tebaldi",
+        "indiccanop": "0,16",
+        "gid": "558"
+    },
+    {
+        "nom": "Jardin des Berges Clara Campoamor",
+        "indiccanop": "0,47",
+        "gid": "559"
+    },
+    {
+        "nom": "Square Félix Jacquier",
+        "indiccanop": "0,78",
+        "gid": "560"
+    },
+    {
+        "nom": "Place Zoé Roche",
+        "indiccanop": "0,66",
+        "gid": "561"
+    },
+    {
+        "nom": "Place d'Helvétie",
+        "indiccanop": "0,91",
+        "gid": "562"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,15",
+        "gid": "897"
+    },
+    {
+        "nom": "Jardin des Berges Marlène Dittrich",
+        "indiccanop": "0,81",
+        "gid": "563"
+    },
+    {
+        "nom": "Jardin des Berges Dame Ellen Mac Arthur",
+        "indiccanop": "0,88",
+        "gid": "564"
+    },
+    {
+        "nom": "Parc du Brétillod",
+        "indiccanop": "0,68",
+        "gid": "565"
+    },
+    {
+        "nom": "Jardin des Poëtes",
+        "indiccanop": "0,90",
+        "gid": "566"
+    },
+    {
+        "nom": "Parc de la Cité Internationale",
+        "indiccanop": "0,45",
+        "gid": "567"
+    },
+    {
+        "nom": "Parc de la Cité Internationale",
+        "indiccanop": "0,29",
+        "gid": "568"
+    },
+    {
+        "nom": "Parc de la Cité internationale",
+        "indiccanop": "0,76",
+        "gid": "569"
+    },
+    {
+        "nom": "Place Jean Chorel",
+        "indiccanop": "0,50",
+        "gid": "570"
+    },
+    {
+        "nom": "Place Rivière",
+        "indiccanop": "0,00",
+        "gid": "571"
+    },
+    {
+        "nom": "Promenade du Sabot de Vénus",
+        "indiccanop": "0,40",
+        "gid": "572"
+    },
+    {
+        "nom": "Square Edouard Michelet",
+        "indiccanop": "0,80",
+        "gid": "573"
+    },
+    {
+        "nom": "Square Gendron",
+        "indiccanop": "0,79",
+        "gid": "574"
+    },
+    {
+        "nom": "Esplanade Geneviève Anthonioz De Gaulle",
+        "indiccanop": "0,67",
+        "gid": "575"
+    },
+    {
+        "nom": "Jardin du Temps des Cerises",
+        "indiccanop": "0,80",
+        "gid": "576"
+    },
+    {
+        "nom": "Square Alice Vansteenderghe",
+        "indiccanop": "0,82",
+        "gid": "577"
+    },
+    {
+        "nom": "Place de Croix-Luizet",
+        "indiccanop": "0,85",
+        "gid": "578"
+    },
+    {
+        "nom": "Place des Buers",
+        "indiccanop": "0,00",
+        "gid": "579"
+    },
+    {
+        "nom": "Place Paul Strauss",
+        "indiccanop": "0,95",
+        "gid": "580"
+    },
+    {
+        "nom": "Place des Retrouvailles",
+        "indiccanop": "0,96",
+        "gid": "581"
+    },
+    {
+        "nom": "Square de la France Libre",
+        "indiccanop": "0,59",
+        "gid": "582"
+    },
+    {
+        "nom": "Square Gérard Maire",
+        "indiccanop": "0,51",
+        "gid": "583"
+    },
+    {
+        "nom": "Place des Allobroges",
+        "indiccanop": "0,00",
+        "gid": "584"
+    },
+    {
+        "nom": "Place Guy Moquet",
+        "indiccanop": "0,00",
+        "gid": "585"
+    },
+    {
+        "nom": "Rue des Tilleuls",
+        "indiccanop": "0,70",
+        "gid": "586"
+    },
+    {
+        "nom": "Place François Mauriac",
+        "indiccanop": "0,11",
+        "gid": "587"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,81",
+        "gid": "1000"
+    },
+    {
+        "nom": "Promenade Lénine",
+        "indiccanop": "0,78",
+        "gid": "588"
+    },
+    {
+        "nom": "Place Noël Carmellino",
+        "indiccanop": "0,08",
+        "gid": "589"
+    },
+    {
+        "nom": "Place Roger Laurent",
+        "indiccanop": "0,71",
+        "gid": "590"
+    },
+    {
+        "nom": "Place Charles de Gaulle",
+        "indiccanop": "0,16",
+        "gid": "591"
+    },
+    {
+        "nom": "Place de la Paix",
+        "indiccanop": "0,00",
+        "gid": "592"
+    },
+    {
+        "nom": "Square de Nurtingen sur Neckar",
+        "indiccanop": "0,78",
+        "gid": "593"
+    },
+    {
+        "nom": "Square de Nurtingen sur Neckar",
+        "indiccanop": "0,59",
+        "gid": "594"
+    },
+    {
+        "nom": "Place Jean Moulin",
+        "indiccanop": "0,12",
+        "gid": "595"
+    },
+    {
+        "nom": "Place François Millou",
+        "indiccanop": "0,00",
+        "gid": "596"
+    },
+    {
+        "nom": "Place Xavier Ricard",
+        "indiccanop": "0,18",
+        "gid": "597"
+    },
+    {
+        "nom": "Place Saint Luc",
+        "indiccanop": "0,16",
+        "gid": "598"
+    },
+    {
+        "nom": "Place Jacques Prévert",
+        "indiccanop": "0,11",
+        "gid": "599"
+    },
+    {
+        "nom": "Place Henri Cochet",
+        "indiccanop": "0,03",
+        "gid": "600"
+    },
+    {
+        "nom": "Square du Professeur Galtier",
+        "indiccanop": "0,07",
+        "gid": "601"
+    },
+    {
+        "nom": "Square de Barcelone",
+        "indiccanop": "0,00",
+        "gid": "602"
+    },
+    {
+        "nom": "Square de Montreal",
+        "indiccanop": "0,20",
+        "gid": "603"
+    },
+    {
+        "nom": "Place de l'Exposition Internationale",
+        "indiccanop": "0,03",
+        "gid": "604"
+    },
+    {
+        "nom": "Square Debourg",
+        "indiccanop": "0,16",
+        "gid": "605"
+    },
+    {
+        "nom": "Voie Verte Léopold Sédar Senghor",
+        "indiccanop": "0,00",
+        "gid": "606"
+    },
+    {
+        "nom": "Voie Verte Fontenay",
+        "indiccanop": "0,05",
+        "gid": "607"
+    },
+    {
+        "nom": "Voie Verte Chappet",
+        "indiccanop": "0,63",
+        "gid": "608"
+    },
+    {
+        "nom": "Esplanade François Mitterand",
+        "indiccanop": "0,00",
+        "gid": "609"
+    },
+    {
+        "nom": "Place de la Capitainerie",
+        "indiccanop": "0,00",
+        "gid": "610"
+    },
+    {
+        "nom": "Rive de Saône Quai Rambaud",
+        "indiccanop": "0,00",
+        "gid": "611"
+    },
+    {
+        "nom": "Berges du Rhône Leclerc",
+        "indiccanop": "0,36",
+        "gid": "648"
+    },
+    {
+        "nom": "Rives de Saône Quai Maréchal Joffre",
+        "indiccanop": "0,66",
+        "gid": "649"
+    },
+    {
+        "nom": "Rive de Saône Quai Rambaud",
+        "indiccanop": "0,12",
+        "gid": "612"
+    },
+    {
+        "nom": "Square Casimir Périer",
+        "indiccanop": "0,00",
+        "gid": "613"
+    },
+    {
+        "nom": "Place Chevalier Saint George",
+        "indiccanop": "0,00",
+        "gid": "614"
+    },
+    {
+        "nom": "Place Abbé Larue",
+        "indiccanop": "0,52",
+        "gid": "615"
+    },
+    {
+        "nom": "Place Saint Irénée",
+        "indiccanop": "0,08",
+        "gid": "616"
+    },
+    {
+        "nom": "Voie Verte Parcours de Santé",
+        "indiccanop": "0,99",
+        "gid": "617"
+    },
+    {
+        "nom": "Place de La Libération",
+        "indiccanop": "0,27",
+        "gid": "618"
+    },
+    {
+        "nom": "Place du Marché",
+        "indiccanop": "0,20",
+        "gid": "619"
+    },
+    {
+        "nom": "Place des 39 Fusillés",
+        "indiccanop": "0,15",
+        "gid": "620"
+    },
+    {
+        "nom": "Jardin Place de Paris",
+        "indiccanop": "0,33",
+        "gid": "621"
+    },
+    {
+        "nom": "Place Valmy",
+        "indiccanop": "0,00",
+        "gid": "622"
+    },
+    {
+        "nom": "Place Valmy",
+        "indiccanop": "0,25",
+        "gid": "623"
+    },
+    {
+        "nom": "Place Valmy",
+        "indiccanop": "0,00",
+        "gid": "624"
+    },
+    {
+        "nom": "Promenade de la Sarra",
+        "indiccanop": "0,62",
+        "gid": "625"
+    },
+    {
+        "nom": "Place de Fourvière",
+        "indiccanop": "0,00",
+        "gid": "626"
+    },
+    {
+        "nom": "Place du Cloître de Fourvière",
+        "indiccanop": "0,00",
+        "gid": "627"
+    },
+    {
+        "nom": "Jardin du Belvédère",
+        "indiccanop": "0,67",
+        "gid": "628"
+    },
+    {
+        "nom": "Place de la Trinité",
+        "indiccanop": "0,00",
+        "gid": "629"
+    },
+    {
+        "nom": "Place Edouard Commette",
+        "indiccanop": "1,00",
+        "gid": "630"
+    },
+    {
+        "nom": "Place Saint Jean",
+        "indiccanop": "0,00",
+        "gid": "631"
+    },
+    {
+        "nom": "Place Neuve Saint-Jean",
+        "indiccanop": "0,00",
+        "gid": "632"
+    },
+    {
+        "nom": "Place de la Baleine",
+        "indiccanop": "0,23",
+        "gid": "633"
+    },
+    {
+        "nom": "Place du Gouvernement",
+        "indiccanop": "0,22",
+        "gid": "634"
+    },
+    {
+        "nom": "Place du Petit Collège",
+        "indiccanop": "0,41",
+        "gid": "635"
+    },
+    {
+        "nom": "Place Saint Paul",
+        "indiccanop": "0,00",
+        "gid": "636"
+    },
+    {
+        "nom": "Place Gerson",
+        "indiccanop": "0,10",
+        "gid": "637"
+    },
+    {
+        "nom": "Rives de Saône Quai Saint-Vincent",
+        "indiccanop": "0,08",
+        "gid": "638"
+    },
+    {
+        "nom": "Place le Viste",
+        "indiccanop": "0,28",
+        "gid": "639"
+    },
+    {
+        "nom": "Place de l'Hôpital",
+        "indiccanop": "0,00",
+        "gid": "640"
+    },
+    {
+        "nom": "Place des Jacobins",
+        "indiccanop": "0,00",
+        "gid": "641"
+    },
+    {
+        "nom": "Place des Cordeliers",
+        "indiccanop": "0,00",
+        "gid": "642"
+    },
+    {
+        "nom": "Place d'Albon",
+        "indiccanop": "0,00",
+        "gid": "643"
+    },
+    {
+        "nom": "Place Meissonier",
+        "indiccanop": "0,00",
+        "gid": "644"
+    },
+    {
+        "nom": "Berges Anna Lindh",
+        "indiccanop": "0,00",
+        "gid": "645"
+    },
+    {
+        "nom": "Berges Anna Lindh",
+        "indiccanop": "0,07",
+        "gid": "646"
+    },
+    {
+        "nom": "Berges Bertha Von Suttner",
+        "indiccanop": "0,38",
+        "gid": "647"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "898"
+    },
+    {
+        "nom": "Rives de Saône Quai Maréchal Joffre",
+        "indiccanop": "0,03",
+        "gid": "650"
+    },
+    {
+        "nom": "Rives de Saône Quai Tilsitt",
+        "indiccanop": "0,52",
+        "gid": "651"
+    },
+    {
+        "nom": "Rives de Saône Quai des Célestins",
+        "indiccanop": "0,00",
+        "gid": "652"
+    },
+    {
+        "nom": "Rives de Saône Quai Saint Antoine",
+        "indiccanop": "0,00",
+        "gid": "653"
+    },
+    {
+        "nom": "Rives de Saône Quai Pêcherie",
+        "indiccanop": "0,52",
+        "gid": "654"
+    },
+    {
+        "nom": "Esplanade Duqaire",
+        "indiccanop": "0,00",
+        "gid": "655"
+    },
+    {
+        "nom": "Rives de Saône Quai Bas Porte Gillet",
+        "indiccanop": "0,24",
+        "gid": "656"
+    },
+    {
+        "nom": "Rive de Saône Chemin Nature",
+        "indiccanop": "0,42",
+        "gid": "657"
+    },
+    {
+        "nom": "Parc de la Maison du Fleuve Rhône",
+        "indiccanop": "0,51",
+        "gid": "658"
+    },
+    {
+        "nom": "Parc du manoir",
+        "indiccanop": "0,69",
+        "gid": "659"
+    },
+    {
+        "nom": "Parc de la Mairie de Grigny",
+        "indiccanop": "0,71",
+        "gid": "660"
+    },
+    {
+        "nom": "Parc des Berges",
+        "indiccanop": "0,44",
+        "gid": "661"
+    },
+    {
+        "nom": "Parc de l'Orangerie",
+        "indiccanop": "0,66",
+        "gid": "667"
+    },
+    {
+        "nom": "Jardin de la Condamine",
+        "indiccanop": "0,31",
+        "gid": "668"
+    },
+    {
+        "nom": "Parc des Berges",
+        "indiccanop": "0,35",
+        "gid": "662"
+    },
+    {
+        "nom": "Parc Historique de Beauregard",
+        "indiccanop": "0,36",
+        "gid": "663"
+    },
+    {
+        "nom": "Fort de Côte Lorette",
+        "indiccanop": "0,40",
+        "gid": "664"
+    },
+    {
+        "nom": "Parc de Faury",
+        "indiccanop": "0,37",
+        "gid": "665"
+    },
+    {
+        "nom": "Grand Moulin de l'Yzeron",
+        "indiccanop": "0,54",
+        "gid": "666"
+    },
+    {
+        "nom": "Boulevard de la République",
+        "indiccanop": "0,81",
+        "gid": "782"
+    },
+    {
+        "nom": "Parc du Vivier",
+        "indiccanop": "0,54",
+        "gid": "669"
+    },
+    {
+        "nom": "Place Carnot",
+        "indiccanop": "0,55",
+        "gid": "670"
+    },
+    {
+        "nom": "Place Bellecour",
+        "indiccanop": "0,10",
+        "gid": "671"
+    },
+    {
+        "nom": "Jardin du Palais Saint Pierre",
+        "indiccanop": "0,89",
+        "gid": "672"
+    },
+    {
+        "nom": "Jardins des Chartreux",
+        "indiccanop": "0,80",
+        "gid": "673"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "783"
+    },
+    {
+        "nom": "Parc de Saint Clair",
+        "indiccanop": "0,21",
+        "gid": "674"
+    },
+    {
+        "nom": "Parc Brosset",
+        "indiccanop": "0,46",
+        "gid": "675"
+    },
+    {
+        "nom": "Parc des Horizons",
+        "indiccanop": "0,08",
+        "gid": "676"
+    },
+    {
+        "nom": "Parc des Gorges d'Enfer",
+        "indiccanop": "0,65",
+        "gid": "677"
+    },
+    {
+        "nom": "Parc de Rancé",
+        "indiccanop": "0,57",
+        "gid": "678"
+    },
+    {
+        "nom": "Jardin de l'Institut Lumiere",
+        "indiccanop": "0,56",
+        "gid": "679"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "784"
+    },
+    {
+        "nom": "Parc Chambovet",
+        "indiccanop": "0,52",
+        "gid": "680"
+    },
+    {
+        "nom": "Parc Maurice Sauthier",
+        "indiccanop": "0,59",
+        "gid": "681"
+    },
+    {
+        "nom": "Jardin des Droits de l'Homme",
+        "indiccanop": "0,55",
+        "gid": "682"
+    },
+    {
+        "nom": "Grand Large",
+        "indiccanop": "0,03",
+        "gid": "683"
+    },
+    {
+        "nom": "Parc de la Cerisaie",
+        "indiccanop": "0,75",
+        "gid": "689"
+    },
+    {
+        "nom": "Parc de Gerland",
+        "indiccanop": "0,20",
+        "gid": "693"
+    },
+    {
+        "nom": "Parc de Parilly",
+        "indiccanop": "0,68",
+        "gid": "694"
+    },
+    {
+        "nom": "Parc de Parilly",
+        "indiccanop": "0,84",
+        "gid": "695"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,54",
+        "gid": "1001"
+    },
+    {
+        "nom": "Forêt de Feuilly",
+        "indiccanop": "0,80",
+        "gid": "684"
+    },
+    {
+        "nom": "Parc Paul Mouyon",
+        "indiccanop": "0,62",
+        "gid": "685"
+    },
+    {
+        "nom": "Parc Théodore Monod",
+        "indiccanop": "0,18",
+        "gid": "686"
+    },
+    {
+        "nom": "Parc Blandan",
+        "indiccanop": "0,23",
+        "gid": "692"
+    },
+    {
+        "nom": "Parc de Parilly",
+        "indiccanop": "0,80",
+        "gid": "696"
+    },
+    {
+        "nom": "Parc de la Feyssine",
+        "indiccanop": "0,61",
+        "gid": "687"
+    },
+    {
+        "nom": "Quai des Berges Renata Tebaldi",
+        "indiccanop": "0,65",
+        "gid": "697"
+    },
+    {
+        "nom": "Parc du Vivier",
+        "indiccanop": "0,82",
+        "gid": "698"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,49",
+        "gid": "723"
+    },
+    {
+        "nom": "Parc de la Tête d'Or",
+        "indiccanop": "0,46",
+        "gid": "688"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "899"
+    },
+    {
+        "nom": "Domaine de Lacroix Laval",
+        "indiccanop": "0,68",
+        "gid": "690"
+    },
+    {
+        "nom": "Parc des hauteurs et Jardins du Rosaire",
+        "indiccanop": "0,73",
+        "gid": "691"
+    },
+    {
+        "nom": "Parc de Parilly",
+        "indiccanop": "0,84",
+        "gid": "710"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "900"
+    },
+    {
+        "nom": "Promenade Lénine",
+        "indiccanop": "0,44",
+        "gid": "699"
+    },
+    {
+        "nom": "Jardin des Berges Melina Mercouri",
+        "indiccanop": "0,02",
+        "gid": "700"
+    },
+    {
+        "nom": "Parc du Vallon",
+        "indiccanop": "0,54",
+        "gid": "701"
+    },
+    {
+        "nom": "Voie Verte Parcours de Santé",
+        "indiccanop": "0,94",
+        "gid": "702"
+    },
+    {
+        "nom": "Rive de Saône Quai Rambaud",
+        "indiccanop": "0,09",
+        "gid": "703"
+    },
+    {
+        "nom": "Place des Docks",
+        "indiccanop": "0,29",
+        "gid": "704"
+    },
+    {
+        "nom": "Rive de Saône",
+        "indiccanop": "0,00",
+        "gid": "705"
+    },
+    {
+        "nom": "Parc de la Visitation",
+        "indiccanop": "0,36",
+        "gid": "706"
+    },
+    {
+        "nom": "Jardin des Plantes",
+        "indiccanop": "0,59",
+        "gid": "707"
+    },
+    {
+        "nom": "Parc de Parilly",
+        "indiccanop": "0,77",
+        "gid": "708"
+    },
+    {
+        "nom": "Parc de Parilly",
+        "indiccanop": "0,63",
+        "gid": "709"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "785"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,76",
+        "gid": "711"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,14",
+        "gid": "712"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,88",
+        "gid": "713"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,50",
+        "gid": "714"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,79",
+        "gid": "715"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,45",
+        "gid": "716"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,76",
+        "gid": "717"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,62",
+        "gid": "718"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,64",
+        "gid": "719"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,22",
+        "gid": "720"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,67",
+        "gid": "721"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,49",
+        "gid": "722"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "786"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,49",
+        "gid": "724"
+    },
+    {
+        "nom": "Grand Parc de Miribel-Jonage",
+        "indiccanop": "0,49",
+        "gid": "725"
+    },
+    {
+        "nom": "Parc de la Cité Berliet",
+        "indiccanop": "0,41",
+        "gid": "726"
+    },
+    {
+        "nom": "Stade du Merlo",
+        "indiccanop": "0,15",
+        "gid": "727"
+    },
+    {
+        "nom": "Parc du Prado",
+        "indiccanop": "0,62",
+        "gid": "728"
+    },
+    {
+        "nom": "Chemin de la Herse",
+        "indiccanop": "0,20",
+        "gid": "729"
+    },
+    {
+        "nom": "Place Louis Pradel",
+        "indiccanop": "0,02",
+        "gid": "730"
+    },
+    {
+        "nom": "Allée du Frère Benoît",
+        "indiccanop": "0,12",
+        "gid": "731"
+    },
+    {
+        "nom": "Terrain d'aventure",
+        "indiccanop": "0,28",
+        "gid": "732"
+    },
+    {
+        "nom": "Parc de la Chauderaie",
+        "indiccanop": "0,79",
+        "gid": "733"
+    },
+    {
+        "nom": "Parc du Grillon",
+        "indiccanop": "0,41",
+        "gid": "734"
+    },
+    {
+        "nom": "Square Bulakian",
+        "indiccanop": "0,02",
+        "gid": "735"
+    },
+    {
+        "nom": "Rue Maryse Bastié",
+        "indiccanop": "0,41",
+        "gid": "736"
+    },
+    {
+        "nom": "Rue du Traité de Rome",
+        "indiccanop": "0,14",
+        "gid": "755"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "787"
+    },
+    {
+        "nom": "Place des Palabres",
+        "indiccanop": "0,00",
+        "gid": "737"
+    },
+    {
+        "nom": "Square Château Gaillard",
+        "indiccanop": "0,54",
+        "gid": "738"
+    },
+    {
+        "nom": "Jardin Alexis-Jordan",
+        "indiccanop": "0,78",
+        "gid": "739"
+    },
+    {
+        "nom": "Rue Colin",
+        "indiccanop": "0,31",
+        "gid": "740"
+    },
+    {
+        "nom": "Parc Chanteur",
+        "indiccanop": "0,44",
+        "gid": "741"
+    },
+    {
+        "nom": "Square M. Claeys",
+        "indiccanop": "0,55",
+        "gid": "742"
+    },
+    {
+        "nom": "Parc des Droits de l'homme",
+        "indiccanop": "0,62",
+        "gid": "743"
+    },
+    {
+        "nom": "Parc de la Maison Berty-Albrecht",
+        "indiccanop": "0,19",
+        "gid": "744"
+    },
+    {
+        "nom": "Rue Félix Rollet",
+        "indiccanop": "0,01",
+        "gid": "745"
+    },
+    {
+        "nom": "Place de l'Europe",
+        "indiccanop": "0,59",
+        "gid": "746"
+    },
+    {
+        "nom": "Parc Georges Manillier",
+        "indiccanop": "0,47",
+        "gid": "747"
+    },
+    {
+        "nom": "Rue du Centenaire",
+        "indiccanop": "0,62",
+        "gid": "748"
+    },
+    {
+        "nom": "Place des Moulins du Rhône",
+        "indiccanop": "0,00",
+        "gid": "749"
+    },
+    {
+        "nom": "Parc de la Roue",
+        "indiccanop": "0,66",
+        "gid": "750"
+    },
+    {
+        "nom": "Chemin du Creux",
+        "indiccanop": "0,92",
+        "gid": "842"
+    },
+    {
+        "nom": "Chemin de Contre-Halage",
+        "indiccanop": "0,70",
+        "gid": "751"
+    },
+    {
+        "nom": "Chemin de Contre-Halage",
+        "indiccanop": "0,70",
+        "gid": "752"
+    },
+    {
+        "nom": "Chemin de Contre-Halage",
+        "indiccanop": "0,70",
+        "gid": "753"
+    },
+    {
+        "nom": "Chemin de Contre-Halage",
+        "indiccanop": "0,70",
+        "gid": "754"
+    },
+    {
+        "nom": "Stade Francisque Jomard",
+        "indiccanop": "0,03",
+        "gid": "756"
+    },
+    {
+        "nom": "Square Casanova",
+        "indiccanop": "0,58",
+        "gid": "757"
+    },
+    {
+        "nom": "Rue des Violettes",
+        "indiccanop": "0,07",
+        "gid": "758"
+    },
+    {
+        "nom": "Square Pressensé",
+        "indiccanop": "0,00",
+        "gid": "759"
+    },
+    {
+        "nom": "Rue des Macchabées",
+        "indiccanop": "0,09",
+        "gid": "760"
+    },
+    {
+        "nom": "Espace de Loisirs Coulouvrier",
+        "indiccanop": "0,27",
+        "gid": "769"
+    },
+    {
+        "nom": "Rue Paul Eluard",
+        "indiccanop": "0,00",
+        "gid": "770"
+    },
+    {
+        "nom": "Rue Paul Eluard",
+        "indiccanop": "0,00",
+        "gid": "771"
+    },
+    {
+        "nom": "Rue Paul Eluard",
+        "indiccanop": "0,00",
+        "gid": "772"
+    },
+    {
+        "nom": "Promenade Léa et Napoléon Bullukian",
+        "indiccanop": "0,21",
+        "gid": "773"
+    },
+    {
+        "nom": "Promenade Parc de Miribel",
+        "indiccanop": "0,01",
+        "gid": "774"
+    },
+    {
+        "nom": "Jardin partagé pédagogique La Pinède",
+        "indiccanop": "0,00",
+        "gid": "775"
+    },
+    {
+        "nom": "Rue de Saint-Cyr",
+        "indiccanop": "0,26",
+        "gid": "776"
+    },
+    {
+        "nom": "Face Cirque Imagine",
+        "indiccanop": "0,01",
+        "gid": "777"
+    },
+    {
+        "nom": "Rue Franklin",
+        "indiccanop": "0,00",
+        "gid": "778"
+    },
+    {
+        "nom": "Rue Jean Lurçat",
+        "indiccanop": "0,00",
+        "gid": "779"
+    },
+    {
+        "nom": "Allée des Cyprès",
+        "indiccanop": "0,60",
+        "gid": "780"
+    },
+    {
+        "nom": "Mairie annexe de Champagne",
+        "indiccanop": "0,00",
+        "gid": "781"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "901"
+    },
+    {
+        "nom": "Rue du Repos",
+        "indiccanop": "0,75",
+        "gid": "761"
+    },
+    {
+        "nom": "Délaissé",
+        "indiccanop": "0,42",
+        "gid": "762"
+    },
+    {
+        "nom": "Délaissé",
+        "indiccanop": "0,42",
+        "gid": "763"
+    },
+    {
+        "nom": "Délaissé",
+        "indiccanop": "0,42",
+        "gid": "764"
+    },
+    {
+        "nom": "Délaissé",
+        "indiccanop": "0,42",
+        "gid": "765"
+    },
+    {
+        "nom": "Délaissé",
+        "indiccanop": "0,42",
+        "gid": "766"
+    },
+    {
+        "nom": "Espace Noëlle Grégoire",
+        "indiccanop": "0,00",
+        "gid": "767"
+    },
+    {
+        "nom": "Square Grimma",
+        "indiccanop": "0,54",
+        "gid": "768"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "788"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "789"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "790"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "791"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "792"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1002"
+    },
+    {
+        "nom": "Promenade de la Rize",
+        "indiccanop": "0,31",
+        "gid": "793"
+    },
+    {
+        "nom": "Stade Dumont",
+        "indiccanop": "0,09",
+        "gid": "794"
+    },
+    {
+        "nom": "Garibaldi Berthelot",
+        "indiccanop": "0,17",
+        "gid": "795"
+    },
+    {
+        "nom": "Avenue de l'Europe",
+        "indiccanop": "0,06",
+        "gid": "796"
+    },
+    {
+        "nom": "Parc urbain de Vancia",
+        "indiccanop": "0,69",
+        "gid": "797"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,13",
+        "gid": "968"
+    },
+    {
+        "nom": "Square Agnès Neyret",
+        "indiccanop": "0,00",
+        "gid": "798"
+    },
+    {
+        "nom": "Jardins familiaux",
+        "indiccanop": "0,00",
+        "gid": "799"
+    },
+    {
+        "nom": "Jardins EDF",
+        "indiccanop": "0,16",
+        "gid": "800"
+    },
+    {
+        "nom": "Chemin de la Rize",
+        "indiccanop": "0,32",
+        "gid": "801"
+    },
+    {
+        "nom": "Rue des Farges",
+        "indiccanop": "0,37",
+        "gid": "802"
+    },
+    {
+        "nom": "Place Docteur Schweitzer",
+        "indiccanop": "0,68",
+        "gid": "803"
+    },
+    {
+        "nom": "Promenade parc de Miribel",
+        "indiccanop": "0,69",
+        "gid": "804"
+    },
+    {
+        "nom": "Rue Georges Salendre",
+        "indiccanop": "0,03",
+        "gid": "821"
+    },
+    {
+        "nom": "Parc Municipal Elsa Triolet",
+        "indiccanop": "0,65",
+        "gid": "843"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "969"
+    },
+    {
+        "nom": "Promenade parc de Miribel",
+        "indiccanop": "0,69",
+        "gid": "805"
+    },
+    {
+        "nom": "Rue du Lieutenant-Colonel Girard",
+        "indiccanop": "0,44",
+        "gid": "806"
+    },
+    {
+        "nom": "Allée Yasser Arafat, Yitzhak Rabin et Shimon Peres",
+        "indiccanop": "0,40",
+        "gid": "807"
+    },
+    {
+        "nom": "Square Capitaine Billon",
+        "indiccanop": "0,67",
+        "gid": "808"
+    },
+    {
+        "nom": "Guillermin Terraillon",
+        "indiccanop": "0,26",
+        "gid": "809"
+    },
+    {
+        "nom": "Parc François Mitterrand",
+        "indiccanop": "0,01",
+        "gid": "810"
+    },
+    {
+        "nom": "Parc François Mitterrand",
+        "indiccanop": "0,01",
+        "gid": "811"
+    },
+    {
+        "nom": "Parc François Mitterrand",
+        "indiccanop": "0,01",
+        "gid": "812"
+    },
+    {
+        "nom": "Parc François Mitterrand",
+        "indiccanop": "0,01",
+        "gid": "813"
+    },
+    {
+        "nom": "Rue de la République",
+        "indiccanop": "0,78",
+        "gid": "814"
+    },
+    {
+        "nom": "Jardins impasse de la Thibaude",
+        "indiccanop": "0,24",
+        "gid": "815"
+    },
+    {
+        "nom": "Rue de la Tase",
+        "indiccanop": "0,00",
+        "gid": "816"
+    },
+    {
+        "nom": "Aire de jeux Philomène Rozan",
+        "indiccanop": "0,00",
+        "gid": "817"
+    },
+    {
+        "nom": "Rue Georges Seguin",
+        "indiccanop": "0,03",
+        "gid": "818"
+    },
+    {
+        "nom": "Place Béatrice Arzt",
+        "indiccanop": "0,00",
+        "gid": "819"
+    },
+    {
+        "nom": "Jardin cours Eugénie",
+        "indiccanop": "0,00",
+        "gid": "820"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,55",
+        "gid": "871"
+    },
+    {
+        "nom": "Parc Nathalie Gautier",
+        "indiccanop": "0,16",
+        "gid": "970"
+    },
+    {
+        "nom": "Fort de Bron",
+        "indiccanop": "0,81",
+        "gid": "822"
+    },
+    {
+        "nom": "Vancia",
+        "indiccanop": "0,86",
+        "gid": "823"
+    },
+    {
+        "nom": "Rue Louis Duclos",
+        "indiccanop": "0,06",
+        "gid": "824"
+    },
+    {
+        "nom": "Confluence",
+        "indiccanop": "0,00",
+        "gid": "825"
+    },
+    {
+        "nom": "Mas Dessous Montchat",
+        "indiccanop": "0,18",
+        "gid": "840"
+    },
+    {
+        "nom": "Confluence",
+        "indiccanop": "0,00",
+        "gid": "826"
+    },
+    {
+        "nom": "Rue Saint Théodore",
+        "indiccanop": "0,04",
+        "gid": "827"
+    },
+    {
+        "nom": "Derrière Piscine de Vaise",
+        "indiccanop": "0,79",
+        "gid": "828"
+    },
+    {
+        "nom": "Ruer Pesselière",
+        "indiccanop": "0,01",
+        "gid": "829"
+    },
+    {
+        "nom": "Rue des Noyers",
+        "indiccanop": "0,50",
+        "gid": "830"
+    },
+    {
+        "nom": "Jardin Roquette",
+        "indiccanop": "0,00",
+        "gid": "831"
+    },
+    {
+        "nom": "Stade Edouard Aubert",
+        "indiccanop": "0,06",
+        "gid": "832"
+    },
+    {
+        "nom": "Gymnase Jean-Jacques Rousseau",
+        "indiccanop": "0,18",
+        "gid": "833"
+    },
+    {
+        "nom": "Parc des loustics",
+        "indiccanop": "0,28",
+        "gid": "841"
+    },
+    {
+        "nom": "Square de Weissach",
+        "indiccanop": "0,31",
+        "gid": "971"
+    },
+    {
+        "nom": "Chemin Montpellas",
+        "indiccanop": "0,41",
+        "gid": "834"
+    },
+    {
+        "nom": "Square Diday",
+        "indiccanop": "0,00",
+        "gid": "835"
+    },
+    {
+        "nom": "Parc de la passerelle",
+        "indiccanop": "0,24",
+        "gid": "836"
+    },
+    {
+        "nom": "Boulevard de Balmont",
+        "indiccanop": "0,63",
+        "gid": "837"
+    },
+    {
+        "nom": "Avenue Garibaldi",
+        "indiccanop": "0,00",
+        "gid": "838"
+    },
+    {
+        "nom": "Quai Rambaud",
+        "indiccanop": "0,00",
+        "gid": "839"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,73",
+        "gid": "1003"
+    },
+    {
+        "nom": "Parc Municipal Elsa Triolet",
+        "indiccanop": "0,65",
+        "gid": "844"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,13",
+        "gid": "845"
+    },
+    {
+        "nom": "Square des Quatre Colonnes",
+        "indiccanop": "0,00",
+        "gid": "846"
+    },
+    {
+        "nom": "Hippodrome de Lyon - Carré de Soie",
+        "indiccanop": "0,01",
+        "gid": "847"
+    },
+    {
+        "nom": "Avenue Franklin Roosevelt",
+        "indiccanop": "0,89",
+        "gid": "848"
+    },
+    {
+        "nom": "Parc Nelson Mandela",
+        "indiccanop": "0,00",
+        "gid": "849"
+    },
+    {
+        "nom": "Rue Gandolière",
+        "indiccanop": "0,99",
+        "gid": "850"
+    },
+    {
+        "nom": "Parc d'Ombreval",
+        "indiccanop": "0,10",
+        "gid": "851"
+    },
+    {
+        "nom": "Square du 8 Mai 1945",
+        "indiccanop": "0,54",
+        "gid": "852"
+    },
+    {
+        "nom": "Station Mue",
+        "indiccanop": "0,03",
+        "gid": "853"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,48",
+        "gid": "854"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,68",
+        "gid": "855"
+    },
+    {
+        "nom": "Esplanade Jacques Chirac",
+        "indiccanop": "0,52",
+        "gid": "872"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "997"
+    },
+    {
+        "nom": "Pelouse des Humanités",
+        "indiccanop": "0,13",
+        "gid": "856"
+    },
+    {
+        "nom": "Bois du Baron",
+        "indiccanop": "0,00",
+        "gid": "857"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,62",
+        "gid": "858"
+    },
+    {
+        "nom": "Parc du Rhône",
+        "indiccanop": "0,72",
+        "gid": "859"
+    },
+    {
+        "nom": "Parc Lisbeth Bouquin",
+        "indiccanop": "0,55",
+        "gid": "860"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,03",
+        "gid": "861"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,57",
+        "gid": "862"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,77",
+        "gid": "863"
+    },
+    {
+        "nom": "Square Henri Frenay",
+        "indiccanop": "0,51",
+        "gid": "864"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,01",
+        "gid": "865"
+    },
+    {
+        "nom": "Rosa Parks",
+        "indiccanop": "0,15",
+        "gid": "866"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,17",
+        "gid": "867"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,15",
+        "gid": "868"
+    },
+    {
+        "nom": "Square Spielberg",
+        "indiccanop": "0,85",
+        "gid": "869"
+    },
+    {
+        "nom": "Parc des Pachottes",
+        "indiccanop": "0,00",
+        "gid": "870"
+    },
+    {
+        "nom": "Square des Anciens Combattants d'Afrique du Nord",
+        "indiccanop": "0,84",
+        "gid": "873"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "874"
+    },
+    {
+        "nom": "Parc du Prieuré",
+        "indiccanop": "0,00",
+        "gid": "875"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "876"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,48",
+        "gid": "877"
+    },
+    {
+        "nom": "Parc du Puy d'or",
+        "indiccanop": "0,64",
+        "gid": "878"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "879"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,73",
+        "gid": "880"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,08",
+        "gid": "881"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "882"
+    },
+    {
+        "nom": "Parc Louis Pergaud",
+        "indiccanop": "0,62",
+        "gid": "883"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,45",
+        "gid": "884"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "885"
+    },
+    {
+        "nom": "Aire de Skateboard",
+        "indiccanop": "0,00",
+        "gid": "886"
+    },
+    {
+        "nom": "Parc de la Mairie",
+        "indiccanop": "0,35",
+        "gid": "887"
+    },
+    {
+        "nom": "Jardin du Molliet",
+        "indiccanop": "0,12",
+        "gid": "888"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,14",
+        "gid": "889"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,41",
+        "gid": "890"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,21",
+        "gid": "891"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "892"
+    },
+    {
+        "nom": "Square Général de Gaulle",
+        "indiccanop": "0,51",
+        "gid": "893"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,39",
+        "gid": "894"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,72",
+        "gid": "895"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "896"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,17",
+        "gid": "902"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "903"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "904"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "905"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,11",
+        "gid": "906"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,49",
+        "gid": "907"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "908"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,37",
+        "gid": "909"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,17",
+        "gid": "910"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "911"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,30",
+        "gid": "912"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,48",
+        "gid": "913"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,07",
+        "gid": "914"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "915"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "916"
+    },
+    {
+        "nom": "Parc Vaclav-Havel",
+        "indiccanop": "0,33",
+        "gid": "917"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,63",
+        "gid": "918"
+    },
+    {
+        "nom": "Square Bernard Meunier",
+        "indiccanop": "0,56",
+        "gid": "919"
+    },
+    {
+        "nom": "Square Lucien-Agnel",
+        "indiccanop": "0,00",
+        "gid": "920"
+    },
+    {
+        "nom": "Jardin de Poche Bienvenus Perroncel",
+        "indiccanop": "0,00",
+        "gid": "921"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "922"
+    },
+    {
+        "nom": "Promenade de la gare",
+        "indiccanop": "0,00",
+        "gid": "923"
+    },
+    {
+        "nom": "Parc Jacob-Hugentobler",
+        "indiccanop": "0,20",
+        "gid": "924"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,01",
+        "gid": "925"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "926"
+    },
+    {
+        "nom": "Square Bufflier",
+        "indiccanop": "0,38",
+        "gid": "927"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "998"
+    },
+    {
+        "nom": "Prairie de la Berthaudière",
+        "indiccanop": "0,13",
+        "gid": "928"
+    },
+    {
+        "nom": "Square Orsel",
+        "indiccanop": "0,00",
+        "gid": "929"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,34",
+        "gid": "930"
+    },
+    {
+        "nom": "Place Général Delfosse",
+        "indiccanop": "0,50",
+        "gid": "931"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "932"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "933"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "934"
+    },
+    {
+        "nom": "Pré au cheval",
+        "indiccanop": "0,29",
+        "gid": "935"
+    },
+    {
+        "nom": "Place Camille Georges",
+        "indiccanop": "0,00",
+        "gid": "936"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "937"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "938"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,01",
+        "gid": "939"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "940"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,02",
+        "gid": "941"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,53",
+        "gid": "942"
+    },
+    {
+        "nom": "Place de la Paix",
+        "indiccanop": "0,00",
+        "gid": "943"
+    },
+    {
+        "nom": "Parc de Montvallon",
+        "indiccanop": "0,41",
+        "gid": "944"
+    },
+    {
+        "nom": "Square Général Brosset",
+        "indiccanop": "0,63",
+        "gid": "945"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,20",
+        "gid": "999"
+    },
+    {
+        "nom": "Parc du Château",
+        "indiccanop": "0,00",
+        "gid": "946"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,06",
+        "gid": "947"
+    },
+    {
+        "nom": "Parc Normandie Niemen",
+        "indiccanop": "0,54",
+        "gid": "948"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "949"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,93",
+        "gid": "950"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,42",
+        "gid": "951"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,12",
+        "gid": "952"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "953"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "954"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "955"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "956"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,01",
+        "gid": "957"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,07",
+        "gid": "958"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "959"
+    },
+    {
+        "nom": "Square Les Floralies",
+        "indiccanop": "0,57",
+        "gid": "960"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,80",
+        "gid": "961"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "962"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,17",
+        "gid": "963"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,15",
+        "gid": "964"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "965"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "966"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "967"
+    },
+    {
+        "nom": "Parc municipal de Chassagne",
+        "indiccanop": "0,00",
+        "gid": "972"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "973"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "974"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,54",
+        "gid": "975"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,02",
+        "gid": "976"
+    },
+    {
+        "nom": "Parc Dupoizat",
+        "indiccanop": "0,28",
+        "gid": "977"
+    },
+    {
+        "nom": "Skate park",
+        "indiccanop": "0,01",
+        "gid": "978"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,49",
+        "gid": "979"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "980"
+    },
+    {
+        "nom": "Square Ninon Vallin",
+        "indiccanop": "0,45",
+        "gid": "981"
+    },
+    {
+        "nom": "Parc Bourchanin",
+        "indiccanop": "0,29",
+        "gid": "982"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,59",
+        "gid": "983"
+    },
+    {
+        "nom": "Parc public François Treyve",
+        "indiccanop": "0,81",
+        "gid": "984"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,33",
+        "gid": "985"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "986"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "987"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,54",
+        "gid": "988"
+    },
+    {
+        "nom": "Square Huguette Bois",
+        "indiccanop": "0,34",
+        "gid": "989"
+    },
+    {
+        "nom": "Square Henri Barbusse",
+        "indiccanop": "0,19",
+        "gid": "990"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,33",
+        "gid": "991"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,53",
+        "gid": "992"
+    },
+    {
+        "nom": "Place Maréchal Joffre",
+        "indiccanop": "0,46",
+        "gid": "993"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,04",
+        "gid": "994"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,07",
+        "gid": "995"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "996"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,97",
+        "gid": "1073"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,38",
+        "gid": "1004"
+    },
+    {
+        "nom": "Parc de la Colandière",
+        "indiccanop": "0,00",
+        "gid": "1005"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1006"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,35",
+        "gid": "1007"
+    },
+    {
+        "nom": "Parc Réaux",
+        "indiccanop": "0,00",
+        "gid": "1008"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1009"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1010"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,10",
+        "gid": "1011"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,28",
+        "gid": "1012"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,77",
+        "gid": "1013"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,73",
+        "gid": "1014"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,05",
+        "gid": "1015"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,60",
+        "gid": "1016"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,84",
+        "gid": "1017"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,69",
+        "gid": "1018"
+    },
+    {
+        "nom": "Parc République",
+        "indiccanop": "0,51",
+        "gid": "1019"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,30",
+        "gid": "1020"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,03",
+        "gid": "1074"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,12",
+        "gid": "1021"
+    },
+    {
+        "nom": "Parc de la Tourette",
+        "indiccanop": "0,09",
+        "gid": "1022"
+    },
+    {
+        "nom": "Parc de la Tourette",
+        "indiccanop": "0,09",
+        "gid": "1023"
+    },
+    {
+        "nom": "Square Félix Lebossé",
+        "indiccanop": "0,79",
+        "gid": "1056"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1057"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,01",
+        "gid": "1024"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,31",
+        "gid": "1025"
+    },
+    {
+        "nom": "Parc du Château de Veynes",
+        "indiccanop": "0,00",
+        "gid": "1026"
+    },
+    {
+        "nom": "",
+        "indiccanop": "1,00",
+        "gid": "1027"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,08",
+        "gid": "1028"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,55",
+        "gid": "1029"
+    },
+    {
+        "nom": "Parc des Etangs de Mathan",
+        "indiccanop": "0,97",
+        "gid": "1030"
+    },
+    {
+        "nom": "Place de la République",
+        "indiccanop": "0,74",
+        "gid": "1031"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,03",
+        "gid": "1032"
+    },
+    {
+        "nom": "",
+        "indiccanop": "1,00",
+        "gid": "1033"
+    },
+    {
+        "nom": "Place d'Helvétie",
+        "indiccanop": "0,57",
+        "gid": "1034"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1035"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,48",
+        "gid": "1075"
+    },
+    {
+        "nom": "Parc Jourdan",
+        "indiccanop": "0,00",
+        "gid": "1036"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1037"
+    },
+    {
+        "nom": "Parc du Fort",
+        "indiccanop": "0,66",
+        "gid": "1038"
+    },
+    {
+        "nom": "Square Paul Claudel",
+        "indiccanop": "0,27",
+        "gid": "1082"
+    },
+    {
+        "nom": "Parc du Château",
+        "indiccanop": "0,37",
+        "gid": "1039"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,34",
+        "gid": "1040"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,34",
+        "gid": "1041"
+    },
+    {
+        "nom": "Place Saint-Alexandre",
+        "indiccanop": "0,55",
+        "gid": "1042"
+    },
+    {
+        "nom": "Square Elie Vignal",
+        "indiccanop": "0,95",
+        "gid": "1043"
+    },
+    {
+        "nom": "Parc Nelson Mandela",
+        "indiccanop": "0,11",
+        "gid": "1044"
+    },
+    {
+        "nom": "Parc de Rajat",
+        "indiccanop": "0,00",
+        "gid": "1045"
+    },
+    {
+        "nom": "Square de la Doua",
+        "indiccanop": "0,73",
+        "gid": "1046"
+    },
+    {
+        "nom": "Parc des Trois Cerisiers",
+        "indiccanop": "0,56",
+        "gid": "1047"
+    },
+    {
+        "nom": "Parc de l'Accueil",
+        "indiccanop": "0,66",
+        "gid": "1048"
+    },
+    {
+        "nom": "Parc de l'Europe",
+        "indiccanop": "0,59",
+        "gid": "1049"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,17",
+        "gid": "1050"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,39",
+        "gid": "1051"
+    },
+    {
+        "nom": "Parc du Fort de Meyzieu",
+        "indiccanop": "0,98",
+        "gid": "1076"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,04",
+        "gid": "1077"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,81",
+        "gid": "1052"
+    },
+    {
+        "nom": "La roseraie de Montessuy",
+        "indiccanop": "0,01",
+        "gid": "1053"
+    },
+    {
+        "nom": "Parc de la Maison des Champs",
+        "indiccanop": "0,43",
+        "gid": "1054"
+    },
+    {
+        "nom": "Square Songieu",
+        "indiccanop": "0,88",
+        "gid": "1055"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1058"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1059"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1060"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1061"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,30",
+        "gid": "1062"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1063"
+    },
+    {
+        "nom": "Parc Bourlione",
+        "indiccanop": "0,17",
+        "gid": "1064"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1065"
+    },
+    {
+        "nom": "Skate park",
+        "indiccanop": "0,35",
+        "gid": "1066"
+    },
+    {
+        "nom": "Parc de la mairie",
+        "indiccanop": "0,41",
+        "gid": "1067"
+    },
+    {
+        "nom": "Pelouse du Premier Cycle",
+        "indiccanop": "0,32",
+        "gid": "1068"
+    },
+    {
+        "nom": "Jardin archéologique",
+        "indiccanop": "0,00",
+        "gid": "1069"
+    },
+    {
+        "nom": "Place Edouard Herriot",
+        "indiccanop": "0,38",
+        "gid": "1070"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,37",
+        "gid": "1071"
+    },
+    {
+        "nom": "Square Antoine Foret",
+        "indiccanop": "0,00",
+        "gid": "1072"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "1078"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1079"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1080"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1081"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1083"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,25",
+        "gid": "1084"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,11",
+        "gid": "1085"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,41",
+        "gid": "1086"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,53",
+        "gid": "1087"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,54",
+        "gid": "1088"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,90",
+        "gid": "1089"
+    },
+    {
+        "nom": "Square des Justes",
+        "indiccanop": "0,86",
+        "gid": "1090"
+    },
+    {
+        "nom": "Parc René Dumont",
+        "indiccanop": "0,78",
+        "gid": "1091"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,07",
+        "gid": "1092"
+    },
+    {
+        "nom": "Parc de l'Aqueduc",
+        "indiccanop": "0,15",
+        "gid": "1093"
+    },
+    {
+        "nom": "Parc de la Commune de Paris",
+        "indiccanop": "0,74",
+        "gid": "1094"
+    },
+    {
+        "nom": "Parc des Sports de la Terre des Lièvres",
+        "indiccanop": "0,09",
+        "gid": "1095"
+    },
+    {
+        "nom": "Square Léon Meiss",
+        "indiccanop": "0,64",
+        "gid": "1096"
+    },
+    {
+        "nom": "Parc du musée Gadagne",
+        "indiccanop": "0,07",
+        "gid": "1097"
+    },
+    {
+        "nom": "Parc du Brûlet",
+        "indiccanop": "0,54",
+        "gid": "1098"
+    },
+    {
+        "nom": "Jardin de poche des Poulettes",
+        "indiccanop": "0,12",
+        "gid": "1099"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1100"
+    },
+    {
+        "nom": "Jardin Alfred Sauvy",
+        "indiccanop": "0,31",
+        "gid": "1101"
+    },
+    {
+        "nom": "Square du Château",
+        "indiccanop": "0,00",
+        "gid": "1102"
+    },
+    {
+        "nom": "City Aventure",
+        "indiccanop": "1,00",
+        "gid": "1103"
+    },
+    {
+        "nom": "Place Jean Fleury Coponat",
+        "indiccanop": "0,53",
+        "gid": "1104"
+    },
+    {
+        "nom": "Square Evariste Galois",
+        "indiccanop": "0,34",
+        "gid": "1105"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,14",
+        "gid": "1106"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,45",
+        "gid": "1107"
+    },
+    {
+        "nom": "Eco-Parc",
+        "indiccanop": "0,21",
+        "gid": "1108"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,32",
+        "gid": "1109"
+    },
+    {
+        "nom": "Jardin de la Filature",
+        "indiccanop": "0,08",
+        "gid": "1110"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1111"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,35",
+        "gid": "1112"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,41",
+        "gid": "1113"
+    },
+    {
+        "nom": "Paroisse Sainte-Thérèse",
+        "indiccanop": "0,16",
+        "gid": "1114"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,42",
+        "gid": "1115"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,45",
+        "gid": "1116"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,41",
+        "gid": "1117"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,39",
+        "gid": "1118"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1119"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,34",
+        "gid": "1120"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,38",
+        "gid": "1121"
+    },
+    {
+        "nom": "Parc du Colombier",
+        "indiccanop": "0,40",
+        "gid": "1122"
+    },
+    {
+        "nom": "Jardin des Mille Couleurs",
+        "indiccanop": "0,55",
+        "gid": "1123"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,87",
+        "gid": "1124"
+    },
+    {
+        "nom": "Parc Etienne Gagnaire",
+        "indiccanop": "0,25",
+        "gid": "1125"
+    },
+    {
+        "nom": "Parc de la Pomme",
+        "indiccanop": "0,55",
+        "gid": "1126"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,34",
+        "gid": "1143"
+    },
+    {
+        "nom": "Parc de L'Atrium",
+        "indiccanop": "0,30",
+        "gid": "1127"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1128"
+    },
+    {
+        "nom": "Jardins de l'Hôtel de ville",
+        "indiccanop": "0,66",
+        "gid": "1129"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,53",
+        "gid": "1130"
+    },
+    {
+        "nom": "Jardin de botanique de l'ISPB",
+        "indiccanop": "0,72",
+        "gid": "1217"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,37",
+        "gid": "1131"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,68",
+        "gid": "1132"
+    },
+    {
+        "nom": "Parc de la Mairie",
+        "indiccanop": "0,74",
+        "gid": "1133"
+    },
+    {
+        "nom": "Parc de Bel Air 1",
+        "indiccanop": "0,21",
+        "gid": "1134"
+    },
+    {
+        "nom": "Square Jules Ferry",
+        "indiccanop": "0,47",
+        "gid": "1135"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,38",
+        "gid": "1136"
+    },
+    {
+        "nom": "Parc public de l'Etoile",
+        "indiccanop": "0,77",
+        "gid": "1137"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1138"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1139"
+    },
+    {
+        "nom": "Place des Frères Voisin",
+        "indiccanop": "0,00",
+        "gid": "1140"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,04",
+        "gid": "1141"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,54",
+        "gid": "1142"
+    },
+    {
+        "nom": "Parc Louis Dupic",
+        "indiccanop": "0,62",
+        "gid": "1144"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1167"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1145"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,60",
+        "gid": "1146"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "1147"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,23",
+        "gid": "1148"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,84",
+        "gid": "1149"
+    },
+    {
+        "nom": "Square Edouard Herriot",
+        "indiccanop": "0,45",
+        "gid": "1150"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1151"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,45",
+        "gid": "1152"
+    },
+    {
+        "nom": "Pré des Castors",
+        "indiccanop": "0,17",
+        "gid": "1153"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,68",
+        "gid": "1154"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,63",
+        "gid": "1155"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1156"
+    },
+    {
+        "nom": "Parc de Sanzy",
+        "indiccanop": "0,82",
+        "gid": "1157"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1158"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,68",
+        "gid": "1159"
+    },
+    {
+        "nom": "Parc de Loisirs Champvillard",
+        "indiccanop": "0,28",
+        "gid": "1160"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,33",
+        "gid": "1161"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1162"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1163"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1164"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1165"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1166"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,02",
+        "gid": "1168"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1169"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1170"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1171"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1172"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1173"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,06",
+        "gid": "1174"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,75",
+        "gid": "1175"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1176"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,36",
+        "gid": "1177"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,24",
+        "gid": "1178"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,26",
+        "gid": "1179"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,56",
+        "gid": "1180"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,20",
+        "gid": "1181"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,40",
+        "gid": "1182"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,06",
+        "gid": "1183"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,33",
+        "gid": "1184"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,62",
+        "gid": "1185"
+    },
+    {
+        "nom": "Parc Brignais",
+        "indiccanop": "0,00",
+        "gid": "1186"
+    },
+    {
+        "nom": "Parc du Haut de la Combe",
+        "indiccanop": "0,39",
+        "gid": "1187"
+    },
+    {
+        "nom": "Parc Bourrat",
+        "indiccanop": "0,57",
+        "gid": "1188"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1189"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,21",
+        "gid": "1190"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,15",
+        "gid": "1215"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1191"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,30",
+        "gid": "1192"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,08",
+        "gid": "1193"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1194"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,16",
+        "gid": "1195"
+    },
+    {
+        "nom": "Parc de la Roseraie",
+        "indiccanop": "0,00",
+        "gid": "1196"
+    },
+    {
+        "nom": "Jardins de l'ENS",
+        "indiccanop": "0,51",
+        "gid": "1197"
+    },
+    {
+        "nom": "Place Georges Salendre",
+        "indiccanop": "0,13",
+        "gid": "1198"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,31",
+        "gid": "1199"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,22",
+        "gid": "1200"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,03",
+        "gid": "1201"
+    },
+    {
+        "nom": "Square Général Pierre Robert de Saint-Vincent",
+        "indiccanop": "0,34",
+        "gid": "1202"
+    },
+    {
+        "nom": "Cours extérieure du mirage",
+        "indiccanop": "0,00",
+        "gid": "1203"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,47",
+        "gid": "1204"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1205"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,04",
+        "gid": "1206"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,17",
+        "gid": "1207"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1208"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1209"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,46",
+        "gid": "1210"
+    },
+    {
+        "nom": "Parc de la Mairie",
+        "indiccanop": "0,51",
+        "gid": "1211"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,86",
+        "gid": "1212"
+    },
+    {
+        "nom": "",
+        "indiccanop": "1,00",
+        "gid": "1213"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,56",
+        "gid": "1214"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,00",
+        "gid": "1216"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,07",
+        "gid": "1218"
+    },
+    {
+        "nom": "",
+        "indiccanop": "0,27",
+        "gid": "1219"
+    }
+]
