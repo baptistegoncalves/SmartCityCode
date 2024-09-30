@@ -18,7 +18,6 @@ import {
 import MapView, { Circle, Marker } from "react-native-maps";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import noiseData from "../assets/datasets/bruit.mesures_observatoire_acoustique.json";
-import pollutionDataJson from "../assets/datasets/poll.json";
 import Add_Pin_Button from "./Add_Pin_Button";
 import AddPinPopup from "./AddPinPopup";
 import MainPopup from "./MainPopup";
@@ -58,28 +57,19 @@ type Pin = {
   reason: string;
 };
 
-interface PollutionData {
-  aqi: number;
-  city: {
-    geo: [number, number];
-    name: string;
-    url: string;
-  };
-  iaqi: {
-    pm10: { v: number };
-    pm25: { v: number };
-  };
-}
-
 interface Capteur {
+  deveui: string;
+  nom: string;
   lat: number;
   lon: number;
-  temperature: number | null;
-  // Ajoutez d'autres propriétés si nécessaire
+  status: string;
+  temperature: number;
+  datemaj: string;
 }
 
 const supabaseUrl = "https://tpzxhsjdxvqoroyflzpq.supabase.co";
-const supabaseKey = "VOTRE_CLE_SUPABASE"; // Remplacez par votre clé Supabase
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwenhoc2pkeHZxb3JveWZsenBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczNTY5MTksImV4cCI6MjA0MjkzMjkxOX0.SEq5hD2kohn-WxXE1VUXA6MKvnr9ev-9Sqz3M-2ciVQ"; // Remplacez par votre clé Supabase
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 function MapScreen({ navigation }: MapScreenProps) {
@@ -103,9 +93,6 @@ function MapScreen({ navigation }: MapScreenProps) {
   >("closed");
   const bottomSheetRef = useRef<BottomSheet>(null);
   const snapPoints = useMemo(() => ["50%"], []);
-  const [pollutionData, setPollutionData] = useState<PollutionData | null>(
-    pollutionDataJson.data as unknown as PollutionData
-  );
 
   // Fonction pour récupérer les pins de Supabase
   const fetchPins = async () => {
@@ -165,7 +152,10 @@ function MapScreen({ navigation }: MapScreenProps) {
       }));
       setCameraLocations(cameras);
     } catch (error) {
-      console.error("Error loading data from API:", error);
+      console.error(
+        "Erreur lors du chargement des caméras depuis l'API:",
+        error
+      );
     }
   };
 
@@ -174,6 +164,7 @@ function MapScreen({ navigation }: MapScreenProps) {
   };
 
   const handleSelectOption = (option: Option) => {
+    console.log("Option sélectionnée:", option);
     setSelectedOptions((prevSelectedOptions) => {
       if (prevSelectedOptions.includes(option)) {
         if (option === "Sécurité") {
@@ -330,28 +321,6 @@ function MapScreen({ navigation }: MapScreenProps) {
               />
             ))}
 
-        {/* Affichage des données de pollution */}
-        {pollutionData && (
-          <Marker
-            coordinate={{
-              latitude: pollutionData.city.geo[0],
-              longitude: pollutionData.city.geo[1],
-            }}
-            title={`AQI: ${pollutionData.aqi}`}
-            description={`PM10: ${pollutionData.iaqi.pm10.v}, PM2.5: ${pollutionData.iaqi.pm25.v}`}
-          >
-            <View
-              style={{
-                backgroundColor: getColorFromAQI(pollutionData.aqi),
-                padding: 5,
-                borderRadius: 5,
-              }}
-            >
-              <Text style={{ color: "white" }}>{pollutionData.aqi}</Text>
-            </View>
-          </Marker>
-        )}
-
         {/* Affichage des pins */}
         {pins.map((pin) => (
           <Marker
@@ -363,32 +332,36 @@ function MapScreen({ navigation }: MapScreenProps) {
           />
         ))}
 
-        {/* Affichage des capteurs */}
-        {capteursData.map((capteur: Capteur, index) => (
-          <Marker
-            key={index}
-            coordinate={{ latitude: capteur.lat, longitude: capteur.lon }}
-            onPress={() =>
-              Alert.alert(
-                "Température",
-                `Température : ${capteur.temperature}°C`
-              )
-            }
-            opacity={0}
-          >
-            <Circle
-              center={{ latitude: capteur.lat, longitude: capteur.lon }}
-              radius={3000}
-              strokeColor="rgba(255, 0, 0, 0.5)"
-              fillColor={
-                capteur.temperature !== null
-                  ? `rgba(255, 0, 0, ${Math.min(1, capteur.temperature / 50)})`
-                  : "rgba(100, 100, 100, 0.3)"
+        {/* Affichage des capteurs de chaleur uniquement si l'option "Chaud" est sélectionnée */}
+        {selectedOptions.includes("Chaud") &&
+          capteursData.map((capteur: Capteur, index) => (
+            <Marker
+              key={capteur.deveui}
+              coordinate={{ latitude: capteur.lat, longitude: capteur.lon }}
+              onPress={() =>
+                Alert.alert(
+                  "Température",
+                  `Température : ${capteur.temperature}°C`
+                )
               }
-              zIndex={1}
-            />
-          </Marker>
-        ))}
+              opacity={0}
+            >
+              <Circle
+                center={{ latitude: capteur.lat, longitude: capteur.lon }}
+                radius={3000}
+                strokeColor="rgba(255, 0, 0, 0.5)"
+                fillColor={
+                  capteur.temperature !== null
+                    ? `rgba(255, 0, 0, ${Math.min(
+                        1,
+                        capteur.temperature / 50
+                      )})`
+                    : "rgba(100, 100, 100, 0.3)"
+                }
+                zIndex={1}
+              />
+            </Marker>
+          ))}
       </MapView>
 
       <TouchableOpacity style={styles.toggleButton} onPress={toggleOptions}>
@@ -467,15 +440,6 @@ function MapScreen({ navigation }: MapScreenProps) {
     </KeyboardAvoidingView>
   );
 }
-
-const getColorFromAQI = (aqi: number): string => {
-  if (aqi <= 50) return "green";
-  if (aqi <= 100) return "yellow";
-  if (aqi <= 150) return "orange";
-  if (aqi <= 200) return "red";
-  if (aqi <= 300) return "purple";
-  return "maroon";
-};
 
 const styles = StyleSheet.create({
   container: {

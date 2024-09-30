@@ -36,10 +36,10 @@
         "datemaj": "N/A"
     },
     {
-        "deveui": "70b3d580a0100657",
-        "nom": "SL-T-G4",
-        "lat": 45.613456,
-        "lon": 4.800357,
+        "deveui": "70b3d580a0100742",
+        "nom": "SL-T-G6",
+        "lat": 45.803818,
+        "lon": 4.719458,
         "status": "active",
         "temperature": 7.875,
         "datemaj": "N/A"
@@ -50,6 +50,15 @@
         "lat": 45.760508,
         "lon": 4.849077,
         "status": "active",
+        "temperature": 7.875,
+        "datemaj": "N/A"
+    },
+    {
+        "deveui": "70b3d580a0100654",
+        "nom": "SL-T-G2",
+        "lat": 45.743602,
+        "lon": 4.840917,
+        "status": "inactive",
         "temperature": 7.875,
         "datemaj": "N/A"
     },
@@ -72,15 +81,6 @@
         "datemaj": "N/A"
     },
     {
-        "deveui": "70b3d580a0100654",
-        "nom": "SL-T-G2",
-        "lat": 45.743602,
-        "lon": 4.840917,
-        "status": "inactive",
-        "temperature": 7.875,
-        "datemaj": "N/A"
-    },
-    {
         "deveui": "70b3d580a0100623",
         "nom": "SL-T-G9",
         "lat": 45.758908,
@@ -90,10 +90,10 @@
         "datemaj": "N/A"
     },
     {
-        "deveui": "70b3d580a0100648",
-        "nom": "SL-T-G12",
-        "lat": 45.689378,
-        "lon": 4.956662,
+        "deveui": "70b3d580a0100657",
+        "nom": "SL-T-G4",
+        "lat": 45.613456,
+        "lon": 4.800357,
         "status": "active",
         "temperature": 7.875,
         "datemaj": "N/A"
@@ -108,10 +108,10 @@
         "datemaj": "N/A"
     },
     {
-        "deveui": "70b3d580a0100742",
-        "nom": "SL-T-G6",
-        "lat": 45.803818,
-        "lon": 4.719458,
+        "deveui": "70b3d580a0100648",
+        "nom": "SL-T-G12",
+        "lat": 45.689378,
+        "lon": 4.956662,
         "status": "active",
         "temperature": 7.875,
         "datemaj": "N/A"
