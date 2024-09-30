@@ -1,0 +1,4 @@
+https://data.grandlyon.com/fr/datapusher/ws/rdata/biotope.temperature_device/all.json?maxfeatures=-1&start=1
+
+infos sur l'api :
+https://data.grandlyon.com/portail/fr/jeux-de-donnees/emplacement-et-etat-des-capteurs-de-temperature-en-temps-reel-dans-la-metropole-de-lyon/api
